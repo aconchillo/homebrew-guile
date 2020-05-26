@@ -1,5 +1,5 @@
 class GuileGit < Formula
-  desc "Guile-Git is a GNU Guile library providing bindings to libgit2"
+  desc "GNU Guile library providing bindings to libgit2"
   homepage "https://gitlab.com/guile-git/guile-git"
   url "https://gitlab.com/guile-git/guile-git/uploads/4c563d8e7e1ff84396abe8ca7011bcaf/guile-git-0.3.0.tar.gz"
   sha256 "75ce437da024fa57d6a2a48ae4e05d48cb42d84f73a3d372baef5c68421bb130"
@@ -11,8 +11,8 @@ class GuileGit < Formula
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
-  depends_on "scheme-bytestructures"
   depends_on "libgit2"
+  depends_on "scheme-bytestructures"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
