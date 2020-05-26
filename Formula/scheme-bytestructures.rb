@@ -1,5 +1,5 @@
 class SchemeBytestructures < Formula
-  desc "Type system of the C programming language, to be used on bytevectors"
+  desc "Library for structured access to bytevector contents"
   homepage "https://github.com/TaylanUB/scheme-bytestructures"
   url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.7/bytestructures-1.0.7.tar.gz"
   sha256 "5d354b4d041b30f5a768487ccf6e838d39a54db0b8d73499681bebbc3129bac5"
