@@ -25,4 +25,16 @@ class GuileRedis < Formula
     EOS
   end
 
+  test do
+    redis = testpath/"redis.scm"
+    redis.write <<~EOS
+      (use-modules (redis))
+    EOS
+
+    ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
+    ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
+    ENV["GUILE_AUTO_COMPILE"] = "0"
+
+    system "guile", redis
+  end
 end
