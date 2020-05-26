@@ -1,6 +1,6 @@
 class GuileHall < Formula
   desc "Hall is a project manager for Guile modules and applications"
-  homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
+  homepage "https://gitlab.com/a-sassmannshausen/guile-hall/"
   url "https://gitlab.com/a-sassmannshausen/guile-hall/-/archive/0.3.1/guile-hall-0.3.1.tar.gz"
   sha256 "b8b1b7c9613217cb4df8ffe22a5e821c40cd5c9ce3de4ca6ad61fc9bb9e5f38e"
 
@@ -14,6 +14,7 @@ class GuileHall < Formula
   depends_on "guile-config"
 
   def install
+    # We need this so we can find guile-config module.
     ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_AUTO_COMPILE"] = "0"
