@@ -1,5 +1,5 @@
 class GuileConfig < Formula
-  desc "Guile Config is a library providing a declarative approach to application configuration specification"
+  desc "Module for handling application configuration in a declarative way"
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
   url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.0/guile-config-0.4.0.tar.gz"
   sha256 "c0f22fb2739e05da734943d0a1e0e06f587f18ad0dd88bb695433bdd4c759b5c"
