@@ -1,5 +1,7 @@
 # Guile Homebrew Tap
 
+**NOTE: This repo requires this pull request to be merged before it can be used: https://github.com/Homebrew/homebrew-core/pull/55305**
+
 ## How do I install these formulae?
 
 `brew install aconchillo/guile/<formula>`
