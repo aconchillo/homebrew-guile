@@ -11,11 +11,11 @@ class Chickadee < Formula
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
-  depends_on "openal-soft"
+  depends_on "guile-opengl"
+  depends_on "guile-sdl2"
   depends_on "libvorbis"
   depends_on "mpg123"
-  depends_on "guile-sdl2"
-  depends_on "guile-opengl"
+  depends_on "openal-soft"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
