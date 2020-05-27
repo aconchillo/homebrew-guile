@@ -15,7 +15,7 @@ class GuileCommonmark < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    inreplace buildpath/"configure.ac", "2.2 2.0", "3.0 2.2 2.0"
+    inreplace buildpath/"configure.ac", "2.2 2.0", "3.0"
 
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
