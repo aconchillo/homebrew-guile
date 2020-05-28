@@ -1,8 +1,17 @@
 # Guile Homebrew Tap
 
-**NOTE: This repo requires this pull request to be merged before it can be used: https://github.com/Homebrew/homebrew-core/pull/55305**
+This project is a [Homebrew](https://brew.sh/) tap providing
+[Guile](https://www.gnu.org/software/guile/) libraries that can be easily used
+outside of the box from macOS.
 
 ## How do I install these formulae?
+
+If you installed Guile through Homebrew before May 28, 2020, you will need to
+reinstall it:
+
+`brew reinstall guile`
+
+After that you can do any of the following:
 
 `brew install aconchillo/guile/<formula>`
 
