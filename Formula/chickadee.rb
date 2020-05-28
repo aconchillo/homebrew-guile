@@ -341,18 +341,21 @@ index b6a8232..08e026d 100644
  ")))
 
 diff --git a/doc/api.texi b/doc/api.texi
-index 9cfa26a..9123916 100644
+index 9cfa26a..ace6fe5 100644
 --- a/doc/api.texi
 +++ b/doc/api.texi
-@@ -3147,7 +3147,7 @@ Sample vertex shader:
+@@ -3147,9 +3147,9 @@ Sample vertex shader:
 
  @example
  @verbatim
 -#version 130
 +#version 330
 
- in vec2 position;
+-in vec2 position;
++layout (location = 0) in vec2 position;
  in vec2 tex;
+ out vec2 fragTex;
+ uniform mat4 mvp;
 @@ -3165,13 +3165,14 @@ Sample fragment shader:
 
  @example
