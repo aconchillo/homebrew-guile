@@ -71,10 +71,10 @@ index e7fb443..6e40c46 100644
    (init-audio)
    (let* ((window (sdl2:make-window #:opengl? #t
 diff --git a/chickadee/render/particles.scm b/chickadee/render/particles.scm
-index d8778da..0d142fa 100644
+index d8778da..700747d 100644
 --- a/chickadee/render/particles.scm
 +++ b/chickadee/render/particles.scm
-@@ -116,9 +116,9 @@ indefinitely."
+@@ -116,12 +116,12 @@ indefinitely."
  (define (make-particles-shader)
    (strings->shader
     "
@@ -82,10 +82,16 @@ index d8778da..0d142fa 100644
 +#version 330
 
 -in vec2 position;
+-in vec2 tex;
+-in vec2 offset;
+-in float life;
 +layout (location = 0) in vec2 position;
- in vec2 tex;
- in vec2 offset;
- in float life;
++layout (location = 1) in vec2 tex;
++layout (location = 2) in vec2 offset;
++layout (location = 3) in float life;
+ out vec2 frag_tex;
+ out float t;
+ uniform mat4 mvp;
 @@ -142,16 +142,17 @@ void main(void) {
  }
  "
@@ -107,10 +113,10 @@ index d8778da..0d142fa 100644
  "))
 
 diff --git a/chickadee/render/pbr.scm b/chickadee/render/pbr.scm
-index 2738b77..f1049bc 100644
+index 2738b77..9325f7d 100644
 --- a/chickadee/render/pbr.scm
 +++ b/chickadee/render/pbr.scm
-@@ -91,9 +91,9 @@
+@@ -91,10 +91,10 @@
    (delay
      (strings->shader
       "
@@ -118,10 +124,12 @@ index 2738b77..f1049bc 100644
 +#version 330
 
 -in vec3 position;
+-in vec2 texcoord0;
 +layout (location = 0) in vec3 position;
- in vec2 texcoord0;
++layout (location = 1) in vec2 texcoord0;
  out vec2 fragTex;
  uniform mat4 model;
+ uniform mat4 view;
 @@ -106,14 +106,15 @@ void main(void) {
  }
  "
@@ -141,10 +149,10 @@ index 2738b77..f1049bc 100644
  }
  ")))
 diff --git a/chickadee/render/phong.scm b/chickadee/render/phong.scm
-index 0f2a938..f25bf9e 100644
+index 0f2a938..1cb0a47 100644
 --- a/chickadee/render/phong.scm
 +++ b/chickadee/render/phong.scm
-@@ -114,9 +114,9 @@
+@@ -114,11 +114,11 @@
    (delay
      (strings->shader
       "
@@ -152,10 +160,14 @@ index 0f2a938..f25bf9e 100644
 +#version 330
 
 -in vec3 position;
+-in vec2 texcoord;
+-in vec3 normal;
 +layout (location = 0) in vec3 position;
- in vec2 texcoord;
- in vec3 normal;
++layout (location = 1) in vec2 texcoord;
++layout (location = 2) in vec3 normal;
 
+ uniform mat4 model;
+ uniform mat4 view;
 @@ -135,7 +135,7 @@ void main() {
  }
  "
@@ -208,7 +220,7 @@ index 0f2a938..f25bf9e 100644
  ")))
 
 diff --git a/chickadee/render/shapes.scm b/chickadee/render/shapes.scm
-index f7412e8..b867096 100644
+index f7412e8..f1d8f61 100644
 --- a/chickadee/render/shapes.scm
 +++ b/chickadee/render/shapes.scm
 @@ -58,9 +58,9 @@
@@ -240,7 +252,7 @@ index f7412e8..b867096 100644
  }
  ")))
           (mvp (make-null-matrix4)))
-@@ -133,9 +134,9 @@ void main (void) {
+@@ -133,10 +134,10 @@ void main (void) {
             (delay
               (strings->shader
                "
@@ -248,10 +260,12 @@ index f7412e8..b867096 100644
 +#version 330
 
 -in vec2 position;
+-in vec2 tex;
 +layout (location = 0) in vec2 position;
- in vec2 tex;
++layout (location = 1) in vec2 tex;
  out vec2 frag_tex;
  uniform mat4 mvp;
+
 @@ -146,9 +147,10 @@ void main(void) {
  }
  "
@@ -277,10 +291,10 @@ index f7412e8..b867096 100644
  }
  "))))
 diff --git a/chickadee/render/sprite.scm b/chickadee/render/sprite.scm
-index b6a8232..08e026d 100644
+index b6a8232..fc41a1c 100644
 --- a/chickadee/render/sprite.scm
 +++ b/chickadee/render/sprite.scm
-@@ -49,9 +49,9 @@
+@@ -49,10 +49,10 @@
    (delay
      (strings->shader
       "
@@ -288,10 +302,12 @@ index b6a8232..08e026d 100644
 +#version 330
 
 -in vec2 position;
+-in vec2 tex;
 +layout (location = 0) in vec2 position;
- in vec2 tex;
++layout (location = 1) in vec2 tex;
  out vec2 fragTex;
  uniform mat4 mvp;
+
 @@ -62,14 +62,15 @@ void main(void) {
  }
  "
@@ -310,7 +326,7 @@ index b6a8232..08e026d 100644
  }
  ")))
 
-@@ -380,9 +381,9 @@ may be specified via the TEXTURE-REGION argument."
+@@ -380,11 +381,11 @@ may be specified via the TEXTURE-REGION argument."
    (delay
      (strings->shader
       "
@@ -318,10 +334,14 @@ index b6a8232..08e026d 100644
 +#version 330
 
 -in vec2 position;
+-in vec2 tex;
+-in vec4 tint;
 +layout (location = 0) in vec2 position;
- in vec2 tex;
- in vec4 tint;
++layout (location = 1) in vec2 tex;
++layout (location = 2) in vec4 tint;
  out vec2 fragTex;
+ out vec4 fragTint;
+ uniform mat4 mvp;
 @@ -396,14 +397,15 @@ void main(void) {
  }
  "
