@@ -1,3 +1,4 @@
+# coding: utf-8
 class GuileConfig < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
@@ -11,6 +12,8 @@ class GuileConfig < Formula
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
+
+  patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -41,3 +44,18 @@ class GuileConfig < Formula
     system "guile", config
   end
 end
+
+__END__
+diff --git a/config.scm b/config.scm
+index 75181c3..63e2f53 100644
+--- a/config.scm
++++ b/config.scm
+@@ -103,7 +103,7 @@ Values from this codex can be extracted using `OPTION-REF'."
+     ;; First, if auto?, check whether we want help etc.
+     (when auto?
+       (cond ((or (and (codex-metadatum 'generate-help? cdx)
+-                      (any (cute string-match "^-[a-Z]*h[a-Z]*$|^--help$" <>)
++                      (any (cute string-match "^-[a-zA-Z]*h[a-zA-Z]*$|^--help$" <>)
+                            commandline))
+                  (and (codex-metadatum 'generate-usage? cdx)
+                       (member "--usage" commandline)))
