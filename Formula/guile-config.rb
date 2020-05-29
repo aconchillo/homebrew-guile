@@ -1,4 +1,3 @@
-# coding: utf-8
 class GuileConfig < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
