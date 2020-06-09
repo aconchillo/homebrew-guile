@@ -1,5 +1,5 @@
 class GuileSqlite3 < Formula
-  desc "JSON module for Guile"
+  desc "Guile bindings to SQLite3"
   homepage "https://notabug.org/guile-sqlite3/guile-sqlite3"
   url "https://notabug.org/guile-sqlite3/guile-sqlite3/archive/v0.1.1.tar.gz"
   sha256 "62a3ee73fa6ff1e5d24b589499d46038176ea1b302c29a8bcbbc6bccad1d08ef"
