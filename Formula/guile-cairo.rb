@@ -1,5 +1,5 @@
 class GuileCairo < Formula
-  desc "A Guile wrapper for the Cairo graphics library"
+  desc "Guile wrapper for the Cairo graphics library"
   homepage "https://www.nongnu.org/guile-cairo/"
   url "https://download.savannah.gnu.org/releases/guile-cairo/guile-cairo-1.11.1.tar.gz"
   sha256 "f4f6337eb5c90fc2f5fd2043de6f237ef336da6285ae042b8452379bb22086bd"
@@ -10,15 +10,16 @@ class GuileCairo < Formula
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
-  depends_on "guile"
   depends_on "cairo"
+  depends_on "guile"
 
   patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "chmod", "755", "build-aux/git-version-gen"
+    chmod 0755, "build-aux/git-version-gen"
+
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
