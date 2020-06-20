@@ -1,8 +1,8 @@
 class GuileConfig < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
-  url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.0/guile-config-0.4.0.tar.gz"
-  sha256 "c0f22fb2739e05da734943d0a1e0e06f587f18ad0dd88bb695433bdd4c759b5c"
+  url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.2/guile-config-0.4.2.tar.gz"
+  sha256 "1daf04b52cfc587e73deb5722b46c12afece015caf3712c44ab7d9630a8f3b4a"
 
   bottle :unneeded
 
@@ -11,8 +11,6 @@ class GuileConfig < Formula
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
-
-  patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -43,18 +41,3 @@ class GuileConfig < Formula
     system "guile", config
   end
 end
-
-__END__
-diff --git a/config.scm b/config.scm
-index 75181c3..63e2f53 100644
---- a/config.scm
-+++ b/config.scm
-@@ -103,7 +103,7 @@ Values from this codex can be extracted using `OPTION-REF'."
-     ;; First, if auto?, check whether we want help etc.
-     (when auto?
-       (cond ((or (and (codex-metadatum 'generate-help? cdx)
--                      (any (cute string-match "^-[a-Z]*h[a-Z]*$|^--help$" <>)
-+                      (any (cute string-match "^-[a-zA-Z]*h[a-zA-Z]*$|^--help$" <>)
-                            commandline))
-                  (and (codex-metadatum 'generate-usage? cdx)
-                       (member "--usage" commandline)))
