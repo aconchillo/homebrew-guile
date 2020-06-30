@@ -1,5 +1,5 @@
 class GuileDsv < Formula
-  desc "Guile module for working with the delimiter-separated values data format"
+  desc "Guile module for delimiter-separated values (DSV) data format"
   homepage "https://github.com/artyom-poptsov/guile-dsv"
   url "https://github.com/artyom-poptsov/guile-dsv/archive/v0.3.0.tar.gz"
   sha256 "4197964279a8791cb0e7368bd87925cb3ae5d5f1ce5bea898c006801a4525187"
