@@ -1,5 +1,5 @@
 class GuileLib < Formula
-  desc "An accumulation place for pure-scheme Guile modules"
+  desc "Accumulation place for pure-scheme Guile modules"
   homepage "https://www.nongnu.org/guile-lib/"
   url "http://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.6.1.tar.gz"
   sha256 "6d1d3d0f14db9d280b8d427d6e1dec4417ddd02bff23bd5982ecb6e262eb3f2a"
