@@ -11,7 +11,7 @@ class GuileColorized < Formula
   def install
     inreplace buildpath/"Makefile", "$(TARGET)", "$(DESTDIR)/share/guile/site/3.0/ice-9/"
 
-    mkdir "#{prefix}/share/guile/site/3.0/ice-9/"
+    mkdir "#{share}/guile/site/3.0/ice-9/"
 
     system "make", "DESTDIR=#{prefix}", "install"
   end
