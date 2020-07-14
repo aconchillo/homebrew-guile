@@ -22,6 +22,10 @@ class GuileColorized < Formula
         export GUILE_LOAD_PATH="#{HOMEBREW_PREFIX}/share/guile/site/3.0"
         export GUILE_LOAD_COMPILED_PATH="#{HOMEBREW_PREFIX}/lib/guile/3.0/site-ccache"
         export GUILE_SYSTEM_EXTENSIONS_PATH="#{HOMEBREW_PREFIX}/lib/guile/3.0/extensions"
+
+      To enable colors on your Guile REPL add the following to your ~/.guile:
+        (use-modules (ice-9 colorized))
+        (activate-colorized)
     EOS
   end
 
