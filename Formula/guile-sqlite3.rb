@@ -10,7 +10,7 @@ class GuileSqlite3 < Formula
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
-  depends_on "sqlite3"
+  depends_on "sqlite"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
