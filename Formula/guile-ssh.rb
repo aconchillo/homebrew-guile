@@ -1,8 +1,8 @@
 class GuileSsh < Formula
   desc "SSH library for programs written in Guile"
   homepage "https://github.com/artyom-poptsov/guile-ssh"
-  url "https://github.com/artyom-poptsov/guile-ssh/archive/v0.12.0.tar.gz"
-  sha256 "d5b610fa0259187a824dfd26b11a415c1ca7b107912feea8b1a9e7c0fcfbe59c"
+  url "https://github.com/artyom-poptsov/guile-ssh/archive/v0.13.0.tar.gz"
+  sha256 "04b16bd0601355f7b5bec39fe43e9f31e417bdf7f8e1fd4bd909842fa612e703"
 
   bottle :unneeded
 
@@ -13,8 +13,6 @@ class GuileSsh < Formula
   depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "libssh"
-
-  patch :DATA
 
   def install
     system "autoreconf", "-vif"
@@ -45,72 +43,3 @@ class GuileSsh < Formula
     system "guile", ssh
   end
 end
-
-__END__
-diff --git a/configure.ac b/configure.ac
-index da11f30..3a4fba4 100644
---- a/configure.ac
-+++ b/configure.ac
-@@ -35,6 +35,7 @@ AM_INIT_AUTOMAKE([color-tests])
- m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])], [AC_SUBST([AM_DEFAULT_VERBOSITY],1)])
-
- AC_PROG_CC
-+LT_INIT([disable-static])
-
- if test "x$GCC" = "xyes"; then
-   # Use compiler warnings.
-diff --git a/modules/ssh/Makefile.am b/modules/ssh/Makefile.am
-index dbc2cf9..c6d5bf5 100644
---- a/modules/ssh/Makefile.am
-+++ b/modules/ssh/Makefile.am
-@@ -66,8 +66,8 @@ endif
- guilec_env  = 									\
- 	GUILE_AUTO_COMPILE=0 							\
- 	$(CROSS_COMPILING_VARIABLE)                                      	\
--	LD_LIBRARY_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${LD_LIBRARY_PATH}"	\
--	GUILE_LOAD_PATH="$(abs_top_srcdir)/modules"					\
-+	GUILE_SYSTEM_EXTENSIONS_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${GUILE_SYSTEM_EXTENSIONS_PATH}"	\
-+	GUILE_LOAD_PATH="$(abs_top_srcdir)/modules"				\
- 	GUILE_LOAD_COMPILED_PATH="$(builddir)/ssh:$$GUILE_LOAD_COMPILED_PATH"
-
- .scm.go:
-diff --git a/modules/ssh/dist/Makefile.am b/modules/ssh/dist/Makefile.am
-index 19050a8..480372d 100644
---- a/modules/ssh/dist/Makefile.am
-+++ b/modules/ssh/dist/Makefile.am
-@@ -61,7 +61,7 @@ endif
- guilec_env  = 									\
- 	GUILE_AUTO_COMPILE=0 							\
- 	$(CROSS_COMPILING_VARIABLE)                                      	\
--	LD_LIBRARY_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${LD_LIBRARY_PATH}"	\
-+	GUILE_SYSTEM_EXTENSIONS_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${GUILE_SYSTEM_EXTENSIONS_PATH}"	\
- 	GUILE_LOAD_PATH="$(abs_top_srcdir)/modules"				\
- 	GUILE_LOAD_COMPILED_PATH="$(builddir)/ssh:$$GUILE_LOAD_COMPILED_PATH"
-
-diff --git a/tests/Makefile.am b/tests/Makefile.am
-index e31119c..d1af611 100644
---- a/tests/Makefile.am
-+++ b/tests/Makefile.am
-@@ -1,9 +1,9 @@
--## Config file for GNU Automake.
-+## Config file for GNU Automake.
- ##
- ## Copyright (C) 2014, 2015, 2016 Artyom V. Poptsov <poptsov.artyom@gmail.com>
- ##
- ## This file is part of Guile-SSH.
--##
-+##
- ## Guile-SSH is free software: you can redistribute it and/or
- ## modify it under the terms of the GNU General Public License as
- ## published by the Free Software Foundation, either version 3 of the
-@@ -87,8 +87,8 @@ guilec_opts = 					\
- # TODO: Move environment setup to a separate file.
- guilec_env  = 									\
- 	GUILE_AUTO_COMPILE=0 							\
--	LD_LIBRARY_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${LD_LIBRARY_PATH}"	\
--	GUILE_LOAD_PATH="$(abs_top_srcdir)/modules"					\
-+	GUILE_SYSTEM_EXTENSIONS_PATH="$(abs_top_builddir)/libguile-ssh/.libs/:${GUILE_SYSTEM_EXTENSIONS_PATH}"	\
-+	GUILE_LOAD_PATH="$(abs_top_srcdir)/modules"				\
- 	GUILE_LOAD_COMPILED_PATH="$(builddir)/ssh:$$GUILE_LOAD_COMPILED_PATH"
-
- .scm.go:
