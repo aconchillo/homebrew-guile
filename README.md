@@ -1,8 +1,10 @@
 # Guile Homebrew Tap
 
-This project is a [Homebrew](https://brew.sh/) tap providing
-[Guile](https://www.gnu.org/software/guile/) libraries that can be easily used
-outside of the box from macOS.
+The goal of Guile Homebrew Tap is to provide
+[Guile](https://www.gnu.org/software/guile/) libraries and applications that
+can be easily installed with [Homebrew](https://brew.sh/).
+
+Happy hacking!
 
 ## How do I install these formulae?
 
