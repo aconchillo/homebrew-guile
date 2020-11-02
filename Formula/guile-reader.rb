@@ -12,8 +12,8 @@ class GuileReader < Formula
   depends_on "gperf" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
-  depends_on "lightning"
   depends_on "guile"
+  depends_on "lightning"
 
   patch :DATA
 
