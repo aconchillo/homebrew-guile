@@ -10,6 +10,7 @@ class Skribilo < Formula
   depends_on "automake" => :build
   depends_on "gnu-sed" => :build
   depends_on "fig2dev"
+  depends_on "ghostscript"
   depends_on "guile"
   depends_on "guile-lib"
   depends_on "guile-reader"
