@@ -1,5 +1,5 @@
 class Skribilo < Formula
-  desc "The Ultimate Document Programming Framework"
+  desc "Ultimate Document Programming Framework"
   homepage "https://www.nongnu.org/skribilo/"
   url "http://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
   sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
@@ -9,10 +9,10 @@ class Skribilo < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gnu-sed" => :build
+  depends_on "fig2dev"
   depends_on "guile"
   depends_on "guile-lib"
   depends_on "guile-reader"
-  depends_on "fig2dev"
   depends_on "imagemagick"
   depends_on "lout"
   depends_on "ploticus"
