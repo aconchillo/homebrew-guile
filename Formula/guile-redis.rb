@@ -1,8 +1,8 @@
 class GuileRedis < Formula
   desc "Redis module for Guile"
   homepage "https://github.com/aconchillo/guile-redis"
-  url "https://download.savannah.gnu.org/releases/guile-redis/guile-redis-1.3.0.tar.gz"
-  sha256 "50e2615f05a62ef304e8c34a4ac7392fe76c29b117fb2b232f22192ba0873b6e"
+  url "https://download.savannah.gnu.org/releases/guile-redis/guile-redis-2.0.0.tar.gz"
+  sha256 "58b70a8af1c2720fbc2902b0d614c33fcbda0dc44128d23d38752d52c6fbf4c5"
 
   bottle :unneeded
 
