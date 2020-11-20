@@ -13,6 +13,11 @@ class GuileJwt < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
+    # We need this so we can find other modules.
+    ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
+    ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
+    ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
+
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
