@@ -4,8 +4,6 @@ class GuileConfig < Formula
   url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.2/guile-config-0.4.2.tar.gz"
   sha256 "1daf04b52cfc587e73deb5722b46c12afece015caf3712c44ab7d9630a8f3b4a"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

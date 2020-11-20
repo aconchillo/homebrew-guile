@@ -4,8 +4,6 @@ class GuileDsv < Formula
   url "https://github.com/artyom-poptsov/guile-dsv/archive/v0.3.0.tar.gz"
   sha256 "4197964279a8791cb0e7368bd87925cb3ae5d5f1ce5bea898c006801a4525187"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

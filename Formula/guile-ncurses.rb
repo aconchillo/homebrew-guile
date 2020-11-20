@@ -4,8 +4,6 @@ class GuileNcurses < Formula
   url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.0.tar.gz"
   sha256 "0e4a9eef7237aeef6cc9e5e1fa8513bfd328e971efd74d8d78d543aa9c5b1d0d"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

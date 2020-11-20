@@ -4,8 +4,6 @@ class GuileGcrypt < Formula
   url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.3.0.tar.gz"
   sha256 "07394c3de4f31a36ca2b670e1998c526de891d9436f12e94d8862ab081274d6a"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

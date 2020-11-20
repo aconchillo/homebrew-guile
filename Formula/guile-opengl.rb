@@ -4,8 +4,6 @@ class GuileOpengl < Formula
   url "https://ftp.gnu.org/gnu/guile-opengl/guile-opengl-0.1.0.tar.gz"
   sha256 "35d2b953052ccd7e41d2429bca71bca03d8f08a206a59d71f7592d043be90e8f"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

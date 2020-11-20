@@ -4,8 +4,6 @@ The goal of Guile Homebrew Tap is to provide
 [Guile](https://www.gnu.org/software/guile/) libraries and applications that
 can be easily installed with [Homebrew](https://brew.sh/).
 
-Bottles?
-
 Happy hacking!
 
 ## How do I install these formulae?

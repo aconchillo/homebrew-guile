@@ -4,8 +4,6 @@ class GuileSdl2 < Formula
   url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.5.0.tar.gz"
   sha256 "9564cb72d3d40eabcdfd8f79a0e2fb2c5ddcce52c9150f5df67a7d771e031d85"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

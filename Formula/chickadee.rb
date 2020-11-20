@@ -4,8 +4,6 @@ class Chickadee < Formula
   url "https://files.dthompson.us/chickadee/chickadee-0.6.0.tar.gz"
   sha256 "2980c5f34b17838f9f513d581d8b311ea709213990ba88fe8ff9ac32d89464cb"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

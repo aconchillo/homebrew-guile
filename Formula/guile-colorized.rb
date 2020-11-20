@@ -4,8 +4,6 @@ class GuileColorized < Formula
   url "https://gitlab.com/NalaGinrut/guile-colorized/-/archive/v0.1/guile-colorized-v0.1.tar.gz"
   sha256 "fb60ca552f6e935b9d8b6a7cf9b2a4e1c85caa6b5bce53f6f4541acf21c5ab47"
 
-  bottle :unneeded
-
   depends_on "guile"
 
   def install

@@ -4,8 +4,6 @@ class GuileOauth < Formula
   url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-0.5.0.tar.gz"
   sha256 "03db9bbe7248e147dde31b54adb4ddbd314f8ebe370e5dfd0ab7790397dc0a27"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

@@ -4,8 +4,6 @@ class GuileReader < Formula
   url "http://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
   sha256 "38c2b444eadbb8c0cab78d90a44ec3ebff42bd410c5b84a91018cee7eb64d2bb"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gnu-sed" => :build

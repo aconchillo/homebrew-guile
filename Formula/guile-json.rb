@@ -4,8 +4,6 @@ class GuileJson < Formula
   url "https://download.savannah.gnu.org/releases/guile-json/guile-json-4.4.0.tar.gz"
   sha256 "298bd3233ddf66207b7f722095e2da18be73fb151ddf6634f16eb6c0ad6211e7"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

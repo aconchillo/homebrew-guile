@@ -4,8 +4,6 @@ class Skribilo < Formula
   url "http://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
   sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gnu-sed" => :build

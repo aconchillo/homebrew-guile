@@ -4,8 +4,6 @@ class GuileSemver < Formula
   url "https://files.ngyro.com/guile-semver/guile-semver-0.1.1.tar.gz"
   sha256 "4f790919375feb204a8ea2eda92a291d9bb4de4c8eb1c6776784589a86253781"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

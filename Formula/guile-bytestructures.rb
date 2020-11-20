@@ -4,8 +4,6 @@ class GuileBytestructures < Formula
   url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.7/bytestructures-1.0.7.tar.gz"
   sha256 "5d354b4d041b30f5a768487ccf6e838d39a54db0b8d73499681bebbc3129bac5"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

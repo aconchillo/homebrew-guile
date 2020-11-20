@@ -4,8 +4,6 @@ class GuileRedis < Formula
   url "https://download.savannah.gnu.org/releases/guile-redis/guile-redis-2.0.0.tar.gz"
   sha256 "58b70a8af1c2720fbc2902b0d614c33fcbda0dc44128d23d38752d52c6fbf4c5"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

@@ -4,8 +4,6 @@ class GuileDbi < Formula
   url "https://github.com/opencog/guile-dbi/archive/guile-dbi-2.1.7.tar.gz"
   sha256 "e337c242891221e2bf6da5433f4d5144c40b37da400a3a011c8ac07390516df4"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "texinfo" => :build

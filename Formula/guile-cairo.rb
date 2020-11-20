@@ -4,8 +4,6 @@ class GuileCairo < Formula
   url "https://download.savannah.gnu.org/releases/guile-cairo/guile-cairo-1.11.1.tar.gz"
   sha256 "f4f6337eb5c90fc2f5fd2043de6f237ef336da6285ae042b8452379bb22086bd"
 
-  bottle :unneeded
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
