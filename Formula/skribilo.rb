@@ -27,7 +27,9 @@ class Skribilo < Formula
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
     system "autoreconf", "-vif"
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure",
+           "--prefix=#{prefix}",
+           "--with-lispdir=#{share}/emacs/site-lisp/skribilo"
     system "make", "install"
   end
 
