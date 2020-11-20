@@ -8,6 +8,7 @@ class GuileJwt < Formula
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
+  depends_on "guile-json"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"

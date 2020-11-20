@@ -29,7 +29,7 @@ class GuileRedis < Formula
   test do
     redis = testpath/"redis.scm"
     redis.write <<~EOS
-      (use-modules (redis))
+      (use-modules (redis main))
     EOS
 
     ENV["GUILE_AUTO_COMPILE"] = "0"

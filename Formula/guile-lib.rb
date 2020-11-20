@@ -1,11 +1,12 @@
 class GuileLib < Formula
   desc "Accumulation place for pure-scheme Guile modules"
   homepage "https://www.nongnu.org/guile-lib/"
-  url "http://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.6.1.tar.gz"
+  url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.6.1.tar.gz"
   sha256 "6d1d3d0f14db9d280b8d427d6e1dec4417ddd02bff23bd5982ecb6e262eb3f2a"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"

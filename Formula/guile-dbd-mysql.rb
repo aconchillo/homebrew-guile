@@ -7,6 +7,7 @@ class GuileDbdMysql < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "guile"
+  depends_on "guile-dbi"
   depends_on "mysql-client"
 
   def install

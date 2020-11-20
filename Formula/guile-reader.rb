@@ -1,11 +1,12 @@
 class GuileReader < Formula
   desc "Simple framework for building readers for GNU Guile"
   homepage "https://www.nongnu.org/guile-reader/"
-  url "http://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
+  url "https://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
   sha256 "38c2b444eadbb8c0cab78d90a44ec3ebff42bd410c5b84a91018cee7eb64d2bb"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "gnu-sed" => :build
   depends_on "gperf" => :build
   depends_on "pkg-config" => :build
