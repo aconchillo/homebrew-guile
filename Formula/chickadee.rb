@@ -4,6 +4,12 @@ class Chickadee < Formula
   url "https://files.dthompson.us/chickadee/chickadee-0.6.0.tar.gz"
   sha256 "2980c5f34b17838f9f513d581d8b311ea709213990ba88fe8ff9ac32d89464cb"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.6.0"
+    sha256 "d047497764b6b2ea99e6c9e5378438b846ade8a5367748dad8da0266552d22f0" => :catalina
+    sha256 "fc86208563c60a69cf41bcfe4cf86218161e4d4d13872ec9252cdf7b8fd7283f" => :x86_64_linux
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
