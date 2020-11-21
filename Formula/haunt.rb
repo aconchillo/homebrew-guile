@@ -4,6 +4,13 @@ class Haunt < Formula
   url "https://files.dthompson.us/haunt/haunt-0.2.4.tar.gz"
   sha256 "cce9080a0eca9892613d63ed2514f70bdb180753a2835c4bb603cd19ed27df14"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.2.4"
+    cellar :any_skip_relocation
+    sha256 "40f77c882734d0ab4376250c6f673dd7825f503d5853491543ef2bfe8ff43fa8" => :catalina
+    sha256 "626d83851a0c87e056d4687f994e0471f6422591833c2a4cbfe242f2f3ed230f" => :x86_64_linux
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
