@@ -4,6 +4,13 @@ class GuileDbi < Formula
   url "https://github.com/opencog/guile-dbi/archive/guile-dbi-2.1.7.tar.gz"
   sha256 "e337c242891221e2bf6da5433f4d5144c40b37da400a3a011c8ac07390516df4"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbi-2.1.7"
+    cellar :any
+    sha256 "ac8942d8044e98b7c87238ed379c2e38554e71c647d5a75e07dd300f35d3a287" => :catalina
+    sha256 "3e30fad491e7f12d2b8d74f2f8a95b7e94a36b2520906a12aaff9b93d5190ced" => :x86_64_linux
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "texinfo" => :build
