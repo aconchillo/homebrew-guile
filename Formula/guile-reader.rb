@@ -6,7 +6,9 @@ class GuileReader < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3"
-    sha256 "171595ff50f6c29dd3be8949c39a38eba452ed19b36311031beabaac625a0bc9" => :catalina
+    rebuild 1
+    sha256 "14b80d0ff7776a3295af6aab3ea6cfd3702abca61debf5d3b447ca6cf87ed3f1" => :catalina
+    sha256 "28fb3fb235d233e1940e3df1f2b4ecf1227fbf2e1e4f03c099f3e14a9d78aeb1" => :x86_64_linux
   end
 
   depends_on "autoconf" => :build
