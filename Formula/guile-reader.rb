@@ -24,6 +24,8 @@ class GuileReader < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
+    ENV["PATH"] = "#{HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:#{ENV["PATH"]}"
+
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
@@ -67,25 +69,3 @@ index faa7016..ecca1de 100644
  token-reader-doc.texi reader-lib-doc.texi: $(top_srcdir)/src/token-readers.h
  	main='(module-ref (resolve-module '\''(extract-doc)) '\'main')' &&	\
  	GUILE_AUTO_COMPILE=0							\
-diff --git a/src/extract-make-reader-flags.sh b/src/extract-make-reader-flags.sh
-index 223ac96..d7e1126 100755
---- a/src/extract-make-reader-flags.sh
-+++ b/src/extract-make-reader-flags.sh
-@@ -16,6 +16,6 @@ else
- fi
-
- grep '^#define SCM_READER_FLAG_' | \
--sed -es'/^#define SCM_READER_FLAG_\([A-Z0-9_]\+\).*\/\* \([^ ]\+\) \*\/.*$/\2, SCM_READER_FLAG_\1/g'
-+gsed -es'/^#define SCM_READER_FLAG_\([A-Z0-9_]\+\).*\/\* \([^ ]\+\) \*\/.*$/\2, SCM_READER_FLAG_\1/g'
-
- # arch-tag: 14e80f57-8f11-4adb-8276-df7da2254daf
-diff --git a/src/extract-token-readers.sh b/src/extract-token-readers.sh
-index 8bba895..70b0fc9 100755
---- a/src/extract-token-readers.sh
-+++ b/src/extract-token-readers.sh
-@@ -17,4 +17,4 @@ else
- fi
-
- grep '^#define SCM_TR_' | \
--sed -es'/^#define SCM_TR_\([A-Z0-9_]\+\) \/\* \([^ ]\+\) \*\/.*$/\2, SCM_TR_\1/g'
-+gsed -es'/^#define SCM_TR_\([A-Z0-9_]\+\) \/\* \([^ ]\+\) \*\/.*$/\2, SCM_TR_\1/g'

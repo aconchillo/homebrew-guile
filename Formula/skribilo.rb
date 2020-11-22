@@ -21,8 +21,6 @@ class Skribilo < Formula
   depends_on "lout"
   depends_on "ploticus"
 
-  patch :DATA
-
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
@@ -30,6 +28,8 @@ class Skribilo < Formula
     ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
+
+    ENV["PATH"] = "#{HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:#{ENV["PATH"]}"
 
     system "autoreconf", "-vif"
     system "./configure",
@@ -61,31 +61,3 @@ class Skribilo < Formula
     system "guile", skribilo
   end
 end
-
-__END__
-diff --git a/substitute.am b/substitute.am
-index 4f69cb8..7b481e9 100644
---- a/substitute.am
-+++ b/substitute.am
-@@ -4,7 +4,7 @@ AM_V_SUBSTITUTE = $(AM_V_SUBSTITUTE_$(V))
- AM_V_SUBSTITUTE_ = $(AM_V_SUBSTITUTE_$(AM_DEFAULT_VERBOSITY))
- AM_V_SUBSTITUTE_0 = @echo "  SUBSTITUTE" $@;
-
--substitute = sed -e 's,[@]guilemoduledir[@],$(guilemoduledir),g'	\
-+substitute = gsed -e 's,[@]guilemoduledir[@],$(guilemoduledir),g'	\
- 		 -e 's,[@]guileobjectdir[@],$(guileobjectdir),g'	\
- 		 -e 's,[@]abs_top_srcdir[@],$(abs_top_srcdir),g'	\
- 		 -e 's,[@]abs_top_builddir[@],$(abs_top_builddir),g'	\
-diff --git a/configure.ac b/configure.ac
-index 04c7eac..b0f08e8 100644
---- a/configure.ac
-+++ b/configure.ac
-@@ -3,7 +3,7 @@
-
- AC_PREREQ(2.59)
- AC_INIT([Skribilo],
--        m4_esyscmd([build-aux/git-version-gen .tarball-version]),
-+        [0.9.5],
-         [skribilo-users@nongnu.org],
- 	[skribilo],
- 	[https://nongnu.org/skribilo/])
