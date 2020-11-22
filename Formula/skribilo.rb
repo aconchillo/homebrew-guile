@@ -31,7 +31,6 @@ class Skribilo < Formula
 
     ENV["PATH"] = "#{HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:#{ENV["PATH"]}"
 
-    system "autoreconf", "-vif"
     system "./configure",
            "--prefix=#{prefix}",
            "--with-lispdir=#{share}/emacs/site-lisp/skribilo"
