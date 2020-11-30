@@ -4,6 +4,13 @@ class GuileLzlib < Formula
   url "https://notabug.org/guile-lzlib/guile-lzlib/archive/0.0.2.tar.gz"
   sha256 "8623db77d447e7b9ffbfcbc288390e706a6b1a89b1171daed60874cfec7e4f87"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzlib-0.0.2"
+    cellar :any_skip_relocation
+    sha256 "6fc6f60d702aa1ad7bbcb9c3987debec666d589227477ab94a23eda48c73ec16" => :catalina
+    sha256 "25af3da8676eb10699b9eec547b7ed14cfa5817246c402f925ffb8918b401da3" => :x86_64_linux
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
