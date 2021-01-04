@@ -1,21 +1,14 @@
-class GuileZlib < Formula
-  desc "GNU Guile bindings to the zlib compression library"
-  homepage "https://notabug.org/guile-zlib/guile-zlib"
-  url "https://notabug.org/guile-zlib/guile-zlib/archive/0.0.1.tar.gz"
-  sha256 "f1100be6dd31b02983cf498155bf11155ca833421f99698f29e5694317335fb1"
-
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zlib-0.0.1"
-    cellar :any_skip_relocation
-    sha256 "933cdb91d44b56b2c840e2d4868fdd747ce4ca98426e76e4e967773b3ec52bd8" => :catalina
-    sha256 "4332ab1c54b7369fe1eceb15686b2714da1c0013a99aac3976adaa68dbb02c99" => :x86_64_linux
-  end
+class GuileZstd < Formula
+  desc "GNU Guile bindings to the zstd compression library"
+  homepage "https://notabug.org/guile-zstd/guile-zstd"
+  url "https://notabug.org/guile-zstd/guile-zstd/archive/v0.1.1.tar.gz"
+  sha256 "6e57ef524f20cab79ca5fd62366c5435f71cf652f582fc1e7d62585e90d499c5"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
-  depends_on "zlib"
+  depends_on "zstd"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -35,9 +28,9 @@ class GuileZlib < Formula
   end
 
   test do
-    zlib = testpath/"zlib.scm"
-    zlib.write <<~EOS
-      (use-modules (zlib))
+    zstd = testpath/"zstd.scm"
+    zstd.write <<~EOS
+      (use-modules (srfi srfi-1))
     EOS
 
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -45,6 +38,6 @@ class GuileZlib < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "guile", zlib
+    system "guile", zstd
   end
 end
