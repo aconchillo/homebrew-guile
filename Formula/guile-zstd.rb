@@ -16,6 +16,8 @@ class GuileZstd < Formula
   depends_on "guile"
   depends_on "zstd"
 
+  patch :DATA
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
@@ -36,7 +38,7 @@ class GuileZstd < Formula
   test do
     zstd = testpath/"zstd.scm"
     zstd.write <<~EOS
-      (use-modules (srfi srfi-1))
+      (use-modules (zstd))
     EOS
 
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -47,3 +49,18 @@ class GuileZstd < Formula
     system "guile", zstd
   end
 end
+
+__END__
+diff --git a/zstd/config.scm.in b/zstd/config.scm.in
+index 150dfb9..07b5c41 100644
+--- a/zstd/config.scm.in
++++ b/zstd/config.scm.in
+@@ -20,7 +20,4 @@
+   #:export (%zstd-library-file-name))
+
+ (define %zstd-library-file-name
+-  ;; 'dynamic-link' in Guile >= 3.0.2 first looks up file names literally
+-  ;; (hence ".so.1"), which is not the case with older versions of Guile.
+-  (cond-expand ((not guile-3) "@ZSTD_LIBDIR@/libzstd")
+-               (else          "@ZSTD_LIBDIR@/libzstd.so.1")))
++  "@ZSTD_LIBDIR@/libzstd")
