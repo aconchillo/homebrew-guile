@@ -6,8 +6,10 @@ class GuileZstd < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zstd-0.1.1"
-    sha256 "fe5556b11ce2be358f7513a889e478cf8f509bed560d24379479bd0ad3b6849a" => :catalina
-    sha256 "3c4421053b47bd93d0fed69d1998a434967cf6057c3e5c660ffcefae91578918" => :x86_64_linux
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "d923cf794353e2ba962d3d10e5e2f11d945f824d31975907fb8683525840a080" => :catalina
+    sha256 "b895dbf3155f7a6f0046fad64cc6132cbe804f8efe8fc1dc7bcbfaee3690239d" => :x86_64_linux
   end
 
   depends_on "autoconf" => :build
