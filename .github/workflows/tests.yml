@@ -7,7 +7,7 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: ['11-arm', '11.0', '10.15', '10.14']
+        os: ['macos-11.0', 'macos-10.15']
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Homebrew
