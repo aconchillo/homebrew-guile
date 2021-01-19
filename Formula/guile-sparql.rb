@@ -9,6 +9,8 @@ class GuileSparql < Formula
   depends_on "pkg-config" => :build
   depends_on "guile"
 
+  patch :DATA
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
@@ -39,3 +41,24 @@ class GuileSparql < Formula
     system "guile", sparql
   end
 end
+
+__END__
+diff --git a/env.in b/env.in
+index 2884c30..a7edb73 100644
+--- a/env.in
++++ b/env.in
+@@ -14,11 +14,11 @@
+ # You should have received a copy of the GNU General Public License
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-GUILE_LOAD_PATH=@abs_top_srcdir@/web:$GUILE_LOAD_PATH
++GUILE_LOAD_PATH=@abs_top_srcdir@:$GUILE_LOAD_PATH
+ if test "@abs_top_srcdir@" != "@abs_top_builddir@"; then
+-    GUILE_LOAD_PATH=@abs_top_builddir@/web:$GUILE_LOAD_PATH
++    GUILE_LOAD_PATH=@abs_top_builddir@:$GUILE_LOAD_PATH
+ fi
+-GUILE_LOAD_COMPILED_PATH=@abs_top_builddir@/web:$GUILE_LOAD_PATH
++GUILE_LOAD_COMPILED_PATH=@abs_top_builddir@:$GUILE_LOAD_PATH
+ PATH=@abs_top_builddir@/bin:$PATH
+
+ export GUILE_LOAD_PATH
