@@ -5,10 +5,10 @@ class GuileCurl < Formula
   sha256 "d241f27c2a6d2ac768ce1ae64fd27e6854b34ace6ce35ce810fb41a2a7b20ed6"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.8"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.9"
     cellar :any
-    sha256 "8f8a8efcc4ab132e14929c92644a9b8b6d684aaced9464d2d3e7de3560daa58d" => :catalina
-    sha256 "84ea01a8f0d5bf780700f8bf9d8f25c5d0146d8635ee41323b5ec975bd626e28" => :x86_64_linux
+    sha256 "18e41dceed4d4f80ebc7a58d5d8c2c3437d801020ab423dcfb9e7d775e2145f2" => :catalina
+    sha256 "9a2ad0e43b0a008754c5bc1b4155bf3d8ad4b1e41995d50be145bfff8cfdf668" => :x86_64_linux
   end
 
   depends_on "autoconf" => :build
