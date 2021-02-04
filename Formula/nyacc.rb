@@ -4,13 +4,6 @@ class Nyacc < Formula
   url "https://download.savannah.gnu.org/releases/nyacc/nyacc-1.03.1.tar.gz"
   sha256 "663a20942338833f595bb7aba24f0b852dfba8792a7f835231fd4438c68fbf4a"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/nyacc-1.03.1"
-    cellar :any_skip_relocation
-    sha256 "ab99e20dc3a402485bbd8ca82cd3586fba1f93d9f5bffde9edbaf299b8628e5b" => :catalina
-    sha256 "edbe733efd34ee8f53672f904086f5b6ce3dfe479370667985350e1c903cd753" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

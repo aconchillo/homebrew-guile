@@ -4,13 +4,6 @@ class Skribilo < Formula
   url "https://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
   sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5"
-    rebuild 1
-    sha256 "ccd8e6fc3ec8c8834287ce02a0d6d2f0a8c643fba71ce4fb861a36e21f8f9fae" => :catalina
-    sha256 "f2de21c98bbf40db23f694ccad8ca7e8284dcb46de4a2453da9dc43217c7d2bd" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gnu-sed" => :build

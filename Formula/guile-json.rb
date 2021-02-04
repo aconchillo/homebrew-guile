@@ -4,13 +4,6 @@ class GuileJson < Formula
   url "https://download.savannah.gnu.org/releases/guile-json/guile-json-4.5.2.tar.gz"
   sha256 "1ab046ec36b1c44c041ac275568d818784d71fab9a5d95f9128cfe8a25051933"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-4.5.1"
-    cellar :any_skip_relocation
-    sha256 "21aba1dad0dc9e769b0e469a05a88592ed9b34526910b11247bcf3f4fbbaf89d" => :catalina
-    sha256 "12da108c7032b054bb27b1179384a8d756de330ac1ced42e1a2515df7125084d" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

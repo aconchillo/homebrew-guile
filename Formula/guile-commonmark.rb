@@ -4,13 +4,6 @@ class GuileCommonmark < Formula
   url "https://github.com/OrangeShark/guile-commonmark/releases/download/v0.1.2/guile-commonmark-0.1.2.tar.gz"
   sha256 "56d518ece5e5d94c1b24943366149e9cb0f6abdb24044c049c6c0ea563d3999e"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-commonmark-0.1.2"
-    cellar :any_skip_relocation
-    sha256 "b8af4b20eda3836d9631789516935c1cbcd7fa06ad87a89e772df296f91ddce6" => :catalina
-    sha256 "553dc7d16cdcbe3bfdcd5f4302e92e3ce9d50858c7e9c8346e14bb2525917130" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

@@ -4,13 +4,6 @@ class GuileSdl2 < Formula
   url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.5.0.tar.gz"
   sha256 "9564cb72d3d40eabcdfd8f79a0e2fb2c5ddcce52c9150f5df67a7d771e031d85"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.5.0"
-    cellar :any_skip_relocation
-    sha256 "9a50a98bb849dcfa18c9a37b2204d85d61702ed17510dadc0ab1c04d43a9bc9f" => :catalina
-    sha256 "5606dca3a23131d5d44f23600bfbe9058ace3c38521d808a38f640f7589e5fae" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
