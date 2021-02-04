@@ -4,13 +4,6 @@ class GuileGcrypt < Formula
   url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.3.0.tar.gz"
   sha256 "07394c3de4f31a36ca2b670e1998c526de891d9436f12e94d8862ab081274d6a"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.3.0"
-    cellar :any_skip_relocation
-    sha256 "a630a3d41669fd208d2b56668e5ff10c9060b6f94b1e2530a0073e52af653f67" => :catalina
-    sha256 "ecc83d1ee2cf1f383d154154c6e1b9fb11cf264ab15d38e283efdf17e9008df7" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

@@ -4,13 +4,6 @@ class GuileGit < Formula
   url "https://gitlab.com/guile-git/guile-git/uploads/2600bb0dfdfb00bfbe46811dccad51d8/guile-git-0.4.0.tar.gz"
   sha256 "2ccee3e0520b5db354a1b7070f95e3bbaf0bb0f61c11ca92793728257a7abecf"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.4.0"
-    cellar :any_skip_relocation
-    sha256 "85bae69b9eea8b1bd7decbec47082a96bceffdc9433accaab0065eb6d5fdc34e" => :catalina
-    sha256 "c4d341745ca0ab5cc35227878783119e574d76a60b36104e498c34f65e3c706a" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

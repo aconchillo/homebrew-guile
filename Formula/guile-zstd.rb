@@ -4,14 +4,6 @@ class GuileZstd < Formula
   url "https://notabug.org/guile-zstd/guile-zstd/archive/v0.1.1.tar.gz"
   sha256 "6e57ef524f20cab79ca5fd62366c5435f71cf652f582fc1e7d62585e90d499c5"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zstd-0.1.1"
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "d923cf794353e2ba962d3d10e5e2f11d945f824d31975907fb8683525840a080" => :catalina
-    sha256 "b895dbf3155f7a6f0046fad64cc6132cbe804f8efe8fc1dc7bcbfaee3690239d" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

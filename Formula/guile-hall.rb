@@ -4,13 +4,6 @@ class GuileHall < Formula
   url "https://gitlab.com/a-sassmannshausen/guile-hall/-/archive/0.3.1/guile-hall-0.3.1.tar.gz"
   sha256 "b8b1b7c9613217cb4df8ffe22a5e821c40cd5c9ce3de4ca6ad61fc9bb9e5f38e"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.3.1"
-    cellar :any_skip_relocation
-    sha256 "168737153681dbe5084df0758212ae234f94dfd5384d5da21113419e510c09ea" => :catalina
-    sha256 "01a7f3941653cdfb11af712115928e7b12d7058d88290cfea1d53e366842eed3" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build

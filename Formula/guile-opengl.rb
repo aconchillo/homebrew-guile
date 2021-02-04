@@ -4,13 +4,6 @@ class GuileOpengl < Formula
   url "https://ftp.gnu.org/gnu/guile-opengl/guile-opengl-0.1.0.tar.gz"
   sha256 "35d2b953052ccd7e41d2429bca71bca03d8f08a206a59d71f7592d043be90e8f"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-opengl-0.1.0"
-    cellar :any_skip_relocation
-    sha256 "957fdc7e8776d7fc7d78f4faae75974e28beaae438107ff52e1c15c4128eeca1" => :catalina
-    sha256 "e2554d683d5f066aee743bdf42840e40cf18513ae065bc8901f559b90e852def" => :x86_64_linux
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
