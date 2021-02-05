@@ -4,6 +4,12 @@ class GuileBytestructures < Formula
   url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.7/bytestructures-1.0.7.tar.gz"
   sha256 "5d354b4d041b30f5a768487ccf6e838d39a54db0b8d73499681bebbc3129bac5"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bytestructures-1.0.7"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "b22c6e26d3ff868513b642ffb1a1608f072aee7ebe8da4ffdba8953e0b345448"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
