@@ -4,6 +4,12 @@ class GuileNcurses < Formula
   url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.0.tar.gz"
   sha256 "0e4a9eef7237aeef6cc9e5e1fa8513bfd328e971efd74d8d78d543aa9c5b1d0d"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ncurses-3.0"
+    rebuild 1
+    sha256 cellar: :any, catalina: "d1242f2b35f1c79f965baf7b86f88e9d0f64f5d71b51e068f923c236901b850e"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
