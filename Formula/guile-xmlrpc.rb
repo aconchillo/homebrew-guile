@@ -4,6 +4,12 @@ class GuileXmlrpc < Formula
   url "https://download.savannah.gnu.org/releases/guile-xmlrpc/guile-xmlrpc-0.4.0.tar.gz"
   sha256 "357755571b85a1e07d1caafdc63ad1c186913ec9ad94b44631df37c8abfc91ac"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-xmlrpc-0.4.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "1721245cd9c78d02ed58dcec65d02f9d2c817a57f735ef9c4fe67a162d22fcf6"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
