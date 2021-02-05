@@ -4,6 +4,12 @@ class GuileRedis < Formula
   url "https://download.savannah.gnu.org/releases/guile-redis/guile-redis-2.0.0.tar.gz"
   sha256 "58b70a8af1c2720fbc2902b0d614c33fcbda0dc44128d23d38752d52c6fbf4c5"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.0.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "8b5454991a560c4dcbb7349f75d823411f20b7e2cdee1419f569d5398363fba3"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
