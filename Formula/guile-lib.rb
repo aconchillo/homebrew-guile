@@ -4,6 +4,12 @@ class GuileLib < Formula
   url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.6.1.tar.gz"
   sha256 "6d1d3d0f14db9d280b8d427d6e1dec4417ddd02bff23bd5982ecb6e262eb3f2a"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.6.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "bc86c48721952d3bd7221ee46c2730040d39e929302eb3372feb6d38b0c135c8"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gettext" => :build
