@@ -4,6 +4,12 @@ class GuileSemver < Formula
   url "https://files.ngyro.com/guile-semver/guile-semver-0.1.1.tar.gz"
   sha256 "4f790919375feb204a8ea2eda92a291d9bb4de4c8eb1c6776784589a86253781"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-semver-0.1.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "1573cbc364322106f04459877e1e0f4b98751e74e1fdfaf034d9c19712dcbe13"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
