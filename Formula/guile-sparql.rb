@@ -4,6 +4,11 @@ class GuileSparql < Formula
   url "https://github.com/roelj/guile-sparql/releases/download/0.0.8/guile-sparql-0.0.8.tar.gz"
   sha256 "96daf40b48bef9a69e8fe05a07b7d97dd05f13b3b717835a06f5bae4c449c4c9"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sparql-0.0.8"
+    sha256 cellar: :any_skip_relocation, catalina: "f463b663a67088c2287d8982aa25eb15880c68e550564241e031726c84f698be"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
