@@ -4,6 +4,12 @@ class GuileSqlite3 < Formula
   url "https://notabug.org/guile-sqlite3/guile-sqlite3/archive/v0.1.2.tar.gz"
   sha256 "dc88fbcd30b6eb7d6d275212fd68eb4ca7a45c9d31ffe4a3d706bd318f9d0016"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sqlite3-0.1.2"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "ecee3644e688fa0a8295a3105e1ac073c8640b00ebf4841029774a52859b3cac"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
