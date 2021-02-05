@@ -4,6 +4,12 @@ class GuileEmail < Formula
   url "https://guile-email.systemreboot.net/releases/guile-email-0.2.2.tar.lz"
   sha256 "b38c6ab2f2534c15b29c7a23d5ffbc4f5ff8348af1d0c90af696bafd1cc888e5"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.2.2"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "40ca2fb24b596287f34999d2edc70291c4f19578089a4b58c4d787bbb057f992"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
