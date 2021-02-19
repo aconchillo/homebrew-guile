@@ -4,6 +4,12 @@ class Wisp < Formula
   url "https://hg.sr.ht/~arnebab/wisp/archive/v1.0.4.tar.gz"
   sha256 "9c59532d2cab0169a6e595ed1c2b179e0cb2954133ccbf1407f40d6a9b515877"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.4"
+    sha256 cellar: :any_skip_relocation, catalina:     "565c2948fdf8d4e3c9d3f79df56b84986dfde2183d8bc18db5ed1fb7abf9f520"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "379b1447a9c2b166fb0d4a7613d8796c5590b74465fd8b6188c2ed3b91cc475d"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
