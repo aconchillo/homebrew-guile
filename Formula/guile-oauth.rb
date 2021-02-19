@@ -1,8 +1,8 @@
 class GuileOauth < Formula
   desc "OAuth module for Guile"
   homepage "https://github.com/aconchillo/guile-oauth"
-  url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-0.5.0.tar.gz"
-  sha256 "03db9bbe7248e147dde31b54adb4ddbd314f8ebe370e5dfd0ab7790397dc0a27"
+  url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-1.0.0.tar.gz"
+  sha256 "132f51fd4c72f756545c23b3db25c59bb45621038decf335f152cdc52e51c1c2"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-0.5.0"
@@ -16,6 +16,7 @@ class GuileOauth < Formula
   depends_on "gnutls"
   depends_on "guile"
   depends_on "guile-gcrypt"
+  depends_on "guile-json"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -42,7 +43,7 @@ class GuileOauth < Formula
   test do
     oauth = testpath/"oauth.scm"
     oauth.write <<~EOS
-      (use-modules (oauth oauth1))
+      (use-modules (oauth oauth1) (oauth oauth2))
     EOS
 
     ENV["GUILE_AUTO_COMPILE"] = "0"
