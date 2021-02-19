@@ -5,9 +5,8 @@ class GuileOauth < Formula
   sha256 "132f51fd4c72f756545c23b3db25c59bb45621038decf335f152cdc52e51c1c2"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-0.5.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "7978be1f3a4f5559bacfb589e6431557cadc425572257688ecc6547a87a059fb"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.0.0"
+    sha256 cellar: :any_skip_relocation, catalina: "cffa62905eea65cd7ebd5bc06ef4c005c6f447a2115fbae9257e2c5e81c87c07"
   end
 
   depends_on "autoconf" => :build
