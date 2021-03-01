@@ -26,6 +26,12 @@ class GuileGcrypt < Formula
     system "make", "install"
   end
 
+  def post_install
+    # Touch package-config.go to avoid Guile recompilation.
+    # See https://github.com/Homebrew/homebrew-core/pull/60307#discussion_r478917491
+    touch "#{lib}/guile/3.0/site-ccache/gcrypt/package-config.go"
+  end
+
   def caveats
     <<~EOS
       Remember to add the following to your .bashrc or equivalent in order to use this module:
