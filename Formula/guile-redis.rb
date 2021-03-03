@@ -5,9 +5,9 @@ class GuileRedis < Formula
   sha256 "f8a4327de9170cbd87e007913eb8776fac04b194c95d97b2f7a3d05c61d16e66"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.0.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "8b5454991a560c4dcbb7349f75d823411f20b7e2cdee1419f569d5398363fba3"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "cc0b63c78712ed4de4ed32778ebf92264c7bfd6772e53a46328625114ab2c2e3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "320e5db66547ce49baab93be83d42df68dabe674eb0ba172b229f95284c865aa"
   end
 
   depends_on "autoconf" => :build
