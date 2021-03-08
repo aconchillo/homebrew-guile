@@ -4,6 +4,12 @@ class GuileQuickcheck < Formula
   url "https://files.ngyro.com/guile-quickcheck/guile-quickcheck-0.1.0.tar.gz"
   sha256 "cb99ac5be99b43b61eb9c452d953543e890e2a83fc83acac289d94316888bc0e"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-quickcheck-0.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "41d7c4555ada9e82be0eb0259b4ce6ae1b071e0ce45e1760a099dc749aee005d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f612a5d1e47e8f8dfccc9e66d31193a16d9304a66b56f4145525947a781f72b4"
+  end
+
   depends_on "guile"
 
   def install
