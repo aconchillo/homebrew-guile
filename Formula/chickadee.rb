@@ -1,8 +1,8 @@
 class Chickadee < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://dthompson.us/projects/chickadee.html"
-  url "https://files.dthompson.us/chickadee/chickadee-0.6.0.tar.gz"
-  sha256 "2980c5f34b17838f9f513d581d8b311ea709213990ba88fe8ff9ac32d89464cb"
+  url "https://files.dthompson.us/chickadee/chickadee-0.7.0.tar.gz"
+  sha256 "e6b2268f2af89028d23d5cee6caf4e7d1fe8344a09a6a01d9d466d24d8243ea5"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.6.0"
