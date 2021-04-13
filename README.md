@@ -2,7 +2,7 @@
 
 The goal of Guile Homebrew Tap is to provide
 [Guile](https://www.gnu.org/software/guile/) libraries and applications that
-can be easily installed with [Homebrew](https://brew.sh/).
+can be easily installed with [Homebrew](https://brew.sh/) in macOS.
 
 Happy hacking!
 
