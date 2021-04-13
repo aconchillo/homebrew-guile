@@ -1,8 +1,8 @@
 class GuileBytestructures < Formula
   desc "Library for structured access to bytevector contents"
   homepage "https://github.com/TaylanUB/scheme-bytestructures"
-  url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.7/bytestructures-1.0.7.tar.gz"
-  sha256 "5d354b4d041b30f5a768487ccf6e838d39a54db0b8d73499681bebbc3129bac5"
+  url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.10/bytestructures-1.0.10.tar.gz"
+  sha256 "bb8a78c1e570f90e344368196844ee0f143682b3d4c6ab69d6de0fa0d7b7c20d"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bytestructures-1.0.7"
