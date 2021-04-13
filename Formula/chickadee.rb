@@ -31,6 +31,19 @@ class Chickadee < Formula
 
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
+
+    # Use Homebrew /usr/local/opt instead.
+    inreplace buildpath/"chickadee/config.scm" do |s|
+      s.gsub!(/^\(define %libopenal .*/,
+              "(define %libopenal \"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\")")
+      s.gsub!(/^\(define %libvorbisfile .*/,
+              "(define %libvorbisfile \"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\")")
+      s.gsub!(/^\(define %libmpg123 .*/,
+              "(define %libmpg123 \"#{HOMEBREW_PREFIX}/opt/mpg123/lib/libmpg123\")")
+      s.gsub!(/^\(define %libfreetype .*/,
+              "(define %libfreetype \"#{HOMEBREW_PREFIX}/opt/freetype/lib/libfreetype\")")
+    end
+
     system "make", "install"
   end
 
