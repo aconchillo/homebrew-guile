@@ -5,9 +5,9 @@ class GuileSqlite3 < Formula
   sha256 "158cb82958c6329319f911412999ea125980f327f54185bf0dad271d6f8f45c2"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sqlite3-0.1.2"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "ecee3644e688fa0a8295a3105e1ac073c8640b00ebf4841029774a52859b3cac"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sqlite3-0.1.3"
+    sha256 cellar: :any_skip_relocation, catalina:     "e7fda70608fd77cb0a2b7ef8808db2fccbba1fb5533a9d3b9b2fa9a5c0fc64e2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8e02ba07d4d57b99e3458b807e7dbe91625dd1c1c1d4617432941b55b9e2013d"
   end
 
   depends_on "autoconf" => :build
