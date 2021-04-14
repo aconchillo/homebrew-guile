@@ -1,8 +1,8 @@
 class GuileSqlite3 < Formula
   desc "Guile bindings to SQLite3"
   homepage "https://notabug.org/guile-sqlite3/guile-sqlite3"
-  url "https://notabug.org/guile-sqlite3/guile-sqlite3/archive/v0.1.2.tar.gz"
-  sha256 "dc88fbcd30b6eb7d6d275212fd68eb4ca7a45c9d31ffe4a3d706bd318f9d0016"
+  url "https://notabug.org/guile-sqlite3/guile-sqlite3/archive/v0.1.3.tar.gz"
+  sha256 "158cb82958c6329319f911412999ea125980f327f54185bf0dad271d6f8f45c2"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sqlite3-0.1.2"
@@ -21,6 +21,13 @@ class GuileSqlite3 < Formula
 
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
+
+    # Use Homebrew /usr/local/opt instead of Cellar.
+    inreplace buildpath/"sqlite3.scm" do |s|
+      s.gsub!(/\(define libsqlite3 .*/,
+              "(define libsqlite3 (dynamic-link \"#{HOMEBREW_PREFIX}/opt/sqlite3/lib/libsqlite3\"))")
+    end
+
     system "make", "install"
   end
 
