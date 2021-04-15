@@ -1,8 +1,8 @@
 class Haunt < Formula
   desc "Simple, functional, hackable static site generator"
   homepage "https://dthompson.us/projects/haunt.html"
-  url "https://files.dthompson.us/haunt/haunt-0.2.4.tar.gz"
-  sha256 "cce9080a0eca9892613d63ed2514f70bdb180753a2835c4bb603cd19ed27df14"
+  url "https://files.dthompson.us/haunt/haunt-0.2.5.tar.gz"
+  sha256 "1324b7986897ca55b9150ae80f8241f4037075bc2bb5bbdae56385540d2dc4bf"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.2.4"
@@ -25,9 +25,6 @@ class Haunt < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    inreplace buildpath/"configure.ac", "2.2 2.0", "3.0"
-
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
