@@ -4,6 +4,12 @@ class GuileConfig < Formula
   url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.2/guile-config-0.4.2.tar.gz"
   sha256 "1daf04b52cfc587e73deb5722b46c12afece015caf3712c44ab7d9630a8f3b4a"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-config-0.4.2"
+    sha256 cellar: :any_skip_relocation, catalina:     "811b981441e43379b49140a79f320b128fa54d2a8ccf3d34b9d4a783ebc48add"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "61d60924def8141867a324562e69be95a182f29416d14d33afe6a64ac86715c4"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
