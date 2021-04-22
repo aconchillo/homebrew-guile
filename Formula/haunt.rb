@@ -10,8 +10,6 @@ class Haunt < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "c462fb97390e8218487d118afb8042f7655a764c85a31e02fe5f8abe49a71c46"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"

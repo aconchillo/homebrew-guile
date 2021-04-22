@@ -10,8 +10,6 @@ class GuileSdl2 < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "a5031817cbb2512390d0ecc634806f19dbd2eefb94187bcaefc23a7ed1d44509"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "sdl2"
@@ -22,7 +20,6 @@ class GuileSdl2 < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

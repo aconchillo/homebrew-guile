@@ -10,8 +10,6 @@ class Skribilo < Formula
     sha256 catalina: "dfdb70de87335020289b3d6009cca1fe32a26a648882e66d1f8be5d001d43dc8"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "gnu-sed" => :build
   depends_on "fig2dev"
   depends_on "ghostscript"

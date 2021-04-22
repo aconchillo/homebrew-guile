@@ -10,15 +10,12 @@ class GuileXmlrpc < Formula
     sha256 cellar: :any_skip_relocation, catalina: "1721245cd9c78d02ed58dcec65d02f9d2c817a57f735ef9c4fe67a162d22fcf6"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

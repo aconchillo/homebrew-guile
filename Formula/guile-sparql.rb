@@ -9,8 +9,6 @@ class GuileSparql < Formula
     sha256 cellar: :any_skip_relocation, catalina: "f463b663a67088c2287d8982aa25eb15880c68e550564241e031726c84f698be"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 

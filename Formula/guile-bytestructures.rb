@@ -10,15 +10,12 @@ class GuileBytestructures < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "68962a5ad51a78be435ac11ee8caf9ee62cdc94ca6f51cb3c81420e8e31e8f23"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

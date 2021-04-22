@@ -10,8 +10,6 @@ class Nyacc < Formula
     sha256 cellar: :any_skip_relocation, catalina: "4d86eb88e5920defdb96d238e404a4b87ca6e33c5250d343bc13f425a8f9f92a"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
