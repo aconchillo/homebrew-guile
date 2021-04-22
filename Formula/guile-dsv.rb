@@ -4,6 +4,13 @@ class GuileDsv < Formula
   url "https://github.com/artyom-poptsov/guile-dsv/archive/v0.4.0.tar.gz"
   sha256 "87d3f3c51b0766806b57678cc417236adadc893e7a4d798e05f3a8084c9d7a78"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.4.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "4a3dca8c14c8586fe627509a81808b8c0ab8c147179786aaebea41b641c61a54"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ad9c2ec8b4d2393760c16caa55298718b11e0a8b368483713d7c440e9a8e4877"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
