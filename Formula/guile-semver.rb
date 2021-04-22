@@ -6,8 +6,8 @@ class GuileSemver < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-semver-0.1.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "1573cbc364322106f04459877e1e0f4b98751e74e1fdfaf034d9c19712dcbe13"
+    sha256 cellar: :any_skip_relocation, catalina:     "7d92e0ec8150258792d735b963e726e0a9bc308d59df92a28b101eec9ded95ba"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "13ceb33cd27b7d09796e56801dc191382f3cf42daec0e99ef6a3f58e52de28ea"
   end
 
   depends_on "pkg-config" => :build
