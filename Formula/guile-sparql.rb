@@ -6,7 +6,9 @@ class GuileSparql < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sparql-0.0.8"
-    sha256 cellar: :any_skip_relocation, catalina: "f463b663a67088c2287d8982aa25eb15880c68e550564241e031726c84f698be"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "3a356dd749952265574daac5ceb15d91932fd353a6da13e0cc11032c86cff7a6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "09c1f1c2e1ac5aa2ac4159463153b78c9b105f711c9f5b52949c71af34b43728"
   end
 
   depends_on "pkg-config" => :build
