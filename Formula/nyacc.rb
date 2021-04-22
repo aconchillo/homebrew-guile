@@ -6,8 +6,8 @@ class Nyacc < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/nyacc-1.03.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "4d86eb88e5920defdb96d238e404a4b87ca6e33c5250d343bc13f425a8f9f92a"
+    sha256 cellar: :any_skip_relocation, catalina:     "16294a32af05bd413b06c069c10d5af82b35fa6b076ed1a3f771886413a0dc36"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c815b8062b917b3aef54c9929c13e3adb6065628b1489c612d69ee7a1aee48a1"
   end
 
   depends_on "pkg-config" => :build
