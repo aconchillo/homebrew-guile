@@ -4,6 +4,12 @@ class GuileColorized < Formula
   url "https://gitlab.com/NalaGinrut/guile-colorized/-/archive/v0.1/guile-colorized-v0.1.tar.gz"
   sha256 "fb60ca552f6e935b9d8b6a7cf9b2a4e1c85caa6b5bce53f6f4541acf21c5ab47"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-colorized-0.1"
+    sha256 cellar: :any_skip_relocation, catalina:     "eb7d8a50a42162c6fc57f54d79a2ddc1db3aa9675f6eab55c877e842c837437b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "db1a8a5f6511d33d187df225bcc66967200c64ec4ce8c1ccd6c1b0ac761af809"
+  end
+
   depends_on "guile"
 
   def install
