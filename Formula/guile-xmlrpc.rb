@@ -6,8 +6,8 @@ class GuileXmlrpc < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-xmlrpc-0.4.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "1721245cd9c78d02ed58dcec65d02f9d2c817a57f735ef9c4fe67a162d22fcf6"
+    sha256 cellar: :any_skip_relocation, catalina:     "1e83148cac523bab2089b1b8e305732252dca4d42511b825391071c4f3bf2ba5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f212a427445e3c3f8b0211da6b3f9fe7fcfd6c4c8bf4e12d742c122b5539d6db"
   end
 
   depends_on "pkg-config" => :build
