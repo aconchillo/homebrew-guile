@@ -4,6 +4,12 @@ class GuileGi < Formula
   url "https://github.com/spk121/guile-gi/archive/v0.3.1.tar.gz"
   sha256 "be503a7de9557aa7cf9c3fe36cc6578a6aa98323cf5db3a34c0d699878c0582e"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.1"
+    sha256 catalina:     "6a8ba8777fdc582f902fac498542405cf5e7786896702f7a1f934cca4fa7ae86"
+    sha256 x86_64_linux: "7436ed8fcd68c7d1b520f9c4721aad519630746a4aeda70a55cbbf32b0898826"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
