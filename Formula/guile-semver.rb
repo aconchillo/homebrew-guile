@@ -10,15 +10,12 @@ class GuileSemver < Formula
     sha256 cellar: :any_skip_relocation, catalina: "1573cbc364322106f04459877e1e0f4b98751e74e1fdfaf034d9c19712dcbe13"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

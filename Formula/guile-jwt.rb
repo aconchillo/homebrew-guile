@@ -10,8 +10,6 @@ class GuileJwt < Formula
     sha256 cellar: :any_skip_relocation, catalina: "ddd24d96ddafb30293034c3efcec9940202ba8823e8ae3a8db079fd21cd586a7"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-json"
@@ -24,7 +22,6 @@ class GuileJwt < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

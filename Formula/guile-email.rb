@@ -10,8 +10,6 @@ class GuileEmail < Formula
     sha256 cellar: :any_skip_relocation, catalina: "40ca2fb24b596287f34999d2edc70291c4f19578089a4b58c4d787bbb057f992"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"

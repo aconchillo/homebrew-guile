@@ -9,8 +9,6 @@ class GuileOauth < Formula
     sha256 cellar: :any_skip_relocation, catalina: "cffa62905eea65cd7ebd5bc06ef4c005c6f447a2115fbae9257e2c5e81c87c07"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "gnutls"
   depends_on "guile"
@@ -25,7 +23,6 @@ class GuileOauth < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

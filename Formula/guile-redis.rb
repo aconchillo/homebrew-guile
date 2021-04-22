@@ -10,15 +10,12 @@ class GuileRedis < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "320e5db66547ce49baab93be83d42df68dabe674eb0ba172b229f95284c865aa"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end

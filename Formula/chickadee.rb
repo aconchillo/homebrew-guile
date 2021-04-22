@@ -10,8 +10,6 @@ class Chickadee < Formula
     sha256 x86_64_linux: "32978d854a9d544b81c4b86b2b631cbb0afb96a665ef79dcd37c97c049a9a652"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
@@ -29,7 +27,6 @@ class Chickadee < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
 
     # Use Homebrew /usr/local/opt instead.
