@@ -4,6 +4,12 @@ class GuileMastodon < Formula
   url "https://framagit.org/prouby/guile-mastodon/-/archive/v0.0.2/guile-mastodon-v0.0.2.tar.gz"
   sha256 "9b65a202ea9e09f1f8c9c0efd3130545c28a533c12ece1f2def68b8c1fbae4c7"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mastodon-0.0.2"
+    sha256 cellar: :any_skip_relocation, catalina:     "2e2b3eeff8a76bfe76e86df4f1f6f5eec5cd4e0fae318b3b12548ff699d76bcf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8203245b05ca176b12a2369809886cdc1fee37cfc76e96323933b696a456e256"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
