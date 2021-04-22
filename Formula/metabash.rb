@@ -4,6 +4,12 @@ class Metabash < Formula
   url "https://github.com/artyom-poptsov/metabash/archive/v0.0.0.tar.gz"
   sha256 "14182092cf15ffe52b1f7d1014fcc90f242e65be017625f09182546c05d2e8ac"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/metabash-0.0.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "e5bd50d8d13272749743db07a2829a3f65e5cbabe0592c74da06886be0648124"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "76ed84dc4f8953d9763e773357e6f532cdb99fcb5eabcdc700ba852adbf828dd"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
