@@ -6,8 +6,8 @@ class GuileEmail < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.2.2"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina: "40ca2fb24b596287f34999d2edc70291c4f19578089a4b58c4d787bbb057f992"
+    sha256 cellar: :any_skip_relocation, catalina:     "3a3cd8d22719c6b80ad5713db263960063bc5ba357d4a9aebbbabd89c907e2a1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d0035366ac6662442037c3eb550f21d0b125fc92f34060b3bfd8101a282e0089"
   end
 
   depends_on "pkg-config" => :build
