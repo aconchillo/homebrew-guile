@@ -4,12 +4,6 @@ class GuileDbdMysql < Formula
   url "https://github.com/opencog/guile-dbi/archive/guile-dbi-2.1.7.tar.gz"
   sha256 "e337c242891221e2bf6da5433f4d5144c40b37da400a3a011c8ac07390516df4"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbd-mysql-2.1.7"
-    rebuild 1
-    sha256 cellar: :any, catalina: "154083a518062b1ac8f65377acd976ed14786b59619af5a02b5f5b98e78b5ded"
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "guile"

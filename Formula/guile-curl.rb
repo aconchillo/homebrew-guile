@@ -4,12 +4,6 @@ class GuileCurl < Formula
   url "https://github.com/spk121/guile-curl/archive/v0.9.tar.gz"
   sha256 "d241f27c2a6d2ac768ce1ae64fd27e6854b34ace6ce35ce810fb41a2a7b20ed6"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.9"
-    rebuild 1
-    sha256 cellar: :any, catalina: "7d67e45b89d54ec9c827688214833291bfab6fe8b2034c36261d3893fdbe107b"
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
