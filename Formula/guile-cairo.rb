@@ -4,12 +4,6 @@ class GuileCairo < Formula
   url "https://download.savannah.gnu.org/releases/guile-cairo/guile-cairo-1.11.1.tar.gz"
   sha256 "f4f6337eb5c90fc2f5fd2043de6f237ef336da6285ae042b8452379bb22086bd"
 
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.1"
-    rebuild 1
-    sha256 catalina: "87b7ed205a5664f903ef8c4bb12fdd86a695aeaccb145e488180042475ec6f37"
-  end
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
