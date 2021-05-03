@@ -4,6 +4,12 @@ class GuileSmc < Formula
   url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "60383bd441bc3636bd4dac6035464b1177eabc9f4229e2c447334a2e8c35f626"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "5893c7f3ea21e15a085dae9281e0c8efdf52202c7c41a7e4bcda78e56b55e3ca"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "322db6d164eeb7021a1987bdb0333e4c91dcfffbf70c67e9e6d71a1afa91b344"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
