@@ -6,8 +6,9 @@ class GuileSmc < Formula
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.1.0"
-    sha256 cellar: :any_skip_relocation, catalina:     "5893c7f3ea21e15a085dae9281e0c8efdf52202c7c41a7e4bcda78e56b55e3ca"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "322db6d164eeb7021a1987bdb0333e4c91dcfffbf70c67e9e6d71a1afa91b344"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "abb1979800875f29da098f1edd5b2c223b920440bd8e730698743d1fb7721904"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a327d95104007ad7f809e84ae840278f8ffc679e6c2abc91b11a5b12aa80f0a"
   end
 
   depends_on "autoconf" => :build
