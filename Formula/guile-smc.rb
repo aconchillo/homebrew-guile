@@ -76,3 +76,20 @@ index 7270822..0a96147 100644
  nobase_nodist_ccache_DATA = $(GOBJECTS)
 
  # Make sure source files are installed first, so that the mtime of
+diff --git a/modules/smc/core/log.scm b/modules/smc/core/log.scm
+index c2062fa..b94b0e0 100644
+--- a/modules/smc/core/log.scm
++++ b/modules/smc/core/log.scm
+@@ -45,10 +45,10 @@
+
+ (define (log level fmt . args)
+   (let* ((message (apply format #f fmt args))
+-         (command (format #f "~a ~a --priority=user.~a --tag='~a' '~a'"
++         (command (format #f "~a ~a -p 'user.~a' -t '~a' '~a'"
+                           %logger
+                           (if *use-stderr?*
+-                              "--stderr"
++                              "-s"
+                               "")
+                           level
+                           %tag
