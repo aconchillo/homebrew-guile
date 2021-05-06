@@ -4,6 +4,12 @@ class GuileIni < Formula
   url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "fd78c93b143f8a1c8f96b97c47ab43a781277327e7af274b777ac5fdc1c7dce8"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "61e449351f2925088aa4fbb114f931efab89828d44596456cd810f3f53fe03d9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e7ad1c9c7945d3187b9670a9be6cd9406e08c10adc7dc0d0b183659a6c314ccc"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
