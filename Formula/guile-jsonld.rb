@@ -4,6 +4,12 @@ class GuileJsonld < Formula
   url "https://framagit.org/tyreunom/guile-jsonld/-/archive/1.0.2/guile-jsonld-1.0.2.tar.gz"
   sha256 "100d36654e6ed84b80ba62a5293dc880655dd738feaf5db16391161e89891af1"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jsonld-1.0.2"
+    sha256 cellar: :any_skip_relocation, catalina:     "8efc79677c71b90a2d36b5cd9aa3af7e1f906ed4ccd7c585d62eb32346be45ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd8c382e34c8ed9d618caf7b8f179d7e50a322ad03c64f54c87f20611671ad0f"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
