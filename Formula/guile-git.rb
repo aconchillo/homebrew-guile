@@ -1,8 +1,8 @@
 class GuileGit < Formula
   desc "GNU Guile library providing bindings to libgit2"
   homepage "https://gitlab.com/guile-git/guile-git"
-  url "https://gitlab.com/guile-git/guile-git/uploads/4ffd7377b0b74da4051356121b46116f/guile-git-0.5.1.tar.gz"
-  sha256 "65e03731d56683f447b4c7fd0bfbf3467adad11218d5f9789d1ab859bf8e368c"
+  url "https://gitlab.com/guile-git/guile-git/uploads/6450f3991aa524484038cdcea3fb248d/guile-git-0.5.2.tar.gz"
+  sha256 "949755a211ad6e905ecdebe66ca35bfaab638d985b9fadc928ad2538d8f5cc95"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.5.1"
