@@ -3,6 +3,7 @@ class GuileSdl2 < Formula
   homepage "https://dthompson.us/projects/guile-sdl2.html"
   url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.7.0.tar.gz"
   sha256 "874a2c09446761351016b2b0d22ec977e40223ca6247535413695bc4fbfceda4"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.7.0"
@@ -22,6 +23,11 @@ class GuileSdl2 < Formula
 
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
+  end
+
+  def post_install
+    # Touch config.go to avoid Guile recompilation.
+    touch "#{lib}/guile/3.0/site-ccache/sdl2/config.go"
   end
 
   def caveats
