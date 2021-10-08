@@ -1,8 +1,8 @@
 class Chickadee < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://dthompson.us/projects/chickadee.html"
-  url "https://files.dthompson.us/chickadee/chickadee-0.7.0.tar.gz"
-  sha256 "e6b2268f2af89028d23d5cee6caf4e7d1fe8344a09a6a01d9d466d24d8243ea5"
+  url "https://files.dthompson.us/chickadee/chickadee-0.8.0.tar.gz"
+  sha256 "b91be303f9899ed98ea940227947af1b7111685f04b81be0c7b84f59e2f47859"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.7.0"
@@ -32,14 +32,11 @@ class Chickadee < Formula
 
     # Use Homebrew /usr/local/opt instead.
     inreplace buildpath/"chickadee/config.scm" do |s|
-      s.gsub!(/^\(define %libopenal .*/,
-              "(define %libopenal \"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\")")
-      s.gsub!(/^\(define %libvorbisfile .*/,
-              "(define %libvorbisfile \"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\")")
-      s.gsub!(/^\(define %libmpg123 .*/,
-              "(define %libmpg123 \"#{HOMEBREW_PREFIX}/opt/mpg123/lib/libmpg123\")")
-      s.gsub!(/^\(define %libfreetype .*/,
-              "(define %libfreetype \"#{HOMEBREW_PREFIX}/opt/freetype/lib/libfreetype\")")
+      s.gsub!(%r{".*/libopenal"}, "\"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\"")
+      s.gsub!(%r{".*/libvorbisfile"}, "\"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\"")
+      s.gsub!(%r{".*/libmpg123"}, "\"#{HOMEBREW_PREFIX}/opt/mpg123/lib/libmpg123\"")
+      s.gsub!(%r{".*/libfreetype"}, "\"#{HOMEBREW_PREFIX}/opt/freetype/lib/libfreetype\"")
+      s.gsub!(%r{".*/libreadline"}, "\"#{HOMEBREW_PREFIX}/opt/readline/lib/libreadline\"")
     end
 
     system "make", "install"
