@@ -5,10 +5,9 @@ class Chickadee < Formula
   sha256 "b91be303f9899ed98ea940227947af1b7111685f04b81be0c7b84f59e2f47859"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.7.0"
-    rebuild 1
-    sha256 catalina:     "7d1ff40e3ffdc26c9642734f00cdd51e178069fdb972980aadc66514dfd59ec0"
-    sha256 x86_64_linux: "072420c2091a4e04b4f522195f8c199c2a32ae8c5d19c70eb126b220effd026e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.8.0"
+    sha256 catalina:     "64f077d137591a4040f71fd6d6b4df9f967d710d54e0bcf5f0e170070f44a9f3"
+    sha256 x86_64_linux: "4eb7ba14012a9ccf00b1f5fb883ae705452879a3d64b8a6f8746afe597ddbce9"
   end
 
   depends_on "pkg-config" => :build
