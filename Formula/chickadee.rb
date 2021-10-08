@@ -3,6 +3,7 @@ class Chickadee < Formula
   homepage "https://dthompson.us/projects/chickadee.html"
   url "https://files.dthompson.us/chickadee/chickadee-0.8.0.tar.gz"
   sha256 "b91be303f9899ed98ea940227947af1b7111685f04b81be0c7b84f59e2f47859"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.8.0"
@@ -39,6 +40,11 @@ class Chickadee < Formula
     end
 
     system "make", "install"
+  end
+
+  def post_install
+    # Touch config.go to avoid Guile recompilation.
+    touch "#{lib}/guile/3.0/site-ccache/chickadee/config.go"
   end
 
   def caveats
