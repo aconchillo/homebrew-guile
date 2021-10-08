@@ -1,8 +1,8 @@
 class GuileSdl2 < Formula
   desc "Guile bindings for the SDL2 C shared library"
   homepage "https://dthompson.us/projects/guile-sdl2.html"
-  url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.6.0.tar.gz"
-  sha256 "b42de4b369531308a2de500704ec6c9ba5087da58aac2c467a0afc48ac9d791b"
+  url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.7.0.tar.gz"
+  sha256 "874a2c09446761351016b2b0d22ec977e40223ca6247535413695bc4fbfceda4"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.6.0"
