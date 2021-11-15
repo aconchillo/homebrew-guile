@@ -4,6 +4,12 @@ class GuileGitlab < Formula
   url "https://github.com/artyom-poptsov/guile-gitlab/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "b499661fad29efee997dae01d2cd614da2d78aa094892e6228d41f7cdcf4739c"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "59e5775134b044066331043a74b64d1d884b1dd5d1c8a6bfdb6c8de87d0407fd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "60082f5686429fcbc0b94f68c5d3a7a22056dd0f45d5d3a549d03ec29289c65f"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
