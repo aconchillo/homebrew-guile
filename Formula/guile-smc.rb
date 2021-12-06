@@ -1,8 +1,8 @@
 class GuileSmc < Formula
   desc "GNU Guile state machine compiler"
   homepage "https://github.com/artyom-poptsov/guile-smc"
-  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "dc4df6d07886538ae88c1fc2397580c79aac93f4f80435649d903665efcf5b78"
+  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "81b1d0036153a2ede213212dda8b14514f8b28041f23e3dfd73a67fdfbc558dd"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.2.0"
@@ -14,8 +14,16 @@ class GuileSmc < Formula
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
+  depends_on "guile-lib"
 
   def install
+    ENV["GUILE_AUTO_COMPILE"] = "0"
+
+    # We need this so we can find other modules.
+    ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
+    ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
+    ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
+
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
