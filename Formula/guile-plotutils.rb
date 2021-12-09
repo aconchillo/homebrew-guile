@@ -4,6 +4,12 @@ class GuilePlotutils < Formula
   url "https://github.com/spk121/guile-plotutils/releases/download/v1.0.1/guile_plotutils-1.0.1.tar.gz"
   sha256 "d93068400bb5fbaf73ef4afd3fd22104cbec6d25e85f774afcef3756ce2f4464"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-plotutils-1.0.1"
+    sha256 cellar: :any,                 big_sur:      "5873df4866b002498aee0352825c00ac555d735aa1eb4c3bd0b609f2dd6fdc29"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5aa2e90454193d36b96fa302d5293ce8ab5f921f36ea283452374c5a3f75a2a5"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
