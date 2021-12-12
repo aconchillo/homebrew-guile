@@ -5,10 +5,8 @@ class GuileDsv < Formula
   sha256 "217730d71e98e0bad538634e12b0329485e157f6d0b45e03ed2d5861c4a1ca69"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.4.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina:     "4a3dca8c14c8586fe627509a81808b8c0ab8c147179786aaebea41b641c61a54"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ad9c2ec8b4d2393760c16caa55298718b11e0a8b368483713d7c440e9a8e4877"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.5.0"
+    sha256 x86_64_linux: "a6bba32ad5d640ea8eb8e5d8725dc542f3b1b19b47a8ac1dd6fd9be7c8906a7b"
   end
 
   depends_on "autoconf" => :build
