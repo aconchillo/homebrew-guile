@@ -1,8 +1,8 @@
 class GuileGi < Formula
   desc "Bindings for GObject Introspection and libgirepository for Guile"
   homepage "https://github.com/spk121/guile-gi/"
-  url "https://github.com/spk121/guile-gi/archive/v0.3.1.tar.gz"
-  sha256 "be503a7de9557aa7cf9c3fe36cc6578a6aa98323cf5db3a34c0d699878c0582e"
+  url "https://github.com/spk121/guile-gi/releases/download/v0.3.2/guile_gi-0.3.2.tar.gz"
+  sha256 "7e35b9b661e331a45bc44f4e4093b748693c603de94d728098a7a8e71f5c3505"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.1"
@@ -22,7 +22,6 @@ class GuileGi < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "./bootstrap"
     system "./configure",
            "--prefix=#{prefix}",
            "--with-gnu-filesystem-hierarchy"
