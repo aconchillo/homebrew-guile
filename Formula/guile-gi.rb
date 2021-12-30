@@ -5,9 +5,9 @@ class GuileGi < Formula
   sha256 "7e35b9b661e331a45bc44f4e4093b748693c603de94d728098a7a8e71f5c3505"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.1"
-    sha256 catalina:     "6a8ba8777fdc582f902fac498542405cf5e7786896702f7a1f934cca4fa7ae86"
-    sha256 x86_64_linux: "7436ed8fcd68c7d1b520f9c4721aad519630746a4aeda70a55cbbf32b0898826"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2"
+    sha256 big_sur:      "cf9778728195ab0de8cdef51850f716bd286d0a4b77163de089ad1b57facac95"
+    sha256 x86_64_linux: "2ae7f71cd1c4106191491fcf26a2c6ed39c9c10e9c855c0d360662a42abfbc79"
   end
 
   depends_on "autoconf" => :build
