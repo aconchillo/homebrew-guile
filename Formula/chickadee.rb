@@ -1,9 +1,9 @@
 class Chickadee < Formula
-  desc "Module for handling application configuration in a declarative way"
+  desc "Game development toolkit for Guile"
   homepage "https://dthompson.us/projects/chickadee.html"
   url "https://files.dthompson.us/chickadee/chickadee-0.8.0.tar.gz"
   sha256 "c02660b6799b9c30d7858e426dfbeb9f5dbbd58190d7cccd60969ef205ad4dcc"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.8.0_1"
