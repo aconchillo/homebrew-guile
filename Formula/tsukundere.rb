@@ -4,6 +4,11 @@ class Tsukundere < Formula
   url "https://gitlab.com/lilyp/tsukundere/-/archive/0.4.2/tsukundere-0.4.2.tar.gz"
   sha256 "ac4cdabd448b389154e0e392e620340c3e5da8a23e205c855fa36fa4b506d7ba"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.2"
+    sha256 x86_64_linux: "e70a0ff3d924baeb28af78cfe45fa49844a13afb0a9ca8555c54cca76ce297c3"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gettext" => :build
