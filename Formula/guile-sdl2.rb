@@ -6,9 +6,9 @@ class GuileSdl2 < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.7.0_1"
-    sha256 cellar: :any_skip_relocation, catalina:     "5b073feb39d72b8e813511b5da47ae1f850273ddb1c7d4f2868b044fa7f9567f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "1d9e6a067947adbe4614cec87e0d3f8db2e36669d9a7571d7ff7302aaa09258a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.7.0_2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "2fd80c5365d556a76ac0466317046062d933e34caa4e460abcd8c72afede2304"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "dda288eafe8decabf79089e4cee2c13c33f35096d33758cdeeeabd6812378bed"
   end
 
   depends_on "pkg-config" => :build
