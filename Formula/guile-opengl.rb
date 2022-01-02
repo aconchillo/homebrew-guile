@@ -3,6 +3,7 @@ class GuileOpengl < Formula
   homepage "https://www.gnu.org/software/guile-opengl/"
   url "https://ftp.gnu.org/gnu/guile-opengl/guile-opengl-0.1.0.tar.gz"
   sha256 "35d2b953052ccd7e41d2429bca71bca03d8f08a206a59d71f7592d043be90e8f"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-opengl-0.1.0"
