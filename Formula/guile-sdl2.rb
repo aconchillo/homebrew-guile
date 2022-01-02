@@ -3,7 +3,7 @@ class GuileSdl2 < Formula
   homepage "https://dthompson.us/projects/guile-sdl2.html"
   url "https://files.dthompson.us/guile-sdl2/guile-sdl2-0.7.0.tar.gz"
   sha256 "874a2c09446761351016b2b0d22ec977e40223ca6247535413695bc4fbfceda4"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sdl2-0.7.0_1"
