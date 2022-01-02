@@ -6,9 +6,9 @@ class GuileOpengl < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-opengl-0.1.0"
-    sha256 cellar: :any_skip_relocation, catalina:     "c3bc4dd42c51533cb4cc744b8c9193d6088433487a63066411d88ffe1767a4ad"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7ee8e1a240dab302e24a2df91fa677c143858231bfc62f89ce3a2a7c13849c7f"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-opengl-0.1.0_1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "32807abe157be3e8c4d7fadbace1d7a152492bbee8c85847c4f1cb21f053ed4f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "abbbc18d154a9fc25d935b4eca71ed1eb8669730e62b8176717f00174a91de51"
   end
 
   depends_on "autoconf" => :build
