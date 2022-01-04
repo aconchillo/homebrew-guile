@@ -3,7 +3,7 @@ class Chickadee < Formula
   homepage "https://dthompson.us/projects/chickadee.html"
   url "https://files.dthompson.us/chickadee/chickadee-0.8.0.tar.gz"
   sha256 "c02660b6799b9c30d7858e426dfbeb9f5dbbd58190d7cccd60969ef205ad4dcc"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.8.0_2"
