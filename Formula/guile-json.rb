@@ -5,9 +5,9 @@ class GuileJson < Formula
   sha256 "abbd13577a945142eb919ae90c6a2ca856784933bff55810ee5f8b33b3415397"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-4.6.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "9b978649a377391a8691abe47ee75b9cc9e217b5ad4c7fce93006bc49755a0ea"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d5ae723de1b115647bcb85391404ad223ce2fdc70f597d69093e294b5bb3f80a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-4.7.0"
+    sha256 cellar: :any_skip_relocation, big_sur:      "89522e3432390e833dcfd1379dadaf357a5f22a4eba3475fa2c3757aeb119665"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b9f49897404c86c8ec9178d1844c59256c7fc8204f0a0f55ff1585de98e866c5"
   end
 
   depends_on "pkg-config" => :build
