@@ -3,6 +3,7 @@ class Tsukundere < Formula
   homepage "https://gitlab.com/lilyp/tsukundere"
   url "https://gitlab.com/lilyp/tsukundere/-/archive/0.4.2/tsukundere-0.4.2.tar.gz"
   sha256 "ac4cdabd448b389154e0e392e620340c3e5da8a23e205c855fa36fa4b506d7ba"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.2"
