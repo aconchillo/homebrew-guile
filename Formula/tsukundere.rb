@@ -6,8 +6,9 @@ class Tsukundere < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.2"
-    sha256 x86_64_linux: "e70a0ff3d924baeb28af78cfe45fa49844a13afb0a9ca8555c54cca76ce297c3"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.2_1"
+    sha256 big_sur:      "56608a28fdccfebc366b3e095f5a499a50578d0e5c9a18109320fbfb56738174"
+    sha256 x86_64_linux: "e3ba79ef0229b003f568295ec340c15b917504698ffe6a51e4e9b44aab3d2141"
   end
 
   depends_on "autoconf" => :build
