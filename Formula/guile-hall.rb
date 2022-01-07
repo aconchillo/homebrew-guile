@@ -6,8 +6,9 @@ class GuileHall < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "09f630af3427e1c581cbd10f50671fd61faced51deb24e80eceb93132d4402f8"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1_1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "7952cb2b21f66555f7bc43f7645b8fb195191f89340abb646cac70cc1e4a8c8d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c37a2c1df9041d4f1527a914e7576ee5df0811198e749aeed45b98ec1a1b06c6"
   end
 
   depends_on "autoconf" => :build
