@@ -1,8 +1,8 @@
 class GuileConfig < Formula
   desc "Module for handling application configuration in a declarative way"
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
-  url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.4.2/guile-config-0.4.2.tar.gz"
-  sha256 "1daf04b52cfc587e73deb5722b46c12afece015caf3712c44ab7d9630a8f3b4a"
+  url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.5.0/guile-config-0.5.0.tar.gz"
+  sha256 "1b5850462afc0d336b55af07b9ff373a50527533112ee6c10c9932b19ffada61"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-config-0.4.2"
