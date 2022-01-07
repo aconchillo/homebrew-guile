@@ -1,8 +1,8 @@
 class GuileTap < Formula
   desc "Test Framework that emits TAP output for GNU Guile"
   homepage "https://github.com/ft/guile-tap"
-  url "https://github.com/ft/guile-tap/archive/refs/tags/v0.4.3.tar.gz"
-  sha256 "07e44d1a597b21fe6f2e0ec012e196da0b61dea7066e59a0fd93c62a5dcad575"
+  url "https://github.com/ft/guile-tap/archive/refs/tags/v0.4.6.tar.gz"
+  sha256 "b01f64a68e78d8a5149f0d706cc3215a1374b1c226fcf200cd0d6b432d0b964c"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-tap-0.4.3"
