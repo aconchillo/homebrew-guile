@@ -5,9 +5,9 @@ class GuileTap < Formula
   sha256 "b01f64a68e78d8a5149f0d706cc3215a1374b1c226fcf200cd0d6b432d0b964c"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-tap-0.4.3"
-    sha256 cellar: :any_skip_relocation, catalina:     "778973d50c2865a8fc2307a066b77bb9de22895498f2c520d3d59eb971d83441"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "598c451258d240f857d251ee9c2493454d8e823d832a15533cc48781fb96b8b7"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-tap-0.4.6"
+    sha256 cellar: :any_skip_relocation, big_sur:      "c62b5c309e28ad17f891436bc6a0c89fab637d4241c4e2ed7ebe0a28bed42bb2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1573e71239176b1903e57abc8c10f818b483d14b4781d86117b39f3fb7c1778f"
   end
 
   depends_on "guile"
