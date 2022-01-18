@@ -4,6 +4,12 @@ class Guilescript < Formula
   url "https://github.com/aconchillo/guilescript/archive/refs/tags/v0.0.0.tar.gz"
   sha256 "54e47f3c4ce79b4d37b768e171a574a3cf851802c61e54a4332200d46c869136"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.0.0"
+    sha256 cellar: :any_skip_relocation, big_sur:      "534a7768eb9fe5091d6b846f9d2d7907a42271291aa2c504c94f5e3bffc3327e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4318da866684a421b0fe8639ae2f240a3b4de8ffbcd0aa7918ae374486680cfa"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
