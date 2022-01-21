@@ -5,9 +5,9 @@ class Guilescript < Formula
   sha256 "202767203fff4fd2e1c1262b82182b02f47195deda56eb007150d3e2ac90c4ad"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.0.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "534a7768eb9fe5091d6b846f9d2d7907a42271291aa2c504c94f5e3bffc3327e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4318da866684a421b0fe8639ae2f240a3b4de8ffbcd0aa7918ae374486680cfa"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.1.0"
+    sha256 cellar: :any_skip_relocation, big_sur:      "3e90b7f5edf6a492f0cfa64f60f4591c526d1cca3d836a41b2b0733d5c5fd86e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e28af1a5924759806cde82b5261e399f92688e9d44454818d522a5e4930fa202"
   end
 
   depends_on "autoconf" => :build
