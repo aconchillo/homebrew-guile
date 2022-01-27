@@ -1,8 +1,8 @@
 class Haunt < Formula
   desc "Simple, functional, hackable static site generator"
   homepage "https://dthompson.us/projects/haunt.html"
-  url "https://files.dthompson.us/haunt/haunt-0.2.5.tar.gz"
-  sha256 "1324b7986897ca55b9150ae80f8241f4037075bc2bb5bbdae56385540d2dc4bf"
+  url "https://files.dthompson.us/haunt/haunt-0.2.6.tar.gz"
+  sha256 "bcf28b43d84325d8a61005f02011a045195e7ccf3fefbc4542823ed09fe590db"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.2.5"
