@@ -1,8 +1,8 @@
 class Guilescript < Formula
   desc "Guile to JavaScript compiler"
   homepage "https://github.com/aconchillo/guilescript"
-  url "https://github.com/aconchillo/guilescript/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "202767203fff4fd2e1c1262b82182b02f47195deda56eb007150d3e2ac90c4ad"
+  url "https://github.com/aconchillo/guilescript/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "7c925dea83aaca7813519a1acf3f145b5774f950f8c41c5f8f9a175f122b5f4f"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.1.0"
