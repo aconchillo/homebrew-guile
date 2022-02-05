@@ -1,8 +1,8 @@
 class Gas < Formula
   desc "Mac Scripting with GuileScript"
   homepage "https://github.com/aconchillo/gas"
-  url "https://github.com/aconchillo/gas/archive/refs/tags/v0.0.0.tar.gz"
-  sha256 "912ca91ac4fc6b3b4957da838512738b18f14d91eb2f0e5f1d9e6fa74636fedb"
+  url "https://github.com/aconchillo/gas/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "f32566e662b08a700e72c6f79d525914651d67d5be898f3109d91d52029c815d"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/gas-0.0.0"
