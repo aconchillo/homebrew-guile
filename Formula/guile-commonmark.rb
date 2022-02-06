@@ -6,9 +6,9 @@ class GuileCommonmark < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-commonmark-0.1.2"
-    sha256 cellar: :any_skip_relocation, catalina:     "f061ae24605c41b175a4d41ff2e2c99b6de004bf260b0cddfe45594e47ceb705"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c2cba15811b26624035ed23fcf5434bfcb5fb2f844185d7a0c3acc3bfe8d8ecc"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-commonmark-0.1.2_1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "4509920dbc5ab78cd35813f3106cdca40168d03fb8175beb7cf4531070da0e93"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ca8ab847d32c61f733dd824c897379cf8c33d9566077ae5b26252bebe382e60"
   end
 
   depends_on "autoconf" => :build
