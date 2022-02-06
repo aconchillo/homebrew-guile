@@ -3,6 +3,7 @@ class GuileCommonmark < Formula
   homepage "https://github.com/OrangeShark/guile-commonmark"
   url "https://github.com/OrangeShark/guile-commonmark/releases/download/v0.1.2/guile-commonmark-0.1.2.tar.gz"
   sha256 "56d518ece5e5d94c1b24943366149e9cb0f6abdb24044c049c6c0ea563d3999e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-commonmark-0.1.2"
