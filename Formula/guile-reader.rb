@@ -3,12 +3,7 @@ class GuileReader < Formula
   homepage "https://www.nongnu.org/guile-reader/"
   url "https://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
   sha256 "38c2b444eadbb8c0cab78d90a44ec3ebff42bd410c5b84a91018cee7eb64d2bb"
-
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3"
-    sha256 catalina:     "43bedd5a941b2f1d6154ca8684b9e39dc824f71b6e5f2ff4f8b5e166cbecc12e"
-    sha256 x86_64_linux: "8b398b48bfd4bca3951841673c8a80a7fe2641d2d7c2fa35286d35304c652741"
-  end
+  revision 1
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
