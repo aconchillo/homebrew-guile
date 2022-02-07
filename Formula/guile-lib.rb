@@ -6,9 +6,9 @@ class GuileLib < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.7"
-    sha256 cellar: :any_skip_relocation, catalina:     "1d016b70be9b781fb4931fbf2ee9bbfc3c896c248556b3309a2f3cac599252da"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a480846f25f7f3649b3b68e95d5bf1beeee2abf151fd4e7eccdbd0192ab2b68e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.7_1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "0fdcfdbafc23dc90c265c28ba1ffdedc5246bcb1a55dd18a8b322935cc8bb899"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "139ec6f77f0baa56d16a7c45053ee5f6a2d0f2e8e1fdbf07ba809c26dd8d1f51"
   end
 
   depends_on "autoconf" => :build
