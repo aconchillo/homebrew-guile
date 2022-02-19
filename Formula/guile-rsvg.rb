@@ -3,6 +3,7 @@ class GuileRsvg < Formula
   homepage "https://wingolog.org/projects/guile-rsvg/"
   url "https://wingolog.org/pub/guile-rsvg/guile-rsvg-2.18.1.tar.gz"
   sha256 "07ca914542f3621bb9b2d72888592c3ad7c292aae1ce79cdcfd90f1ecd10ce8c"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rsvg-2.18.1"
