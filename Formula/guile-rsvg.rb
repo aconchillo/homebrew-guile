@@ -4,6 +4,11 @@ class GuileRsvg < Formula
   url "https://wingolog.org/pub/guile-rsvg/guile-rsvg-2.18.1.tar.gz"
   sha256 "07ca914542f3621bb9b2d72888592c3ad7c292aae1ce79cdcfd90f1ecd10ce8c"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rsvg-2.18.1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "843c670518fa6315c62362fa7229aea84195026d9f41f1f447b7e10dcdcc20e8"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
