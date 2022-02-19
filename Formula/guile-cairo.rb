@@ -3,6 +3,7 @@ class GuileCairo < Formula
   homepage "https://www.nongnu.org/guile-cairo/"
   url "https://download.savannah.gnu.org/releases/guile-cairo/guile-cairo-1.11.1.tar.gz"
   sha256 "f4f6337eb5c90fc2f5fd2043de6f237ef336da6285ae042b8452379bb22086bd"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.1"
@@ -27,6 +28,11 @@ class GuileCairo < Formula
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
+  end
+
+  def post_install
+    # Touch config.go to avoid Guile recompilation.
+    touch "#{lib}/guile/3.0/site-ccache/cairo/config.go"
   end
 
   def caveats
