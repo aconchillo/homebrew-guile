@@ -6,8 +6,9 @@ class GuileGit < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.5.2_1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "bd0370a8167fc902dae151b4a317df082654df35d32157f606d75b8a730cfec0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.5.2_2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "de100ac6aefed86383b415f6e7d5453851d733cc3832a69d0e36d1991037a8f3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "263d075ede376a0f3438acac685979d67fcd0a2b02e30e213a2bc314ada26374"
   end
 
   depends_on "pkg-config" => :build
