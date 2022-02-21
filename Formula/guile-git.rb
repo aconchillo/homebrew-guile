@@ -3,6 +3,7 @@ class GuileGit < Formula
   homepage "https://gitlab.com/guile-git/guile-git"
   url "https://gitlab.com/guile-git/guile-git/uploads/6450f3991aa524484038cdcea3fb248d/guile-git-0.5.2.tar.gz"
   sha256 "949755a211ad6e905ecdebe66ca35bfaab638d985b9fadc928ad2538d8f5cc95"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.5.2"
