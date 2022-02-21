@@ -1,8 +1,8 @@
 class GuileBytestructures < Formula
   desc "Library for structured access to bytevector contents"
   homepage "https://github.com/TaylanUB/scheme-bytestructures"
-  url "https://github.com/TaylanUB/scheme-bytestructures/releases/download/v1.0.10/bytestructures-1.0.10.tar.gz"
-  sha256 "bb8a78c1e570f90e344368196844ee0f143682b3d4c6ab69d6de0fa0d7b7c20d"
+  url "https://github.com/TaylanUB/scheme-bytestructures/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "2c9a990f6bb60df3c430c74f8856cbc5ea95c3e9e609bb1e07811e321c0967ce"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bytestructures-1.0.10"
@@ -11,12 +11,15 @@ class GuileBytestructures < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "5540a0119bba1a8b9bcfcdd313db76e67537fbd54c5911005a6a355a80c892fb"
   end
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
+    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
