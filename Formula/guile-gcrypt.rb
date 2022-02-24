@@ -6,10 +6,9 @@ class GuileGcrypt < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.3.0"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, catalina:     "5d810f157958ea7cf52915d0ff700129c7b249877976507c3ac9d6492e1062f9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "654992957b7db8db18514fcde56a2168fae9cab3153ae1fcfccc948fdae2a917"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.3.0_1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "b94ca82522739dec5138b44e3dafedc929ff9c6feea982d8c2f0f1a9866667e9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4130aec5a6f9aeca4d669286dcc22e157e8cb98a351d0e816d3876fcf4967d1a"
   end
 
   depends_on "autoconf" => :build
