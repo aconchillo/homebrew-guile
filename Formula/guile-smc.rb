@@ -1,8 +1,8 @@
 class GuileSmc < Formula
   desc "GNU Guile state machine compiler"
   homepage "https://github.com/artyom-poptsov/guile-smc"
-  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "81b1d0036153a2ede213212dda8b14514f8b28041f23e3dfd73a67fdfbc558dd"
+  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "fba0c63e6a9cf652a37f7bf5a5bc6aeed070d20a9662560dee2cf457ce1e65f9"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.3.0"
@@ -11,6 +11,7 @@ class GuileSmc < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "help2man" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-lib"
