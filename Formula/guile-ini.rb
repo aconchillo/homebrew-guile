@@ -1,8 +1,8 @@
 class GuileIni < Formula
   desc "GNU Guile library for working with INI format"
   homepage "https://github.com/artyom-poptsov/guile-ini"
-  url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "04cf0393554b10a7247f145c365c3f2003cc97c7ab4634d45069ba529b9e7152"
+  url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "f51f3748a108963e35b797871f10369fb03628440b3c82c8634dd536e27cd8dd"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.2.0"
