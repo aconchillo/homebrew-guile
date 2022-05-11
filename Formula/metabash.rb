@@ -3,6 +3,7 @@ class Metabash < Formula
   homepage "https://github.com/artyom-poptsov/metabash"
   url "https://github.com/artyom-poptsov/metabash/archive/v0.0.0.tar.gz"
   sha256 "14182092cf15ffe52b1f7d1014fcc90f242e65be017625f09182546c05d2e8ac"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/metabash-0.0.0"
@@ -12,7 +13,6 @@ class Metabash < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
-  depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-ssh"
