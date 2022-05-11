@@ -4,6 +4,12 @@ class GuileIcs < Formula
   url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.2.1.tar.gz"
   sha256 "707bfce74b5f466e3ab64fca7567265a6e5a04787a00dc5901ba0b949948f67a"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ics-0.2.1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "da6ea09e45b8197073100b72c1b17d8426d3b7380cc5f46db47653d115059288"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a6b73deb7f8e2c9e5566da3b01ada1a6112d131cf53d4987c2e823596d6e7771"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "help2man" => :build
