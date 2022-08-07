@@ -4,6 +4,13 @@ class GuileLspServer < Formula
   url "https://codeberg.org/rgherdt/scheme-lsp-server/archive/0.1.8.tar.gz"
   sha256 "3c6e7f31a3862664f5ae55355c1503bfbca1f4836d57309240831f8117957440"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.1.8"
+    sha256 cellar: :any_skip_relocation, monterey:     "c631fe5a363d70524fdd8cadaf5702f40f98ac77c11d5c6aeaccc1cb3d29e90a"
+    sha256 cellar: :any_skip_relocation, big_sur:      "5d730a9139499a907b57db7ac003d746bc2f67d4ae4b653085a16899fe5a0c6c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "13a83adcc9d1e26553e28d046af0ad21e23df1f122b46df121765a993ac97c8a"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-json-rpc"
