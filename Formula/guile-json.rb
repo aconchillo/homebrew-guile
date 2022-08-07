@@ -1,8 +1,8 @@
 class GuileJson < Formula
   desc "JSON module for Guile"
   homepage "https://github.com/aconchillo/guile-json"
-  url "https://download.savannah.gnu.org/releases/guile-json/guile-json-4.7.1.tar.gz"
-  sha256 "c5349a2380f67c8a613a9b3af7c98d21325d443023369e6f761b366e96946843"
+  url "https://download.savannah.gnu.org/releases/guile-json/guile-json-4.7.2.tar.gz"
+  sha256 "942ab7ec5b40856799c0ca9fb81921af17fc4360aebef1cc8cb1f6ad9220d519"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-4.7.1"
