@@ -1,8 +1,8 @@
 class GuileOauth < Formula
   desc "OAuth module for Guile"
   homepage "https://github.com/aconchillo/guile-oauth"
-  url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-1.1.0.tar.gz"
-  sha256 "e7e320b849d7141c1617e559f2d22fd36d493a45a7df2c1c8ac09ee9f9b6c1d3"
+  url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-1.3.0.tar.gz"
+  sha256 "33ed60eb471df34e37a26f228016b3db6b3e65f69d66bf226051dbbefcc29b15"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.1.0"
