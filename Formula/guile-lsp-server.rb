@@ -3,6 +3,7 @@ class GuileLspServer < Formula
   homepage "https://codeberg.org/rgherdt/scheme-lsp-server"
   url "https://codeberg.org/rgherdt/scheme-lsp-server/archive/0.1.14.tar.gz"
   sha256 "6fc035909c9ae99031de45406e3121250eeefa4424edba88212e259d6d2e4547"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.1.14"
@@ -25,6 +26,9 @@ class GuileLspServer < Formula
 
     chdir "guile" do
       system "./configure", "--prefix=#{prefix}"
+      # Getting runtime issues without -j1. Probably due to the fact that some
+      # files get auto generated.
+      system "make", "-j1"
       system "make", "install"
     end
   end
