@@ -5,10 +5,10 @@ class GuileLspServer < Formula
   sha256 "ad1c10fe4fb760c051be9ac16724ef4b970341d76576bfe9043151ed1fe05b33"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.1.14_1"
-    sha256 cellar: :any_skip_relocation, monterey:     "9d047185388d7de2e46947624da7c4a4ec4730063ea3b494cf40ec40d1b15f54"
-    sha256 cellar: :any_skip_relocation, big_sur:      "3b2f7c8f153ead9e430925073728be568b1a64e68fe6802bca4fb66d6b7b38d4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "34c0fa3c438159a27a59726476b50d6dbca68b31f8d1dad6ae7e4bf50dc5eaf6"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.1.16"
+    sha256 cellar: :any_skip_relocation, monterey:     "302be7f2db0c146ee228c41a476e1728b6735d180a4acb756c62f6ba6b49e818"
+    sha256 cellar: :any_skip_relocation, big_sur:      "c4a8ea022a59ad741022ea717c01a4ab65f666c58abe1e456bc4e575ad20ab67"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c2147da916b56eeeac1911e2449e2335ea5bc7f539a34b5db15446316017c332"
   end
 
   depends_on "pkg-config" => :build
