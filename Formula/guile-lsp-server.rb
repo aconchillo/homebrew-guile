@@ -1,9 +1,8 @@
 class GuileLspServer < Formula
   desc "LSP Server for Guile"
   homepage "https://codeberg.org/rgherdt/scheme-lsp-server"
-  url "https://codeberg.org/rgherdt/scheme-lsp-server/archive/0.1.14.tar.gz"
-  sha256 "6fc035909c9ae99031de45406e3121250eeefa4424edba88212e259d6d2e4547"
-  revision 1
+  url "https://codeberg.org/rgherdt/scheme-lsp-server/archive/0.1.16.tar.gz"
+  sha256 "ad1c10fe4fb760c051be9ac16724ef4b970341d76576bfe9043151ed1fe05b33"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.1.14_1"
