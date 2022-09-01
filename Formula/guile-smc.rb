@@ -5,9 +5,9 @@ class GuileSmc < Formula
   sha256 "94b914a38e18bbb7495c100735a7163a651c4f5cdad069d90cde29e8d5339bf8"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.4.0"
-    sha256 big_sur:      "e6c24bc5cde7c08d752feae84e06786980d87fa1a36ea2bdf339eeadff6e95a5"
-    sha256 x86_64_linux: "cac1d6a466fcac67b99ffd74d5d8a2b1dccdbb53caf5b9e68c69fe5881218287"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.5.0"
+    sha256 big_sur:      "58ecad142a71babe129cf255cfeb9db5a5a79231619f64a2c8dcbd7cd9779046"
+    sha256 x86_64_linux: "f60b0fabbbfd707740b9b96dff7fdd298b78a3085ddc21abfb434bbd320d581d"
   end
 
   depends_on "autoconf" => :build
