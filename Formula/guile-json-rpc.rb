@@ -1,8 +1,8 @@
 class GuileJsonRpc < Formula
   desc "JSON-RPC module for Guile"
   homepage "https://codeberg.org/rgherdt/scheme-json-rpc"
-  url "https://codeberg.org/rgherdt/scheme-json-rpc/archive/0.2.8.tar.gz"
-  sha256 "87726c8293852a4a6ebc554ab77cec537a99601bc0b66110d9f816f4cf8b6cf1"
+  url "https://codeberg.org/rgherdt/scheme-json-rpc/archive/0.2.10.tar.gz"
+  sha256 "57f6a0fa2c902f1fabc73bd5846219f90178b35e3064c6a551a54031ea42f1f2"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-rpc-0.2.8"
