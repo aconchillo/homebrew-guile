@@ -1,8 +1,8 @@
 class GuileNcurses < Formula
   desc "Guile library for creating text user interfaces with ncurses"
   homepage "https://www.gnu.org/software/guile-ncurses/"
-  url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.0.tar.gz"
-  sha256 "0e4a9eef7237aeef6cc9e5e1fa8513bfd328e971efd74d8d78d543aa9c5b1d0d"
+  url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.1.tar.gz"
+  sha256 "ee89e8ceafcab9dd0ef3fc1acc9b10f4d21ba4b256d329d842d6183e63f8d733"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ncurses-3.0"
