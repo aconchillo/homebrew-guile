@@ -4,6 +4,13 @@ class GuileSsh < Formula
   url "https://github.com/artyom-poptsov/guile-ssh/archive/v0.16.0.tar.gz"
   sha256 "32e1b0ba3d6252bd7ac4261e4c10efb82bd3cabc978498d96c78050a92e1db8e"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.16.0"
+    sha256 cellar: :any,                 monterey:     "67d0ba3deea216488d83aad4ae139deb8b4e39a459cf35b1a2e068d528858b39"
+    sha256 cellar: :any,                 big_sur:      "c2071d43ab71b7c242f0a83a74ba9a93852c803e5054ea0ac291ba5c30caf180"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3511636b8b866e4ca6f32686de9ed37cf7d0d073d995a1b2777e9e356abfbcf9"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
