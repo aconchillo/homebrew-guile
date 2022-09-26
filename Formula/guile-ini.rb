@@ -1,8 +1,8 @@
 class GuileIni < Formula
   desc "GNU Guile library for working with INI format"
   homepage "https://github.com/artyom-poptsov/guile-ini"
-  url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "728f5c5bbcc68df043fbd69763e4197020a18932c0a6798b75149563f0d83060"
+  url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.5.2.tar.gz"
+  sha256 "c48b25ee62d8026e8b692985ee912cc209aa3d96e7472a85aad409cdadcd4c38"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.5.1"
@@ -16,8 +16,6 @@ class GuileIni < Formula
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-smc"
-
-  patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -55,27 +53,3 @@ class GuileIni < Formula
     system "guile", ini
   end
 end
-
-__END__
-diff --git a/modules/ini/Makefile.am b/modules/ini/Makefile.am
-index 5b5d20b..533c2b1 100644
---- a/modules/ini/Makefile.am
-+++ b/modules/ini/Makefile.am
-@@ -20,12 +20,16 @@
- include $(top_srcdir)/build-aux/am/guile.am
-
- SOURCES = \
--	fsm-context.scm \
- 	fsm.scm	\
- 	fsm-context-ini.scm
-
-+BUILT_SOURCES = \
-+	fsm-context.scm
-+
-+INSTALL += \
-+	fsm-context.scm
-+
- EXTRA_DIST += \
--	fsm-context.scm \
- 	fsm.scm	\
- 	fsm.puml
