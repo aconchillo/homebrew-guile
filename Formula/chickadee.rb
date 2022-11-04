@@ -1,9 +1,8 @@
 class Chickadee < Formula
   desc "Game development toolkit for Guile"
   homepage "https://dthompson.us/projects/chickadee.html"
-  url "https://files.dthompson.us/chickadee/chickadee-0.8.0.tar.gz"
-  sha256 "c02660b6799b9c30d7858e426dfbeb9f5dbbd58190d7cccd60969ef205ad4dcc"
-  revision 3
+  url "https://files.dthompson.us/chickadee/chickadee-0.9.0.tar.gz"
+  sha256 "733bc907c0a5d33f77198bab365fd1072657376a6f1382774dc2c8791aa5222d"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.8.0_3"
@@ -20,8 +19,6 @@ class Chickadee < Formula
   depends_on "mpg123"
   depends_on "openal-soft"
 
-  patch :DATA
-
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
@@ -32,7 +29,7 @@ class Chickadee < Formula
 
     system "./configure", "--prefix=#{prefix}"
 
-    # Use Homebrew /usr/local/opt instead.
+    # Use Homebrew prefix instead instead.
     inreplace buildpath/"chickadee/config.scm" do |s|
       s.gsub!(%r{".*/libopenal"}, "\"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\"")
       s.gsub!(%r{".*/libvorbisfile"}, "\"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\"")
@@ -72,51 +69,3 @@ class Chickadee < Formula
     system "guile", chickadee
   end
 end
-
-__END__
-diff --git a/data/shaders/pbr-frag.glsl b/data/shaders/pbr-frag.glsl
-index a211096..0986840 100644
---- a/data/shaders/pbr-frag.glsl
-+++ b/data/shaders/pbr-frag.glsl
-@@ -66,6 +66,9 @@ const float GAMMA = 2.2;
- vec4 texture(sampler2D tex, vec2 coord) {
-   return texture2D(tex, coord);
- }
-+vec4 texture(samplerCube tex, vec3 coord) {
-+  return textureCube(tex, coord);
-+}
- #endif
-
- float posDot(vec3 v1, vec3 v2) {
-@@ -364,7 +367,7 @@ void main(void) {
-   //
-   // TODO: Use fancy PBR equations instead of these basic ones.
-   float fresnel = pow(1.0 - clamp(dot(viewDirection, normal), 0.0, 1.0), 5);
--  vec3 ambientDiffuse = textureCube(skybox, normal).rgb;
-+  vec3 ambientDiffuse = texture(skybox, normal).rgb;
-   vec3 ambientSpecular = textureLod(skybox, reflection, roughness * 7.0).rgb;
-   color += (ambientDiffuse * albedo + ambientSpecular * fresnel) * ambientOcclusion;
-   // Apply Reinhard tone mapping to convert our high dynamic range
-diff --git a/data/shaders/phong-frag.glsl b/data/shaders/phong-frag.glsl
-index c1a19c1..2d70fda 100644
---- a/data/shaders/phong-frag.glsl
-+++ b/data/shaders/phong-frag.glsl
-@@ -50,6 +50,9 @@ const float GAMMA = 2.2;
- vec4 texture(sampler2D tex, vec2 coord) {
-   return texture2D(tex, coord);
- }
-+vec4 texture(samplerCube tex, vec3 coord) {
-+  return textureCube(tex, coord);
-+}
- #endif
-
- vec3 gammaCorrect(vec3 color) {
-@@ -161,7 +164,7 @@ void main() {
-   // Apply image based ambient lighting.
-   float fresnel = pow(1.0 - clamp(dot(viewDir, normal), 0.0, 1.0), 5);
-   float roughness = 1.0 - (material.shininess / 1000.0);
--  vec3 ambientDiffuse = textureCube(skybox, normal).rgb * diffuseColor;
-+  vec3 ambientDiffuse = texture(skybox, normal).rgb * diffuseColor;
-   vec3 ambientSpecular = textureLod(skybox, reflection, roughness * 7.0).rgb * fresnel;
-   vec3 ambientColor = (ambientDiffuse + ambientSpecular) * ambientOcclusion;
-   color += ambientColor;
