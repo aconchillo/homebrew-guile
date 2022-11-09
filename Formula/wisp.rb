@@ -1,8 +1,8 @@
 class Wisp < Formula
   desc "OAuth module for Guile"
   homepage "https://www.draketo.de/software/wisp"
-  url "https://hg.sr.ht/~arnebab/wisp/archive/v1.0.4.tar.gz"
-  sha256 "9c59532d2cab0169a6e595ed1c2b179e0cb2954133ccbf1407f40d6a9b515877"
+  url "https://hg.sr.ht/~arnebab/wisp/archive/v1.0.7.tar.gz"
+  sha256 "641ebd1624987a9f2b6ec9966ccf333b0894599bd9edcf609426b294a6f87b49"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.4"
