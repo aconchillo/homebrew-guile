@@ -5,9 +5,9 @@ class Wisp < Formula
   sha256 "641ebd1624987a9f2b6ec9966ccf333b0894599bd9edcf609426b294a6f87b49"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.4"
-    sha256 cellar: :any_skip_relocation, catalina:     "565c2948fdf8d4e3c9d3f79df56b84986dfde2183d8bc18db5ed1fb7abf9f520"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "379b1447a9c2b166fb0d4a7613d8796c5590b74465fd8b6188c2ed3b91cc475d"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.7"
+    sha256 cellar: :any_skip_relocation, monterey:     "de3587a0be8100d36209d17cb9d1304891ac8f85456d0555b75978a47f8e3f47"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f8c38d4727994ded058b9ce402b1ea7f630d5705f39b3f04ac4e7eeddd480807"
   end
 
   depends_on "autoconf" => :build
