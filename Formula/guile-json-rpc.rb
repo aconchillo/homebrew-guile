@@ -5,10 +5,9 @@ class GuileJsonRpc < Formula
   sha256 "6a10390de15a9a991e7bc15d8766a5da7561428f25c2f33592d86b374ca242a1"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-rpc-0.2.10"
-    sha256 cellar: :any_skip_relocation, monterey:     "ba82627362993f74b3b8e4c555772b9145b7b404140e39152faccd6d904b1a70"
-    sha256 cellar: :any_skip_relocation, big_sur:      "f0fb19ccb6c51e64507794a841096f3843337872e220a93567e2c3219141990b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "17fc960c45baf67e7f476380a7a3a985943598485cac6dc508547f55961dcd0c"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-rpc-0.2.11"
+    sha256 cellar: :any_skip_relocation, monterey:     "a55c53348ff336b40ee693fa7cfba1c74ffc6d4fcca26056d4db25c28cf6339f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b3aeb8b7c63b77d959b35966311a941cebc5d0e03d56cfb348823dc46eddb6be"
   end
 
   depends_on "pkg-config" => :build
