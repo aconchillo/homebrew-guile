@@ -4,6 +4,11 @@ class GuilePng < Formula
   url "https://github.com/artyom-poptsov/guile-png/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "b8b1a046461033d85f55cc4f7946faf1d20a0c62baaf280fa7083df144f9236f"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-png-0.2.0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a8bd278e7009b5f975667c25f69b28d4922b56d27af7b09ed2f192edffcc3af8"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "coreutils" => :build
