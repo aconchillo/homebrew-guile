@@ -3,6 +3,7 @@ class GuileZlib < Formula
   homepage "https://notabug.org/guile-zlib/guile-zlib"
   url "https://notabug.org/guile-zlib/guile-zlib/archive/v0.1.0.tar.gz"
   sha256 "25c726b570a06d21bc6fd7ec6093f377c749ce2efdd1d1516ac1b595f3f94ee9"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zlib-0.1.0"
@@ -22,6 +23,11 @@ class GuileZlib < Formula
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
+  end
+
+  def post_install
+    # Touch config.go to avoid Guile recompilation.
+    touch "#{lib}/guile/3.0/site-ccache/zlib/config.go"
   end
 
   def caveats
