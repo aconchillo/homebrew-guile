@@ -3,6 +3,7 @@ class GuileIni < Formula
   homepage "https://github.com/artyom-poptsov/guile-ini"
   url "https://github.com/artyom-poptsov/guile-ini/archive/refs/tags/v0.5.2.tar.gz"
   sha256 "c48b25ee62d8026e8b692985ee912cc209aa3d96e7472a85aad409cdadcd4c38"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.5.2"
@@ -14,6 +15,7 @@ class GuileIni < Formula
   depends_on "automake" => :build
   depends_on "coreutils" => :build
   depends_on "pkg-config" => :build
+  depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "guile-smc"
 
