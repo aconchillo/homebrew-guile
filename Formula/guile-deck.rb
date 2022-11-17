@@ -4,6 +4,11 @@ class GuileDeck < Formula
   url "https://github.com/artyom-poptsov/guile-deck/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "a2b3a5cd7626010abef1ec217f8a70dac0eea734d0aa6e34a3f5819b4eaafe4b"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-deck-0.2.0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5a0fc318125b34e30346cac6e30d3da6cb0ebe217fa17b6126e51e21dfaca3f1"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
