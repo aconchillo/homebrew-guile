@@ -3,6 +3,7 @@ class GuileSmc < Formula
   homepage "https://github.com/artyom-poptsov/guile-smc"
   url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.5.2.tar.gz"
   sha256 "6f47332e6210e17863cc3b5445e8dfd953adbf19ff0a98922f9d19c71f06f592"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.5.2"
@@ -14,6 +15,7 @@ class GuileSmc < Formula
   depends_on "automake" => :build
   depends_on "help2man" => :build
   depends_on "pkg-config" => :build
+  depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "guile-lib"
 
