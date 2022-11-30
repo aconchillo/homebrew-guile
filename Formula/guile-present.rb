@@ -4,6 +4,11 @@ class GuilePresent < Formula
   url "https://wingolog.org/pub/guile-present/guile-present-0.3.0.tar.gz"
   sha256 "d564f7c231da5ee86e8b81cbab106c84396ff1799f36d4cdee5d17500f2155e1"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-present-0.3.0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "dc524a768f35a1fb0305f36357540fc72546f5273690f6b981cd7cdd69a3c9be"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
