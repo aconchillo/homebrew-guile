@@ -4,6 +4,12 @@ class GuileDns < Formula
   url "https://git.lysator.liu.se/hugo/guile-dns/-/archive/0.1/guile-dns-0.1.tar.gz"
   sha256 "3cdf6716889fb50d9e963ceec22c151290ff81ddecf089fba1f009540b3abb53"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dns-0.1"
+    sha256 cellar: :any_skip_relocation, monterey:     "39c11e34c4310292b09e9ac725e05a8b0706b7e300bd5eedf35c2092aefa6b9e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f4de778d88677ae39c49613de359ebf32a954ea86ac5dad05201f43537c49856"
+  end
+
   # coreutils because native `install` not working great
   depends_on "coreutils" => :build
   depends_on "texinfo" => :build
