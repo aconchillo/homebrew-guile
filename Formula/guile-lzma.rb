@@ -4,6 +4,11 @@ class GuileLzma < Formula
   url "https://files.ngyro.com/guile-lzma/guile-lzma-0.1.1.tar.gz"
   sha256 "2b866896d672ed4d39008f4b5336750d7897560a06678365f5c5a72bd2fcce5e"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "784de7f25a28ef47f3647d141fb6c6ba66617aec3ac24053f65770b1ef3dfe2c"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
