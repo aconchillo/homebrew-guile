@@ -1,9 +1,8 @@
 class GuileGcrypt < Formula
   desc "Guile 3.0/2.x bindings to the GNU Libgcrypt cryptography library"
   homepage "https://notabug.org/cwebber/guile-gcrypt"
-  url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.3.0.tar.gz"
-  sha256 "07394c3de4f31a36ca2b670e1998c526de891d9436f12e94d8862ab081274d6a"
-  revision 1
+  url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.4.0.tar.gz"
+  sha256 "35f0681e01defab0aaa2a83227c0be836b0a1303dd1f7279497a76dd1255b17e"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.3.0_1"
