@@ -1,8 +1,8 @@
 class GuileJwt < Formula
   desc "JSON Web Token module for Guile"
   homepage "https://github.com/aconchillo/guile-jwt"
-  url "https://download.savannah.gnu.org/releases/guile-jwt/guile-jwt-0.2.0.tar.gz"
-  sha256 "c26ac2336bfb8ada5dd5e253ebdafa9f0a72bc4c34bdb79e917a0ec06098641a"
+  url "https://download.savannah.gnu.org/releases/guile-jwt/guile-jwt-0.3.0.tar.gz"
+  sha256 "97c5542a536c8862409fc9c603daebbd687f575e76d49b05561fcaa9b53c4a6f"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jwt-0.2.0"
@@ -12,6 +12,7 @@ class GuileJwt < Formula
 
   depends_on "pkg-config" => :build
   depends_on "guile"
+  depends_on "guile-gcrypt"
   depends_on "guile-json"
 
   def install
