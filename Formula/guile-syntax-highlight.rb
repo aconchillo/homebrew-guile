@@ -4,6 +4,12 @@ class GuileSyntaxHighlight < Formula
   url "https://files.dthompson.us/guile-syntax-highlight/guile-syntax-highlight-0.2.0.tar.gz"
   sha256 "695a8c000fa61146f53c4a18030c8a26aef0e7841e0fe43c0d1d1a4341f89660"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-syntax-highlight-0.2.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "c0ea1d965009215fc5020b55ec61a053d98587b9081e769e4a3bca6eaedcdc55"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "526fa76ef9ed0c41043159257a1a45a04dc6c935c0188fa86c4cef4b107b207e"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
