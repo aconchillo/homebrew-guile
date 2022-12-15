@@ -5,6 +5,11 @@ class GGolf < Formula
   version "0.8.0-a.1"
   sha256 "6fc62b594fc73f5821134bc3ff45182bd27d765ede1bab8487fea06f99215b93"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-a.1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "008b04ce988dbcbda4eb7114dbe411b33fb15c446acf862cdcebc4b097ba403c"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
