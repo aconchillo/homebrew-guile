@@ -4,6 +4,7 @@ class GGolf < Formula
   url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0-a.1.tar.gz"
   version "0.8.0-a.1"
   sha256 "6fc62b594fc73f5821134bc3ff45182bd27d765ede1bab8487fea06f99215b93"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-a.1"
@@ -35,7 +36,7 @@ class GGolf < Formula
     inreplace buildpath/"g-golf/init.scm", "libgirepository-1.0", "#{HOMEBREW_PREFIX}/lib/libgirepository-1.0"
 
     system "autoreconf", "-vif"
-    system "./configure", "--prefix=#{prefix}", "--with-guile-site=yes"
+    system "./configure", "--prefix=#{prefix}"
     system "make", "-j1", "install"
   end
 
@@ -65,18 +66,18 @@ end
 
 __END__
 --- a/configure.ac	2022-12-15 11:09:06
-+++ b/configure.ac	2022-12-15 11:11:08
-@@ -77,8 +77,8 @@
- AC_SUBST([guile_site])
-
- if test "x$guile_site" = "xyes"; then
--   SITEDIR="$GUILE_GLOBAL_SITE";
--   SITECCACHEDIR="$GUILE_SITE_CCACHE";
++++ b/configure.ac	2022-12-16 15:11:17
+@@ -80,8 +80,8 @@
+    SITEDIR="$GUILE_GLOBAL_SITE";
+    SITECCACHEDIR="$GUILE_SITE_CCACHE";
+ else
+-   SITEDIR="$datadir/g-golf";
+-   SITECCACHEDIR="$libdir/g-golf/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
 +   SITEDIR="$datadir/guile/site/$GUILE_EFFECTIVE_VERSION";
 +   SITECCACHEDIR="$libdir/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
- else
-    SITEDIR="$datadir/g-golf";
-    SITECCACHEDIR="$libdir/g-golf/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
+ fi
+ AC_SUBST([SITEDIR])
+ AC_SUBST([SITECCACHEDIR])
 --- a/libg-golf/Makefile.am	2022-12-15 11:19:14
 +++ b/libg-golf/Makefile.am	2022-12-15 11:19:22
 @@ -23,7 +23,9 @@
