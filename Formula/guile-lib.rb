@@ -3,7 +3,7 @@ class GuileLib < Formula
   homepage "https://www.nongnu.org/guile-lib/"
   url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.7.tar.gz"
   sha256 "e4ef3b845f121882c7c0cf04f81a1cb8fd360c6f64b56b868de5546214f904de"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.7_1"
@@ -24,7 +24,7 @@ class GuileLib < Formula
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
     system "autoreconf", "-vif"
-    system "./configure", "--prefix=#{prefix}", "--with-guile-site=yes"
+    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
 
@@ -53,18 +53,16 @@ class GuileLib < Formula
 end
 
 __END__
-diff --git a/configure.ac b/configure.ac
-index 07be121..e95a6b0 100644
---- a/configure.ac
-+++ b/configure.ac
-@@ -83,8 +83,8 @@ AC_ARG_WITH(
- AC_SUBST([guile_site])
-
- if test "x$guile_site" = "xyes"; then
--   SITEDIR="$GUILE_GLOBAL_SITE";
--   SITECCACHEDIR="$GUILE_SITE_CCACHE";
+--- a/configure.ac	2022-12-16 15:15:11
++++ b/configure.ac	2022-12-16 15:15:32
+@@ -92,8 +92,8 @@
+    SITEDIR="$GUILE_GLOBAL_SITE";
+    SITECCACHEDIR="$GUILE_SITE_CCACHE";
+ else
+-   SITEDIR="$datadir/guile-lib";
+-   SITECCACHEDIR="$libdir/guile-lib/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
 +   SITEDIR="$datadir/guile/site/$GUILE_EFFECTIVE_VERSION";
 +   SITECCACHEDIR="$libdir/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
- else
-    SITEDIR="$datadir/guile-lib";
-    SITECCACHEDIR="$libdir/guile-lib/guile/$GUILE_EFFECTIVE_VERSION/site-ccache";
+ fi
+ AC_SUBST([SITEDIR])
+ AC_SUBST([SITECCACHEDIR])
