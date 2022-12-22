@@ -4,6 +4,12 @@ class Fibers < Formula
   url "https://github.com/wingo/fibers/releases/download/v1.2.0/fibers-1.2.0.tar.gz"
   sha256 "0aefb081767f6f49ecb5146dfe54663c42facf0783181e5bef0a6c8ca8d51043"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.2.0"
+    sha256 monterey:     "bbf040fe738a48759e26d5478ec9704bb7f3680a032700add8adbdd047b0c78d"
+    sha256 x86_64_linux: "4b8b111dd69dc1d259b1c8b201e42107d3c583cd65dcc92434dea7e78f3f1dff"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "texinfo" => :build
