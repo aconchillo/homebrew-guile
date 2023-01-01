@@ -1,8 +1,8 @@
 class GuileSsh < Formula
   desc "SSH library for programs written in Guile"
   homepage "https://github.com/artyom-poptsov/guile-ssh"
-  url "https://github.com/artyom-poptsov/guile-ssh/archive/v0.16.0.tar.gz"
-  sha256 "32e1b0ba3d6252bd7ac4261e4c10efb82bd3cabc978498d96c78050a92e1db8e"
+  url "https://github.com/artyom-poptsov/guile-ssh/archive/v0.16.1.tar.gz"
+  sha256 "53333c82bcf810ef628644e16343f6f996eff0f7460a45681b17ee5a9229912d"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.16.0"
