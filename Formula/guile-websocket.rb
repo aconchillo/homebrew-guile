@@ -3,6 +3,7 @@ class GuileWebsocket < Formula
   homepage "https://dthompson.us/projects/guile-websocket.html"
   url "https://files.dthompson.us/guile-websocket/guile-websocket-0.1.tar.gz"
   sha256 "2441d36470b6264331f124ca09ca754ffeedac77b801444cfbe6b18950e05074"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.1"
@@ -10,8 +11,6 @@ class GuileWebsocket < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "cd507c47e74cff3f0dd65e3e0d03408e8c51673f1d503689629e4c5d8735cfde"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "guile"
 
   def install
