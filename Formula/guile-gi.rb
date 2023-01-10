@@ -6,9 +6,9 @@ class GuileGi < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2"
-    sha256 big_sur:      "cf9778728195ab0de8cdef51850f716bd286d0a4b77163de089ad1b57facac95"
-    sha256 x86_64_linux: "2ae7f71cd1c4106191491fcf26a2c6ed39c9c10e9c855c0d360662a42abfbc79"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2_1"
+    sha256 monterey:     "5a56819f824f43648dfd8c6e7d43c36f9b97408f0527e052640e8d9f1efccfec"
+    sha256 x86_64_linux: "eba1da1ea593f0818d0e03da541b002b03e2931c6b5c08d870c42a074975672f"
   end
 
   depends_on "pkg-config" => :build
