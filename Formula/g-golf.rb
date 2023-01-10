@@ -1,10 +1,9 @@
 class GGolf < Formula
   desc "Guile Object Library for GNOME"
   homepage "https://www.gnu.org/software/g-golf/"
-  url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0-a.1.tar.gz"
-  version "0.8.0-a.1"
-  sha256 "6fc62b594fc73f5821134bc3ff45182bd27d765ede1bab8487fea06f99215b93"
-  revision 1
+  url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0-a.2.tar.gz"
+  version "0.8.0-a.2"
+  sha256 "2389a6b72025e1eea726f1c981c929bd87b9d0980cef74ad977df36504c18e8a"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-a.1_1"
