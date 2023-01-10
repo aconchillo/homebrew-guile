@@ -3,6 +3,7 @@ class GuileGi < Formula
   homepage "https://github.com/spk121/guile-gi/"
   url "https://github.com/spk121/guile-gi/releases/download/v0.3.2/guile_gi-0.3.2.tar.gz"
   sha256 "7e35b9b661e331a45bc44f4e4093b748693c603de94d728098a7a8e71f5c3505"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2"
@@ -10,8 +11,6 @@ class GuileGi < Formula
     sha256 x86_64_linux: "2ae7f71cd1c4106191491fcf26a2c6ed39c9c10e9c855c0d360662a42abfbc79"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "glib"
