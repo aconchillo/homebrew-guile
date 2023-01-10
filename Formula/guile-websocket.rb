@@ -6,9 +6,9 @@ class GuileWebsocket < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.1"
-    sha256 cellar: :any_skip_relocation, monterey:     "fdf02a6044a12dc9607267b35dcb027959530ea008b6aa86ce6afc96d804527f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "cd507c47e74cff3f0dd65e3e0d03408e8c51673f1d503689629e4c5d8735cfde"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.1_1"
+    sha256 cellar: :any_skip_relocation, monterey:     "cdd46942c05196ea0e75b729db750bd84aabe0eb5066e3a516f2e3b569628be9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b879b6774eef465590472835ea9f20be65604004456be7416f1b60fcc1dc8f3f"
   end
 
   depends_on "guile"
