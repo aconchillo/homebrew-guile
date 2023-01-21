@@ -3,6 +3,7 @@ class GuileEmail < Formula
   homepage "https://guile-email.systemreboot.net/"
   url "https://guile-email.systemreboot.net/releases/guile-email-0.3.0.tar.lz"
   sha256 "82559411737975be73b916533bb5bb9974b7c393e57e9d84f47c4701b0deb709"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.3.0"
@@ -52,31 +53,22 @@ end
 
 __END__
 diff --git a/Makefile b/Makefile
-index cc69eed..5a5f72d 100644
+index cc69eed..b7ed63e 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -48,8 +48,8 @@ distribute_files = $(sources) tests $(doc_texi) \
- 		   COPYING NEWS README.org \
- 		   guix.scm Makefile
-
--scmdir = $(datarootdir)/guile/site/$(guile_effective_version)
--godir = $(libdir)/guile/$(guile_effective_version)/site-ccache
-+scmdir = $(datarootdir)/guile/site/$(guile_effective_version)/email
-+godir = $(libdir)/guile/$(guile_effective_version)/site-ccache/email
-
- .PHONY: all check install clean dist
-
-@@ -90,9 +90,10 @@ $(dist_archive): .git/refs/heads/master
+@@ -90,9 +90,12 @@ $(dist_archive): .git/refs/heads/master
  	$(GPG) --detach-sign --armor $<
 
  install: $(doc_info)
 -	mkdir -p $(scmdir) $(godir)
 -	cp --parents -vr $(sources) $(scmdir)
 -	cp --parents -vr $(objects) $(godir)
-+	install -d $(scmdir)
-+	install $(sources) $(scmdir)
-+	install -d $(godir)
-+	install $(objects) $(godir)
++	for source in $(sources); do \
++		install -D $$source $(scmdir)/$$source; \
++	done
++	for object in $(objects); do \
++		install -D $$object $(godir)/$$object; \
++	done
  	install -D $(doc_info) --target-directory $(infodir)
 
  clean:
