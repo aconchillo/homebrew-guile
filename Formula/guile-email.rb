@@ -6,9 +6,9 @@ class GuileEmail < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.3.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "f3ea285bc9feee70a8e143cc8aabe882b7bd5cfb78dd19ab5250b2aa7424980b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "cf91ea3563f277204a27921aee10150e42be5fe0f96f58e311fd16ccc5f00883"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.3.0_1"
+    sha256 cellar: :any_skip_relocation, monterey:     "30a8a2439a597bdf2b5f2c135bddc2442588b95c0edf524d8d1296309eb84266"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a9478999c743ef043313ef59ddcc69efdc970f9eb4b449001eb8e250acc86337"
   end
 
   # coreutils because native `install` not working great
