@@ -3,6 +3,7 @@ class Gas < Formula
   homepage "https://github.com/aconchillo/gas"
   url "https://github.com/aconchillo/gas/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "f32566e662b08a700e72c6f79d525914651d67d5be898f3109d91d52029c815d"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/gas-0.1.0"
@@ -27,6 +28,6 @@ class Gas < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "gas", gas
+    system "#{bin}/gas", gas
   end
 end
