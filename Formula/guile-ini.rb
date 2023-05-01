@@ -5,8 +5,9 @@ class GuileIni < Formula
   sha256 "9f31c9ee57a4823ec1635718242908ae0bad9ced563a21d469189f26418ce06e"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.5.2_1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fb129463d56056549b8b295af2a173b6ffb94f246d3f12530da990aec58a1f22"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ini-0.5.3"
+    sha256 cellar: :any_skip_relocation, monterey:     "c405756fb57010c6b41a58d5169688f181e3b7e96ae5b8b50347fca8cb19a9ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ca87c52a2d3866ba4f592cfad58fc63bd5d69a2331089d7710501f8bd9c39055"
   end
 
   depends_on "autoconf" => :build
