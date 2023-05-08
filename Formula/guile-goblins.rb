@@ -1,8 +1,8 @@
 class GuileGoblins < Formula
   desc "Distributed object programming environment"
   homepage "https://gitlab.com/spritely/guile-goblins"
-  url "https://spritely.institute/files/releases/guile-goblins/guile-goblins-0.10.tar.gz"
-  sha256 "a2f52decdc51484a912d029b713ab4d70261e6b8404f616b3e42824a22afdf8e"
+  url "https://spritely.institute/files/releases/guile-goblins/guile-goblins-0.11.0.tar.gz"
+  sha256 "d450f7e71bdacaa0b4e283dd82db34f03265e8f56785cf4afc3afe358b7184c5"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-goblins-0.10"
