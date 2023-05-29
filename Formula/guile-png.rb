@@ -5,8 +5,9 @@ class GuilePng < Formula
   sha256 "f77c998be959fc89c703b99941410beceb7f0a6ded57123ab899beca5658cecd"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-png-0.3.0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8ac433c64074c4e3d382433d3b10232c3b2cd6690833305621490a72c8b812d0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-png-0.5.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "c9b6edd48d0ec7f434ce21f5ac35cbb67d820c3b1531dd436c3a08092bfb8229"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "301ee11554afebd9c2603cbb0b03119ebaa7142722d8b26a2823162d72c09642"
   end
 
   depends_on "autoconf" => :build
