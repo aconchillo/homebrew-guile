@@ -1,8 +1,8 @@
 class Fibers < Formula
   desc "Concurrency library for Guile"
   homepage "https://github.com/wingo/fibers"
-  url "https://github.com/wingo/fibers/releases/download/v1.2.0/fibers-1.2.0.tar.gz"
-  sha256 "0aefb081767f6f49ecb5146dfe54663c42facf0783181e5bef0a6c8ca8d51043"
+  url "https://github.com/wingo/fibers/releases/download/v1.3.1/fibers-1.3.1.tar.gz"
+  sha256 "a5e1a9c49c0efe7ac6f355662041430d4b64e59baa538d2b8fb5ef7528d81dbf"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.2.0"
