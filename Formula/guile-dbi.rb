@@ -1,8 +1,8 @@
 class GuileDbi < Formula
   desc "Guile scheme interface to SQL databases"
   homepage "https://github.com/opencog/guile-dbi"
-  url "https://github.com/opencog/guile-dbi/archive/guile-dbi-2.1.7.tar.gz"
-  sha256 "e337c242891221e2bf6da5433f4d5144c40b37da400a3a011c8ac07390516df4"
+  url "https://github.com/opencog/guile-dbi/archive/guile-dbi-2.1.8.tar.gz"
+  sha256 "c6a84a63b57ae23c259c203063f4226ac566161e0261f4e1d2f2f963ad06e4e7"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbi-2.1.7"
