@@ -5,9 +5,8 @@ class GuileDbi < Formula
   sha256 "c6a84a63b57ae23c259c203063f4226ac566161e0261f4e1d2f2f963ad06e4e7"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbi-2.1.7"
-    sha256 cellar: :any,                 catalina:     "8c36fc35fe5b3780761cf8b10ddac5becce490355c3ec4998a473daa4fda3ccc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "150e72d54415e9366e597275b521473611af95d32ee26a60ecd18be654e4c76c"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbi-2.1.8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1f18cbb0ce8634b335353110e20636547c3ce3d35f83c4bc99a254d4551d78be"
   end
 
   depends_on "autoconf" => :build
