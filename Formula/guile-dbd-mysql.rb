@@ -5,9 +5,8 @@ class GuileDbdMysql < Formula
   sha256 "c6a84a63b57ae23c259c203063f4226ac566161e0261f4e1d2f2f963ad06e4e7"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbd-mysql-2.1.7"
-    sha256 cellar: :any,                 catalina:     "b592cc92b10e69f26c52f2e352217c254fe014478d4224870c83408c172edfd2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d4c430ae6b7654d1c7e924e68f6d4084f179582a8622871c128b1c2104a8e1a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbd-mysql-2.1.8"
+    sha256 x86_64_linux: "40a40f6d32d6cd4d8d2a4d8bf81e196d21ee5f489382fad3ede0fda2229d550f"
   end
 
   depends_on "autoconf" => :build
