@@ -4,6 +4,12 @@ class GuileCoap < Formula
   url "https://codeberg.org/eris/guile-coap/archive/v0.1.0.tar.gz"
   sha256 "6ff9f82d43bf8ccb830331e4347b1a9864163cef381d0cd0f79df5a910d75274"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.1.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "1c78e4dc9cdb58b2bee6e0852be588a23037b5db275a869ec52150c71ce8ebf9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a6fc4984c62219d8c1d6812f4046ca5e0ca0d10cf6a6ac6f6e9bd60569065723"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "texinfo" => :build
