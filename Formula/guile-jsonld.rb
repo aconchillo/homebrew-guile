@@ -3,6 +3,7 @@ class GuileJsonld < Formula
   homepage "https://framagit.org/tyreunom/guile-jsonld"
   url "https://framagit.org/tyreunom/guile-jsonld/-/archive/1.0.2/guile-jsonld-1.0.2.tar.gz"
   sha256 "100d36654e6ed84b80ba62a5293dc880655dd738feaf5db16391161e89891af1"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jsonld-1.0.2"
@@ -13,8 +14,8 @@ class GuileJsonld < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
-  depends_on "gnutls"
   depends_on "guile"
+  depends_on "guile-gnutls"
   depends_on "guile-json"
   depends_on "guile-rdf"
 
