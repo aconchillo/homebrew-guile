@@ -3,7 +3,7 @@ class GuileGitlab < Formula
   homepage "https://github.com/artyom-poptsov/guile-gitlab"
   url "https://github.com/artyom-poptsov/guile-gitlab/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "b499661fad29efee997dae01d2cd614da2d78aa094892e6228d41f7cdcf4739c"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.1.0_1"
@@ -14,8 +14,8 @@ class GuileGitlab < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
-  depends_on "gnutls"
   depends_on "guile"
+  depends_on "guile-gnutls"
   depends_on "guile-json"
 
   patch :DATA
