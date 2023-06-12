@@ -3,6 +3,7 @@ class GuileOauth < Formula
   homepage "https://github.com/aconchillo/guile-oauth"
   url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-1.3.0.tar.gz"
   sha256 "33ed60eb471df34e37a26f228016b3db6b3e65f69d66bf226051dbbefcc29b15"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.3.0"
@@ -11,9 +12,9 @@ class GuileOauth < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "gnutls"
   depends_on "guile"
   depends_on "guile-gcrypt"
+  depends_on "guile-gnutls"
   depends_on "guile-json"
 
   def install
