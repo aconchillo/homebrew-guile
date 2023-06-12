@@ -6,9 +6,9 @@ class GuileOauth < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.3.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "3131f3c0edafd898f4d4034b83475cb00e01ee4d320127d2215a798431a1710b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2ea66bffbb5c30c048fbdb4d9e3935cae9e79fc0bca3dfd29ef53b7be134f8af"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.3.0_1"
+    sha256 cellar: :any_skip_relocation, monterey:     "3f089cdf4b988226c8f401564512a967e38d27291e1c79cc1ac8390aa3c60b9d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b544eecc717b10ff571848b3d32df407809da9d79941a7689e86b005ad77b04c"
   end
 
   depends_on "pkg-config" => :build
