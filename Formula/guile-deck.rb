@@ -6,8 +6,9 @@ class GuileDeck < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-deck-0.2.0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5a0fc318125b34e30346cac6e30d3da6cb0ebe217fa17b6126e51e21dfaca3f1"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-deck-0.2.0_1"
+    sha256 cellar: :any_skip_relocation, monterey:     "2d4f6b86b982249d03852c48b4ff1b23a664b5778b786ba90ca18a1d90ae6f31"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c7b69714511da65267ebbe400c0c1b4dde942f11c2b1c8eb2c6346a316850e3a"
   end
 
   depends_on "autoconf" => :build
