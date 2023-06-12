@@ -6,9 +6,9 @@ class GuileGitlab < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.1.0_1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "c06e80c2375727e15ba165cadb872a978574f1b66fa5b13e6bf7c4a38ac2a8db"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e08cb5af78b5dd39d1c20500de1ef8decd6565828b3696ce158346170fe540b3"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.1.0_2"
+    sha256 cellar: :any_skip_relocation, monterey:     "593aeb5c1d7e167358d405aa043a6dc2e59d6f9ccaafd74d6def359ee35c3bd5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1770289767a789f9d2f1b1c1f7110ff559e1267260024d9f9ea6b3d5c57971b6"
   end
 
   depends_on "autoconf" => :build
