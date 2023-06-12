@@ -6,9 +6,8 @@ class GuileJsonld < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jsonld-1.0.2"
-    sha256 cellar: :any_skip_relocation, catalina:     "8efc79677c71b90a2d36b5cd9aa3af7e1f906ed4ccd7c585d62eb32346be45ef"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd8c382e34c8ed9d618caf7b8f179d7e50a322ad03c64f54c87f20611671ad0f"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jsonld-1.0.2_1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "bb62c0438e4dcdf05bbfead72bc38b01427ab4956676bb7dd821ef39fa095be4"
   end
 
   depends_on "autoconf" => :build
