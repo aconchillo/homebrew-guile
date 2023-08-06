@@ -1,9 +1,8 @@
 class GuileGitlab < Formula
   desc "SSH library for programs written in Guile"
   homepage "https://github.com/artyom-poptsov/guile-gitlab"
-  url "https://github.com/artyom-poptsov/guile-gitlab/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b499661fad29efee997dae01d2cd614da2d78aa094892e6228d41f7cdcf4739c"
-  revision 2
+  url "https://github.com/artyom-poptsov/guile-gitlab/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "9408ee5dba92b56882f35079aa4d11fb8179ec58b050f88f03f6de149977ceb8"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.1.0_2"
@@ -17,8 +16,7 @@ class GuileGitlab < Formula
   depends_on "guile"
   depends_on "guile-gnutls"
   depends_on "guile-json"
-
-  patch :DATA
+  depends_on "guile-lib"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -56,28 +54,3 @@ class GuileGitlab < Formula
     system "guile", gitlab
   end
 end
-
-__END__
-diff --git a/configure.ac b/configure.ac
-index 401a51a..97ddb3c 100644
---- a/configure.ac
-+++ b/configure.ac
-@@ -45,7 +45,7 @@ AC_ARG_WITH([guilesitedir],
-              esac],
-              [guilesitedir=""])
-
--GUILE_PKG([2.2 2.0])
-+GUILE_PKG([3.0 2.2 2.0])
- GUILE_PROGS
- GUILE_SITE_DIR
-
-diff --git a/modules/gitlab/cli/common.scm b/modules/gitlab/cli/common.scm
-index 8da5752..7ef166d 100644
---- a/modules/gitlab/cli/common.scm
-+++ b/modules/gitlab/cli/common.scm
-@@ -1,4 +1,5 @@
- (define-module (gitlab cli common)
-+  #:use-module (ice-9 format)
-   #:use-module (ice-9 pretty-print)
-   #:export (print
-             print-many
