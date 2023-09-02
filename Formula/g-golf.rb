@@ -1,9 +1,9 @@
 class GGolf < Formula
   desc "Guile Object Library for GNOME"
   homepage "https://www.gnu.org/software/g-golf/"
-  url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0-a.4.tar.gz"
-  version "0.8.0-a.4"
-  sha256 "55521b9def9521b63aa2648ceca61aa9103d13b33063f369c946dae330cc65bb"
+  url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0-a.5.tar.gz"
+  version "0.8.0-a.5"
+  sha256 "719f8105c028cda281c9d48952738c22a0803a044e17d95c2204d9c8f3b79553"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-a.4"
@@ -67,17 +67,6 @@ class GGolf < Formula
 end
 
 __END__
---- a/configure.ac	2023-05-01 13:34:33
-+++ b/configure.ac	2023-05-01 13:27:45
-@@ -105,6 +105,8 @@
-
- PKG_CHECK_MODULES(GUILE_LIB, guile-lib-1.0 >= 0.2.5)
-
-+PKG_CHECK_MODULES(FFI, libffi >= 3.3.0)
-+
- AC_CONFIG_FILES(
-   [pre-inst-env],
-   [chmod +x pre-inst-env])
 --- a/configure.ac	2022-12-15 11:09:06
 +++ b/configure.ac	2022-12-16 15:11:17
 @@ -80,8 +80,8 @@
