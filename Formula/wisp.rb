@@ -1,8 +1,8 @@
 class Wisp < Formula
   desc "OAuth module for Guile"
   homepage "https://www.draketo.de/software/wisp"
-  url "https://hg.sr.ht/~arnebab/wisp/archive/v1.0.7.tar.gz"
-  sha256 "641ebd1624987a9f2b6ec9966ccf333b0894599bd9edcf609426b294a6f87b49"
+  url "https://www.draketo.de/software/wisp-1.0.11.tar.gz"
+  sha256 "a643ef884f3cd3078c5e50f36de4c425ee7a1ca4fac73096769ebc287cb3dedd"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.7"
@@ -10,16 +10,13 @@ class Wisp < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f8c38d4727994ded058b9ce402b1ea7f630d5705f39b3f04ac4e7eeddd480807"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
-  depends_on "python@3.9" => :build
+  depends_on "python@3.11" => :build
   depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
