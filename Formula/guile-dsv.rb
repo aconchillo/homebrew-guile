@@ -1,8 +1,8 @@
 class GuileDsv < Formula
   desc "Guile module for delimiter-separated values (DSV) data format"
   homepage "https://github.com/artyom-poptsov/guile-dsv"
-  url "https://github.com/artyom-poptsov/guile-dsv/archive/v0.6.0.tar.gz"
-  sha256 "8e0f9f9a80dd0cdfc418290741fc977b848f657367de686ffeb6cda6af767a59"
+  url "https://github.com/artyom-poptsov/guile-dsv/archive/v0.7.0.tar.gz"
+  sha256 "87b6973696871eae40def021c98f43e3011ebc7ed9cfa6e730405c9ec66fb7c7"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.6.0"
@@ -12,10 +12,13 @@ class GuileDsv < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  # coreutils because native `install` not working great
+  depends_on "coreutils" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "guile-lib"
+  depends_on "guile-smc"
   depends_on "help2man"
 
   def install
