@@ -5,6 +5,12 @@ class GuileNext < Formula
   version "3.0.9"
   license "LGPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9"
+    sha256 ventura:      "767f149b51182758b2e40dcd070dd38c7c646936ff0893c014f812d16999b5ba"
+    sha256 x86_64_linux: "766419ef703c46354c579718f3a2d0e9ed4a848d8e5c05e713f4b3cea984d924"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gettext" => :build
