@@ -4,6 +4,7 @@ class GuileNext < Formula
   url "https://git.savannah.gnu.org/git/guile.git", revision: "79e836b8cc601a1259c934000a953a8d739ddd6f"
   version "3.0.9"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9"
@@ -69,6 +70,10 @@ class GuileNext < Formula
 
   def caveats
     <<~EOS
+      To use `guile-next` you need to unlink `guile` and then link `guile-next`:
+        brew unlink guile
+        brew link guile-next
+
       Guile libraries can now be installed here:
           Source files: #{HOMEBREW_PREFIX}/share/guile/site/3.0
         Compiled files: #{HOMEBREW_PREFIX}/lib/guile/3.0/site-ccache
