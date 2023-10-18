@@ -4,6 +4,12 @@ class GuileHoot < Formula
   url "https://spritely.institute/files/releases/guile-hoot/guile-hoot-0.1.0.tar.gz"
   sha256 "2f81c178a46e62057ef01c41f5e39a83091c1c32a24a85177366422124cb0781"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.1.0"
+    sha256 cellar: :any_skip_relocation, ventura:      "d0e50cb90dfce24c74bc31f3b37e8ac037a5df038b8e7d90bfb6cc543195293f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a626b48d8301c863089ea80a4749af552b7a0f1e6b1e0577915285aa5d1b01b3"
+  end
+
   depends_on "texinfo" => :build
   depends_on "guile-next"
 
