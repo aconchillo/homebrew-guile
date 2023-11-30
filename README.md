@@ -4,6 +4,10 @@ The goal of Guile Homebrew Tap is to provide
 [Guile](https://www.gnu.org/software/guile/) libraries and applications that
 can be easily installed with [Homebrew](https://brew.sh/).
 
+Nowadays, many members of the Guile community use [Guix](https://guix.gnu.org/)
+to install Guile software. Unfortunately, Guix is not available on macOS so this
+Homebrew tap is an easy way to get started with Guile on macOS.
+
 Happy hacking!
 
 ## How do I install these formulae?
