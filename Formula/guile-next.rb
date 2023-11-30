@@ -1,10 +1,10 @@
 class GuileNext < Formula
   desc "GNU Ubiquitous Intelligent Language for Extensions"
   homepage "https://www.gnu.org/software/guile/"
-  url "https://git.savannah.gnu.org/git/guile.git", revision: "79e836b8cc601a1259c934000a953a8d739ddd6f"
+  url "https://git.savannah.gnu.org/git/guile.git", revision: "d8df317bafcdd9fcfebb636433c4871f2fab28b2"
   version "3.0.9"
   license "LGPL-3.0-or-later"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_1"
