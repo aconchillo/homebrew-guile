@@ -1,7 +1,7 @@
 class GuileSmc < Formula
   desc "GNU Guile state machine compiler"
   homepage "https://github.com/artyom-poptsov/guile-smc"
-  url "https://github.com/artyom-poptsov/guile-smc/archive/v0.6.2.tar.gz"
+  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.6.2.tar.gz"
   sha256 "96845d5f2f6c74bc9a1c41d64b60b6accee77a57d5323e0194e63d95494c24a4"
 
   bottle do

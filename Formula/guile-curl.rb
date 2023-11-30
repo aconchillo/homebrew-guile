@@ -1,7 +1,7 @@
 class GuileCurl < Formula
   desc "Guile bindings for the CURL network client library"
   homepage "https://github.com/spk121/guile-curl"
-  url "https://github.com/spk121/guile-curl/archive/v0.9.tar.gz"
+  url "https://github.com/spk121/guile-curl/archive/refs/tags/v0.9.tar.gz"
   sha256 "d241f27c2a6d2ac768ce1ae64fd27e6854b34ace6ce35ce810fb41a2a7b20ed6"
 
   bottle do

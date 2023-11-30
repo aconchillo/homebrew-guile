@@ -1,7 +1,7 @@
 class Metabash < Formula
   desc "GNU Guile module for running distributed shell pipelines"
   homepage "https://github.com/artyom-poptsov/metabash"
-  url "https://github.com/artyom-poptsov/metabash/archive/v0.0.0.tar.gz"
+  url "https://github.com/artyom-poptsov/metabash/archive/refs/tags/v0.0.0.tar.gz"
   sha256 "14182092cf15ffe52b1f7d1014fcc90f242e65be017625f09182546c05d2e8ac"
   revision 1
 

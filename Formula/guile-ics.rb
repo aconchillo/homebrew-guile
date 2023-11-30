@@ -1,7 +1,7 @@
 class GuileIcs < Formula
   desc "RFC5545 (iCalendar) format parser for GNU Guile"
   homepage "https://github.com/artyom-poptsov/guile-ics"
-  url "https://github.com/artyom-poptsov/guile-ics/archive/v0.5.0.tar.gz"
+  url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.5.0.tar.gz"
   sha256 "3f4d8deca5ca13ae4927dd4866092b4375b01cf1300fc93fafc98a28e8ce7de6"
 
   bottle do
