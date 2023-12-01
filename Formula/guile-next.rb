@@ -7,9 +7,9 @@ class GuileNext < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_1"
-    sha256 ventura:      "c52eb6cc25733dfb6411c11d4f1bc1e830dc4c92735e86cb34d2ebf5ec6707c5"
-    sha256 x86_64_linux: "30c888a3c67a824ac16b07978ccfb77483c4301994f923826789eb202ee5f412"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_2"
+    sha256 ventura:      "40995df63861f7339bdfe996cda2e139d49d6e1ea045df17b712104eaa6efb0d"
+    sha256 x86_64_linux: "1cfd861b9d1f0a2be31e10a47952feada2039b83d6a424e65aab62586065c090"
   end
 
   depends_on "autoconf" => :build
