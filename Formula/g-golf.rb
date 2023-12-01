@@ -6,9 +6,8 @@ class GGolf < Formula
   sha256 "0b21c82c4c09e3f8736994f655bb72ee41210ad927701737b8d89e6f7f2b54e1"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-a.5"
-    sha256 cellar: :any,                 monterey:     "6a6d3266520ad6422b438fa68330bbaf47ddb9ca6eac66f8465609760150952d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "79b9bca0c10461fcaade8e225669ecad9bc0fba123947aea430965f05d86265b"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-rc-2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0477abaafdacf87313fcd7a56ce208f0adf4453b1c84b5f3cf581a00cbd4f285"
   end
 
   depends_on "autoconf" => :build
