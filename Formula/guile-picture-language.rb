@@ -4,6 +4,11 @@ class GuilePictureLanguage < Formula
   url "https://git.elephly.net/software/guile-picture-language.git", revision: "a1322bf11945465241ca5b742a70893f24156d12"
   version "0.0.1"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-picture-language-0.0.1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "475468dd8c4e8def0a152a6793102034a6244f04ce951db61d2f6ff30c90fb90"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "texinfo" => :build
