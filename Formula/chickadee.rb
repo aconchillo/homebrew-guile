@@ -3,6 +3,7 @@ class Chickadee < Formula
   homepage "https://dthompson.us/projects/chickadee.html"
   url "https://files.dthompson.us/chickadee/chickadee-0.10.0.tar.gz"
   sha256 "132f53b6e59a1a51c6d9c618c2a248b76457ed73545b6f0e1a5fe4b8f5020f75"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.10.0"
@@ -31,11 +32,11 @@ class Chickadee < Formula
 
     # Use Homebrew prefix instead instead.
     inreplace buildpath/"chickadee/config.scm" do |s|
-      s.gsub!(%r{".*/libopenal"}, "\"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\"")
-      s.gsub!(%r{".*/libvorbisfile"}, "\"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\"")
-      s.gsub!(%r{".*/libmpg123"}, "\"#{HOMEBREW_PREFIX}/opt/mpg123/lib/libmpg123\"")
-      s.gsub!(%r{".*/libfreetype"}, "\"#{HOMEBREW_PREFIX}/opt/freetype/lib/libfreetype\"")
-      s.gsub!(%r{".*/libreadline"}, "\"#{HOMEBREW_PREFIX}/opt/readline/lib/libreadline\"")
+      s.gsub!(/.*\/libopenal/, "\"#{HOMEBREW_PREFIX}/opt/openal-soft/lib/libopenal\"")
+      s.gsub!(/.*\/libvorbisfile/, "\"#{HOMEBREW_PREFIX}/opt/libvorbis/lib/libvorbisfile\"")
+      s.gsub!(/.*\/libmpg123/, "\"#{HOMEBREW_PREFIX}/opt/mpg123/lib/libmpg123\"")
+      s.gsub!(/.*\/libfreetype/, "\"#{HOMEBREW_PREFIX}/opt/freetype/lib/libfreetype\"")
+      s.gsub!(/.*\/libreadline/, "\"#{HOMEBREW_PREFIX}/opt/readline/lib/libreadline\"")
     end
 
     system "make", "install"
