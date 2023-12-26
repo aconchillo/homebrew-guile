@@ -3,7 +3,7 @@ class GuileAspell < Formula
   homepage "https://github.com/spk121/guile-aspell"
   url "https://github.com/spk121/guile-aspell/releases/download/0.5.0/guile_aspell-0.5.0.tar.gz"
   sha256 "958e3f1f80bffdc5200778804259384722b94ed0fda5957001fc652f941322a7"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-aspell-0.5.0_1"
