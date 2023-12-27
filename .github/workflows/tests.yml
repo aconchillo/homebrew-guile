@@ -1,7 +1,8 @@
 name: brew test-bot
 on:
   push:
-    branches: master
+    branches:
+      - master
   pull_request:
 env:
   HOMEBREW_NO_INSTALL_FROM_API: 1
@@ -18,15 +19,11 @@ jobs:
 
       - name: Cache Homebrew Bundler RubyGems
         id: cache
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: ${{ steps.set-up-homebrew.outputs.gems-path }}
           key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ runner.os }}-rubygems-
-
-      - name: Install Homebrew Bundler RubyGems
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: brew install-bundler-gems
 
       - run: brew test-bot --only-cleanup-before
 
@@ -39,7 +36,7 @@ jobs:
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v3
         with:
           name: bottles
           path: '*.bottle.*'
