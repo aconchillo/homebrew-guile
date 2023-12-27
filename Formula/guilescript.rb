@@ -3,6 +3,7 @@ class Guilescript < Formula
   homepage "https://github.com/aconchillo/guilescript"
   url "https://github.com/aconchillo/guilescript/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "7c925dea83aaca7813519a1acf3f145b5774f950f8c41c5f8f9a175f122b5f4f"
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.2.0"
