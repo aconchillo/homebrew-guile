@@ -4,7 +4,7 @@ class GuileNext < Formula
   url "https://git.savannah.gnu.org/git/guile.git", revision: "d8df317bafcdd9fcfebb636433c4871f2fab28b2"
   version "3.0.9"
   license "LGPL-3.0-or-later"
-  revision 3
+  revision 4
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_3"
