@@ -6,8 +6,10 @@ class Gas < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/gas-0.1.0_1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "35a12a10398be6660f1949dfe898a5226ae7ad24b3b0cd0f15e1d1f367565551"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/gas-0.1.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "6ff612ee65ea7ed5746f4416a3de9ff2d38185aeb65991f968fa4c8457bce66c"
+    sha256 cellar: :any_skip_relocation, ventura:      "e776a827a724f7b65692568adc3b43c6e66b72c1677bc5c8626504c4d5b3e789"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "57c7a4be76ca91c9ce140df0877ff07225ea4424eb3b06e7f70fcd2e73b9e47b"
   end
 
   depends_on "guilescript"
