@@ -3,6 +3,7 @@ class GuileGcrypt < Formula
   homepage "https://notabug.org/cwebber/guile-gcrypt"
   url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.4.0.tar.gz"
   sha256 "35f0681e01defab0aaa2a83227c0be836b0a1303dd1f7279497a76dd1255b17e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.4.0"
