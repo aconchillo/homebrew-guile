@@ -7,8 +7,10 @@ class GuileCairo < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.2_1"
-    sha256 x86_64_linux: "292fa9404ed457167170eda57e16b31684b248a342d5e3ec80e4ba5180369172"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.2_2"
+    sha256 arm64_sonoma: "19fbf8b59b94b32655aa796eef3b2530889edddf389e146f3ab7d8bbe60ff9e6"
+    sha256 ventura:      "b6df3e1db26460ffe1ee09285bb09c8872a8dfcad7d642b8f64aefdba3068b00"
+    sha256 x86_64_linux: "7e171f4155c84bf6404a7cee3f37d592eeed7d5df88f15b5bbcda81d9f7b0156"
   end
 
   depends_on "autoconf" => :build
