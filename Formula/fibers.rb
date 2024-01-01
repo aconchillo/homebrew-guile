@@ -6,9 +6,10 @@ class Fibers < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.3.1"
-    sha256 monterey:     "da57b106b267b294fc61164ce9b24bfaadcc154f1dd0506b78e85bc587c74865"
-    sha256 x86_64_linux: "3311011685334495d315ec30d48a9a244c76f572339afb2b8d8473f5adab8ac0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.3.1_1"
+    sha256 arm64_sonoma: "196f88b9b1355c93a9a4614aba258fcc2c2890a5547881746cf2abe525b61df8"
+    sha256 ventura:      "cd9c67fe2d33997bf17a0a15ab332da36bdff28443f6e3c88f45621fc1f887ed"
+    sha256 x86_64_linux: "4eb749ecfda5083a14f92ef8b2233889451f9c9fe6f60a9b3a03202ae15cfc20"
   end
 
   depends_on "autoconf" => :build
