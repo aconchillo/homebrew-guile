@@ -6,8 +6,8 @@ class Wisp < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.11"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f71b78b334862c71e2affa7d57e297bbb42796ed73b7978e7969424f31341208"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.11_1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "37b04ec1c098202a41283f0568031e0856313f30c3323f4d7c9d8d8467840cd8"
   end
 
   depends_on "pkg-config" => :build
