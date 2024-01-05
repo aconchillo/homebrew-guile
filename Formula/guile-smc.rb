@@ -3,6 +3,7 @@ class GuileSmc < Formula
   homepage "https://github.com/artyom-poptsov/guile-smc"
   url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.6.3.tar.gz"
   sha256 "9e6d9b4c6a145cefc9c671971ffa46685c1f58634ae1f5b23b7d18b0f0b03429"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.6.3"
