@@ -3,6 +3,7 @@ class GuileJson < Formula
   homepage "https://github.com/aconchillo/guile-json"
   url "https://download.savannah.gnu.org/releases/guile-json/guile-json-4.7.3.tar.gz"
   sha256 "38ba048ed29d12f05b32c5b2fb7a51795c448b41e403a2b1b72ff0035817f388"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-4.7.3"
