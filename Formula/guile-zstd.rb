@@ -3,6 +3,7 @@ class GuileZstd < Formula
   homepage "https://notabug.org/guile-zstd/guile-zstd"
   url "https://notabug.org/guile-zstd/guile-zstd/archive/v0.1.1.tar.gz"
   sha256 "6e57ef524f20cab79ca5fd62366c5435f71cf652f582fc1e7d62585e90d499c5"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zstd-0.1.1"
