@@ -3,6 +3,7 @@ class Skribilo < Formula
   homepage "https://www.nongnu.org/skribilo/"
   url "https://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
   sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5"
@@ -11,6 +12,7 @@ class Skribilo < Formula
   end
 
   depends_on "gnu-sed" => :build
+  depends_on "aconchillo/guile/ploticus"
   depends_on "fig2dev"
   depends_on "ghostscript"
   depends_on "guile"
@@ -18,7 +20,6 @@ class Skribilo < Formula
   depends_on "guile-reader"
   depends_on "imagemagick"
   depends_on "lout"
-  depends_on "ploticus"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
