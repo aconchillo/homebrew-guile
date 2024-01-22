@@ -6,9 +6,10 @@ class GuileReader < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3_1"
-    sha256 big_sur:      "35dde54d2ac30b03fb091dd3bd0073ec1f098036899561282d237bbee620d27e"
-    sha256 x86_64_linux: "cae13a9d437b7d7ad1921f5e2477f54d7940607936e3166f2bdcf3fa8d5fb9ee"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3_2"
+    sha256 arm64_sonoma: "502a692c95fce38c65b0fe907e8c84c5e78ceb55de22a44d37e7699e84cd28c6"
+    sha256 ventura:      "00581b1f038e92fe8e02fcb7b418c32670293a3a11293dce1d092a6346b80c5e"
+    sha256 x86_64_linux: "ac37e5ce49cc39c86f4b72f997ff4a50e8d388b9502ce17bb110735ed220e275"
   end
 
   depends_on "autoconf" => :build
