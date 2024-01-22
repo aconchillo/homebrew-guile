@@ -6,9 +6,8 @@ class Skribilo < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5"
-    sha256 catalina:     "f0abf559199c7818f3111f7f3d9df044d348f3c57ce4b008e48c22cdcd1a2cbf"
-    sha256 x86_64_linux: "1414ce74f6f31c37512856be4ccfeeb63ce9b6f7b17ad45f1382252349117f05"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5_1"
+    sha256 x86_64_linux: "40342f79338804a5cdf8816882ade970bb1a5090bb6450e87940a9c8f36474be"
   end
 
   depends_on "gnu-sed" => :build
