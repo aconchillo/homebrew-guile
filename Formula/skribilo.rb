@@ -3,7 +3,7 @@ class Skribilo < Formula
   homepage "https://www.nongnu.org/skribilo/"
   url "https://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
   sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5_1"
