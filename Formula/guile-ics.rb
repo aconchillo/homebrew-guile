@@ -1,8 +1,8 @@
 class GuileIcs < Formula
   desc "RFC5545 (iCalendar) format parser for GNU Guile"
   homepage "https://github.com/artyom-poptsov/guile-ics"
-  url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "3f4d8deca5ca13ae4927dd4866092b4375b01cf1300fc93fafc98a28e8ce7de6"
+  url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "a18f6090f9919142c9129f0ef3f67ca3f0a0db47cc44201d36d6e7655189d1bc"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ics-0.5.0"
