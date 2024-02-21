@@ -5,9 +5,10 @@ class Haunt < Formula
   sha256 "98babed06be54a066c3ebc94410a91eb7cc48367e94d528131d3ba271499992b"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.2.6_1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "f81c048772ac3c52a6c9bc5e6279b371525c3d8b7f5608bd2c7428950e037d08"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4504b0bb959ec1d71307ee32039fb61c20bfea728e9334a8069784042db7a103"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "1d0860dee1d57633094b5477b59b856a0f276c2c689fe4016e46f0a2713c05cb"
+    sha256 cellar: :any_skip_relocation, ventura:      "d4c7156f162fc9bb2ac1a7e963af196963e2ae60210f375cbc7cdebc5c013a1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "eab1dbfc841f9a67217df3838216a9c35f04fc93ce76b434efdeadca886e8859"
   end
 
   depends_on "autoconf" => :build
