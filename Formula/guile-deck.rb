@@ -3,7 +3,7 @@ class GuileDeck < Formula
   homepage "https://github.com/artyom-poptsov/guile-deck"
   url "https://github.com/artyom-poptsov/guile-deck/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "a2b3a5cd7626010abef1ec217f8a70dac0eea734d0aa6e34a3f5819b4eaafe4b"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-deck-0.2.0_1"
