@@ -6,9 +6,10 @@ class GuileSemver < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-semver-0.1.1"
-    sha256 cellar: :any_skip_relocation, catalina:     "7d92e0ec8150258792d735b963e726e0a9bc308d59df92a28b101eec9ded95ba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "13ceb33cd27b7d09796e56801dc191382f3cf42daec0e99ef6a3f58e52de28ea"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-semver-0.1.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fb51168867afee86933a64e52334b7cbd478316d653d9e3b15a0d564a0b6fbf3"
+    sha256 cellar: :any_skip_relocation, ventura:      "a8d1ffdb18f733162b425302a0d3c7584f66e84bbe69a71cde2defc303bf6258"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "be64d2ca459ff5566ea76a815bf5f298bf50d0501db84f5913418fc0f26d0750"
   end
 
   depends_on "pkg-config" => :build
