@@ -6,8 +6,10 @@ class Chickadee < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.10.0_1"
-    sha256 x86_64_linux: "c77354d840094b2fb7966d519b46f2a59cc136357b06230beb7f7503e9ab2bc1"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/chickadee-0.10.0_2"
+    sha256 arm64_sonoma: "799bbb4456a19556444898ba2d918e1019619bfc19c4883b0b47e48eb4c4e708"
+    sha256 ventura:      "23ebf170b9df5a94f2d7ba4bf820ae003ac93e7fb3100099ca41831fa85e9717"
+    sha256 x86_64_linux: "807c3bf17f682df29bad662b8ebed5b1f77ac634bfc32e456b41f410d9baec49"
   end
 
   depends_on "pkg-config" => :build
