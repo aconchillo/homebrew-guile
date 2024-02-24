@@ -3,6 +3,7 @@ class GuileSemver < Formula
   homepage "https://ngyro.com/software/guile-semver.html"
   url "https://files.ngyro.com/guile-semver/guile-semver-0.1.1.tar.gz"
   sha256 "4f790919375feb204a8ea2eda92a291d9bb4de4c8eb1c6776784589a86253781"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-semver-0.1.1"
