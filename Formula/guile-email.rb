@@ -1,9 +1,8 @@
 class GuileEmail < Formula
   desc "Collection of email utilities"
   homepage "https://guile-email.systemreboot.net/"
-  url "https://guile-email.systemreboot.net/releases/guile-email-0.3.0.tar.lz"
-  sha256 "82559411737975be73b916533bb5bb9974b7c393e57e9d84f47c4701b0deb709"
-  revision 1
+  url "https://guile-email.systemreboot.net/releases/guile-email-0.3.1.tar.lz"
+  sha256 "1cbebc536586190914a07d0e204f2b575098fe06791ee4c31e3369162d635e08"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.3.0_1"
@@ -15,8 +14,6 @@ class GuileEmail < Formula
   depends_on "coreutils" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
-
-  patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -50,25 +47,3 @@ class GuileEmail < Formula
     system "guile", email
   end
 end
-
-__END__
-diff --git a/Makefile b/Makefile
-index cc69eed..b7ed63e 100644
---- a/Makefile
-+++ b/Makefile
-@@ -90,9 +90,12 @@ $(dist_archive): .git/refs/heads/master
- 	$(GPG) --detach-sign --armor $<
-
- install: $(doc_info)
--	mkdir -p $(scmdir) $(godir)
--	cp --parents -vr $(sources) $(scmdir)
--	cp --parents -vr $(objects) $(godir)
-+	for source in $(sources); do \
-+		install -D $$source $(scmdir)/$$source; \
-+	done
-+	for object in $(objects); do \
-+		install -D $$object $(godir)/$$object; \
-+	done
- 	install -D $(doc_info) --target-directory $(infodir)
-
- clean:
