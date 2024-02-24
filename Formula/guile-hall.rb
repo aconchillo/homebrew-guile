@@ -3,7 +3,7 @@ class GuileHall < Formula
   homepage "https://gitlab.com/a-sassmannshausen/guile-hall/"
   url "https://gitlab.com/a-sassmannshausen/guile-hall/-/archive/0.4.1/guile-hall-0.4.1.tar.gz"
   sha256 "8bf70fa795db3032be710a41fd316b92a87da2c2c909658412d0c36c4142e9be"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1_1"
@@ -46,6 +46,6 @@ class GuileHall < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "hall"
+    system "#{bin}/hall"
   end
 end
