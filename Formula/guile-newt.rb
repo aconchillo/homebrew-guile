@@ -5,9 +5,10 @@ class GuileNewt < Formula
   sha256 "0a8381c23a7de31ce9fd9457fbff85d6e373f52ce72a7835b39250d9d0c370e8"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-newt-0.0.2"
-    sha256 cellar: :any_skip_relocation, big_sur:      "e0f819581eb6d70556e317d171633da5903c736f43c3ee393d83cc80abaa0af5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f930223d70681a8ea791aa46c03dbf02d85776b9dfca80d5e4af965afe6a0b6e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-newt-0.0.3"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e94817d7c5e9c14502949c6708bf54d90399a9ed719195df79489c74f86deb34"
+    sha256 cellar: :any_skip_relocation, ventura:      "5b9235f456415a2999c177f4618081d8af8a57287a0c5e5cb9a1673079f0e7e9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8dfdd5a6888edda197347a347ad04e465ebeae7f2908cad8ea26e4078e406c63"
   end
 
   depends_on "autoconf" => :build
