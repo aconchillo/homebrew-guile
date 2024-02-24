@@ -3,6 +3,7 @@ class GuileJwt < Formula
   homepage "https://github.com/aconchillo/guile-jwt"
   url "https://download.savannah.gnu.org/releases/guile-jwt/guile-jwt-0.3.0.tar.gz"
   sha256 "97c5542a536c8862409fc9c603daebbd687f575e76d49b05561fcaa9b53c4a6f"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jwt-0.3.0"
