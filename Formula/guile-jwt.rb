@@ -6,9 +6,10 @@ class GuileJwt < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jwt-0.3.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "f95a38a887ec9915b808d18b1754a27accbab09b70c093697e47bb9d64931317"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "05ead96860dd3f641dd098a91ccfacd82b40ce8dfd1e254f6c43b7cde0ab3b92"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-jwt-0.3.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "a1e6bd1cdb247b3b272856505aee08b54cabf1d266ad7fed40019910182d3663"
+    sha256 cellar: :any_skip_relocation, ventura:      "9b45857253801f715e36acd6adfe44a453c08f5706b2e9f69ac8533e0641bda3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4077cefd06906f1d4c05cd81b51548905f27c8cf59be3bc3c00314311f21fa3b"
   end
 
   depends_on "pkg-config" => :build
