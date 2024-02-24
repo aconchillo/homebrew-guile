@@ -3,6 +3,7 @@ class Haunt < Formula
   homepage "https://dthompson.us/projects/haunt.html"
   url "https://files.dthompson.us/haunt/haunt-0.3.0.tar.gz"
   sha256 "98babed06be54a066c3ebc94410a91eb7cc48367e94d528131d3ba271499992b"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.3.0"
@@ -11,8 +12,6 @@ class Haunt < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "eab1dbfc841f9a67217df3838216a9c35f04fc93ce76b434efdeadca886e8859"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
@@ -27,7 +26,6 @@ class Haunt < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
-    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
