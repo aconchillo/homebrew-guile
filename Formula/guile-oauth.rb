@@ -3,7 +3,7 @@ class GuileOauth < Formula
   homepage "https://github.com/aconchillo/guile-oauth"
   url "https://download.savannah.gnu.org/releases/guile-oauth/guile-oauth-1.3.0.tar.gz"
   sha256 "33ed60eb471df34e37a26f228016b3db6b3e65f69d66bf226051dbbefcc29b15"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-oauth-1.3.0_1"
