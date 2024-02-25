@@ -3,6 +3,7 @@ class GuileQuickcheck < Formula
   homepage "https://ngyro.com/software/guile-quickcheck.html"
   url "https://files.ngyro.com/guile-quickcheck/guile-quickcheck-0.1.0.tar.gz"
   sha256 "cb99ac5be99b43b61eb9c452d953543e890e2a83fc83acac289d94316888bc0e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-quickcheck-0.1.0"
