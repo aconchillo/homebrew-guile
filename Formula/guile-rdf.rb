@@ -3,6 +3,7 @@ class GuileRdf < Formula
   homepage "https://framagit.org/tyreunom/guile-rdf"
   url "https://framagit.org/tyreunom/guile-rdf/-/archive/1.0/guile-rdf-1.0.tar.gz"
   sha256 "11dcd2b970f962c484260540ca77d5bb983ae99bab81127aea5fb59c3e851de0"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rdf-1.0"
