@@ -6,9 +6,10 @@ class GuileCurl < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.9"
-    sha256 cellar: :any,                 catalina:     "0931b9247176554ee8ba10253e7a7d53fab35bb861e4ab0513f41e80d4e5c83b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9b57b73588e976ed06bc60ce99bf7ffab7554f7a2c8f8e55721b0cff824529a9"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.9_1"
+    sha256 cellar: :any,                 arm64_sonoma: "16d68b94b42144f9361f3f6c3e784a171491ebc61910e346aeefc3b571777055"
+    sha256 cellar: :any,                 ventura:      "3593fe5fc4c21bb6104fcf14b2d12613f65e3930322ae1dc65813a27c9470f89"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5b1ce7d1fd9f4e2ae75a9d6b5ef45a1d0d5d42eb4a8a7f1d575a1efbc01c3d4a"
   end
 
   depends_on "autoconf" => :build
