@@ -3,6 +3,7 @@ class GuilePresent < Formula
   homepage "https://wingolog.org/projects/guile-present/"
   url "https://wingolog.org/pub/guile-present/guile-present-0.3.0.tar.gz"
   sha256 "d564f7c231da5ee86e8b81cbab106c84396ff1799f36d4cdee5d17500f2155e1"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-present-0.3.0"
