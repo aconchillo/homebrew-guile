@@ -3,7 +3,7 @@ class GuileGi < Formula
   homepage "https://github.com/spk121/guile-gi/"
   url "https://github.com/spk121/guile-gi/releases/download/v0.3.2/guile_gi-0.3.2.tar.gz"
   sha256 "7e35b9b661e331a45bc44f4e4093b748693c603de94d728098a7a8e71f5c3505"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2_1"
