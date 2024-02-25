@@ -6,9 +6,10 @@ class GuileQuickcheck < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-quickcheck-0.1.0"
-    sha256 cellar: :any_skip_relocation, catalina:     "41d7c4555ada9e82be0eb0259b4ce6ae1b071e0ce45e1760a099dc749aee005d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f612a5d1e47e8f8dfccc9e66d31193a16d9304a66b56f4145525947a781f72b4"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-quickcheck-0.1.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "9eecc7cba1f689c7ab5f82f4d1132150e39dd9125195ace092896069c6cedc02"
+    sha256 cellar: :any_skip_relocation, ventura:      "83a0dedce7d2b7cfbac2e7cb8f6a48e24788c8d5ce0e4ce1d3b7d9324daa95ce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f79417032fdc744dd1edbd188bd967fa4d0f7eee025a1838402c991d49e7900f"
   end
 
   depends_on "guile"
