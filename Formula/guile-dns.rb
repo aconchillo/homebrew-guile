@@ -3,6 +3,7 @@ class GuileDns < Formula
   homepage "https://git.lysator.liu.se/hugo/guile-dns"
   url "https://git.lysator.liu.se/hugo/guile-dns/-/archive/0.1/guile-dns-0.1.tar.gz"
   sha256 "3cdf6716889fb50d9e963ceec22c151290ff81ddecf089fba1f009540b3abb53"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dns-0.1"
