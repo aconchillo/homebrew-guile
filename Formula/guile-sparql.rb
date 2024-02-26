@@ -3,6 +3,7 @@ class GuileSparql < Formula
   homepage "https://github.com/roelj/guile-sparql"
   url "https://github.com/roelj/guile-sparql/releases/download/0.0.8/guile-sparql-0.0.8.tar.gz"
   sha256 "96daf40b48bef9a69e8fe05a07b7d97dd05f13b3b717835a06f5bae4c449c4c9"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sparql-0.0.8"
