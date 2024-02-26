@@ -6,8 +6,10 @@ class GuilePictureLanguage < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-picture-language-0.0.1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "475468dd8c4e8def0a152a6793102034a6244f04ce951db61d2f6ff30c90fb90"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-picture-language-0.0.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "2c3d03c86d82c80d8f7d50b22edee67899524ab3822a9c36b78e0faf976dd6b7"
+    sha256 cellar: :any_skip_relocation, ventura:      "59e5745fbe546b91e19601a7d790fc0cc8e155ea7e945d4a30a16b1604c30bdc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "cf8d4e1a01713fe62d38650bc0ded90f079755a44730497fcaad007a6967b6bb"
   end
 
   depends_on "autoconf" => :build
