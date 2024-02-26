@@ -1,8 +1,9 @@
 class GuileCoap < Formula
   desc "CoAP module for Guile"
   homepage "https://codeberg.org/eris/guile-coap"
-  url "https://codeberg.org/eris/guile-coap/archive/refs/tags/v0.1.0.tar.gz"
+  url "https://codeberg.org/eris/guile-coap/archive/v0.1.0.tar.gz"
   sha256 "6ff9f82d43bf8ccb830331e4347b1a9864163cef381d0cd0f79df5a910d75274"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.1.0"
