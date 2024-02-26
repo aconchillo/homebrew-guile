@@ -3,6 +3,7 @@ class GuileMastodon < Formula
   homepage "https://framagit.org/prouby/guile-mastodon"
   url "https://framagit.org/prouby/guile-mastodon/-/archive/v0.0.2/guile-mastodon-v0.0.2.tar.gz"
   sha256 "9b65a202ea9e09f1f8c9c0efd3130545c28a533c12ece1f2def68b8c1fbae4c7"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mastodon-0.0.2"
