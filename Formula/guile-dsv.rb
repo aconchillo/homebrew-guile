@@ -3,6 +3,7 @@ class GuileDsv < Formula
   homepage "https://github.com/artyom-poptsov/guile-dsv"
   url "https://github.com/artyom-poptsov/guile-dsv/archive/refs/tags/v0.7.1.tar.gz"
   sha256 "bfa9078f8abecd5662e7b4dc60fc031d297b69dc7cc50d3c61faf59b05aaac09"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.7.1"
