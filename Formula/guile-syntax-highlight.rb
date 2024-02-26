@@ -1,9 +1,9 @@
 class GuileSyntaxHighlight < Formula
   desc "General-purpose syntax highlighting library for GNU Guile"
   homepage "https://dthompson.us/projects/guile-syntax-highlight.html"
-  url "https://files.dthompson.us/guile-syntax-highlight/guile-syntax-highlight-0.2.0.tar.gz"
+  url "https://files.dthompson.us/releases/guile-syntax-highlight/guile-syntax-highlight-0.2.0.tar.gz"
   sha256 "695a8c000fa61146f53c4a18030c8a26aef0e7841e0fe43c0d1d1a4341f89660"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-syntax-highlight-0.2.0_1"
