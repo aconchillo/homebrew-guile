@@ -6,9 +6,10 @@ class GuileCoap < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.1.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "1c78e4dc9cdb58b2bee6e0852be588a23037b5db275a869ec52150c71ce8ebf9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a6fc4984c62219d8c1d6812f4046ca5e0ca0d10cf6a6ac6f6e9bd60569065723"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.1.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "3dd3efe36f4a08b3cbc2cefa82fa9349bed04ba594584f7926ca5974cf44b745"
+    sha256 cellar: :any_skip_relocation, ventura:      "90c94956048f36637b015aa9dcdc0484bc9a5d44d61fb3df8c2fbd0f92660e0f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3604708f3e3a3cd1d275353e0b18f7604b1fe07283a49c90c720358a1a15b77a"
   end
 
   depends_on "autoconf" => :build
