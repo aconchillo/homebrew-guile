@@ -3,6 +3,7 @@ class GuileXmlrpc < Formula
   homepage "https://github.com/aconchillo/guile-xmlrpc"
   url "https://download.savannah.gnu.org/releases/guile-xmlrpc/guile-xmlrpc-0.4.0.tar.gz"
   sha256 "357755571b85a1e07d1caafdc63ad1c186913ec9ad94b44631df37c8abfc91ac"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-xmlrpc-0.4.0"
