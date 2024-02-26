@@ -3,6 +3,7 @@ class GuileNcurses < Formula
   homepage "https://www.gnu.org/software/guile-ncurses/"
   url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.1.tar.gz"
   sha256 "ee89e8ceafcab9dd0ef3fc1acc9b10f4d21ba4b256d329d842d6183e63f8d733"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ncurses-3.1"
