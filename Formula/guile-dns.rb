@@ -6,9 +6,10 @@ class GuileDns < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dns-0.1"
-    sha256 cellar: :any_skip_relocation, monterey:     "39c11e34c4310292b09e9ac725e05a8b0706b7e300bd5eedf35c2092aefa6b9e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f4de778d88677ae39c49613de359ebf32a954ea86ac5dad05201f43537c49856"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dns-0.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "5673de8926e594e45f72e6059b899c7000a42a4457ef8ba9f6d52711c772dd80"
+    sha256 cellar: :any_skip_relocation, ventura:      "4b6fd59d64146691910ea189c502834451b73177fc8edab81bf2ca672acd2650"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d7a96d3b6a923e3ea06f90eacb0b54fd8766faf3952930a90e1bd4314659c030"
   end
 
   # coreutils because native `install` not working great
