@@ -3,6 +3,7 @@ class GuilePictureLanguage < Formula
   homepage "https://elephly.net/guile-picture-language/"
   url "https://git.elephly.net/software/guile-picture-language.git", revision: "a1322bf11945465241ca5b742a70893f24156d12"
   version "0.0.1"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-picture-language-0.0.1"
