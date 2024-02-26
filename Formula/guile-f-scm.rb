@@ -5,6 +5,13 @@ class GuileFScm < Formula
   sha256 "c4c2d4c395b7a54344c7fce3b74a7158b9cf812c4ae1a108c62761c34b503f3e"
   revision 1
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-f-scm-0.2.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "62726cfcb17ecd2851d5876a06a079ec8c4dff58b74a80c0c25d0fc17c269065"
+    sha256 cellar: :any_skip_relocation, ventura:      "27a6eda60aff6b04efed79d8fa88cc07289afd1a63bd57170ce503f8a88f6f10"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c0baec856add112117b8d8444ca5c63477ef0b84fdf86cbeac568e77db3292a0"
+  end
+
   depends_on "guile"
 
   def install
