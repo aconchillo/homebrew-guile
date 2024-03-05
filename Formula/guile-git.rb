@@ -1,8 +1,8 @@
 class GuileGit < Formula
   desc "GNU Guile library providing bindings to libgit2"
   homepage "https://gitlab.com/guile-git/guile-git"
-  url "https://gitlab.com/guile-git/guile-git/uploads/6450f3991aa524484038cdcea3fb248d/guile-git-0.5.2.tar.gz"
-  sha256 "949755a211ad6e905ecdebe66ca35bfaab638d985b9fadc928ad2538d8f5cc95"
+  url "https://gitlab.com/guile-git/guile-git/-/archive/v0.6.0/guile-git-v0.6.0.tar.gz"
+  sha256 "aea0820529711450a46e36909ccd999c83bff563dbf4875bbb422fd60874bd7f"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.5.2_2"
@@ -10,6 +10,8 @@ class GuileGit < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "263d075ede376a0f3438acac685979d67fcd0a2b02e30e213a2bc314ada26374"
   end
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
@@ -24,6 +26,7 @@ class GuileGit < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
+    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
