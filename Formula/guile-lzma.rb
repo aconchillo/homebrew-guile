@@ -3,6 +3,7 @@ class GuileLzma < Formula
   homepage "https://ngyro.com/software/guile-lzma.html"
   url "https://files.ngyro.com/guile-lzma/guile-lzma-0.1.1.tar.gz"
   sha256 "2b866896d672ed4d39008f4b5336750d7897560a06678365f5c5a72bd2fcce5e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1"
