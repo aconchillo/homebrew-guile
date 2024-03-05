@@ -6,8 +6,10 @@ class GuileLzma < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "784de7f25a28ef47f3647d141fb6c6ba66617aec3ac24053f65770b1ef3dfe2c"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e11f61a86454dbe7bc70948028e4956d2bc461450efabdd0c9eedf47f6e06dcf"
+    sha256 cellar: :any_skip_relocation, ventura:      "99d5da21b4bc8c8484d5793be639d94413592f7eeda0361427c0e3b308d69002"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "34d48462162654f4318b478fbe7495329dfd5fe973b319ee636400e4717bd91e"
   end
 
   depends_on "autoconf" => :build
