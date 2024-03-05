@@ -7,8 +7,10 @@ class GGolf < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-rc-2_1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a9814a07bdd1d407ef1dfa68e1f3d9c6d8616edd99237bbff77e375b24699c8"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0-rc-2_2"
+    sha256 cellar: :any,                 arm64_sonoma: "a626711f8e9974b84afdaf76c6b8249cb5fc13dd6717a91bb025e645c40b4cb1"
+    sha256 cellar: :any,                 ventura:      "7fc8d6677354b4a2279282f7805591d437c864cf5e3078816bd2ff4eb2a5a65c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1a88b0dc39833c7ec23dc013c9a5ffb1e3b4fe7da8573bc7befc91c3de872a47"
   end
 
   depends_on "autoconf" => :build
