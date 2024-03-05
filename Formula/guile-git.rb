@@ -3,6 +3,7 @@ class GuileGit < Formula
   homepage "https://gitlab.com/guile-git/guile-git"
   url "https://gitlab.com/guile-git/guile-git/-/archive/v0.6.0/guile-git-v0.6.0.tar.gz"
   sha256 "aea0820529711450a46e36909ccd999c83bff563dbf4875bbb422fd60874bd7f"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.6.0"
@@ -30,6 +31,11 @@ class GuileGit < Formula
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
+  end
+
+  def post_install
+    # Touch configuration.go to avoid Guile recompilation.
+    touch "#{lib}/guile/3.0/site-ccache/git/configuration.go"
   end
 
   def caveats
