@@ -6,9 +6,10 @@ class GuileAspell < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-aspell-0.5.0_1"
-    sha256 cellar: :any_skip_relocation, monterey:     "b36dda8bbaf61f53a7976dca15f195d62631c6aa82880b40e81045af0df1a58a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4cc257afc154e3192599ec15ebbbf711a93a0483d22c09f0c6f3cb464dc14d7e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-aspell-0.5.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "953348758f05c3b7255e6b465d701607657226ef25deeee2db64d26ef6d85993"
+    sha256 cellar: :any_skip_relocation, ventura:      "53570f1cac2fc5c05c95e6d1eda6d4ed0aa56d52b7d2a3a972af1681a68672c3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1b12c693c71ff890751983c74bc3bc54e0beb5a650b20595abe344429be8a0ac"
   end
 
   depends_on "pkg-config" => :build
