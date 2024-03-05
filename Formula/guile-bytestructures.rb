@@ -6,9 +6,10 @@ class GuileBytestructures < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bytestructures-2.0.1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "97153acc9836c45d7192b4c5d2fe8e567de11af4b1db84f9cd2280ec77b17021"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "cdc1a63a99a1ffc7d392715354f2798017f4ea13fc13b17861628a6e846490fb"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bytestructures-2.0.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "96411303a6c4b3ecfb5081f20ba14386561c249ade6569d230ff8bda24d4bfd6"
+    sha256 cellar: :any_skip_relocation, ventura:      "a74d626f8f460b73b1c97563a6a4997e6f9d8c2f52689ad8e179feb767526292"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2e629ba1b7b1acc17324f7407c5699e7a238ba6e246c7d80812b3336bf16bec6"
   end
 
   depends_on "autoconf" => :build
