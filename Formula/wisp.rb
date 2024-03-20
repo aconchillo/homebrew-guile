@@ -1,9 +1,8 @@
 class Wisp < Formula
   desc "OAuth module for Guile"
   homepage "https://www.draketo.de/software/wisp"
-  url "https://www.draketo.de/software/wisp-1.0.11.tar.gz"
-  sha256 "a643ef884f3cd3078c5e50f36de4c425ee7a1ca4fac73096769ebc287cb3dedd"
-  revision 2
+  url "https://www.draketo.de/software/wisp-1.0.12.tar.gz"
+  sha256 "1abed812c960b2f9f383b151bbd9758e6e24df56e181f00b9e04fd7b7d7c9a2e"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.11_2"
@@ -11,7 +10,7 @@ class Wisp < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "python@3.11" => :build
+  depends_on "python@3.12" => :build
   depends_on "guile"
 
   def install
