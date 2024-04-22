@@ -1,8 +1,8 @@
 class GuileHoot < Formula
   desc "Full-featured WebAssembly (WASM) toolkit in Scheme"
   homepage "https://spritely.institute/hoot/"
-  url "https://spritely.institute/files/releases/guile-hoot/guile-hoot-0.3.0.tar.gz"
-  sha256 "c12aa415c17d3d529a59065cefd275917596fb518f03d96fe38fa06efbb9ecfd"
+  url "https://spritely.institute/files/releases/guile-hoot/guile-hoot-0.4.0.tar.gz"
+  sha256 "a28ffcee8e02ae2733007507849df53a23dfbaeffcb9f4249aa8c1dfd24a9256"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.3.0"
