@@ -1,8 +1,8 @@
 class GuilePng < Formula
   desc "Portable Network Graphics library for GNU Guile"
   homepage "https://github.com/artyom-poptsov/guile-png"
-  url "https://github.com/artyom-poptsov/guile-png/archive/refs/tags/v0.7.2.tar.gz"
-  sha256 "7f68028e37931a60a37286e3ba0dba221dea521d71975a5cb6d2f51a53e188ba"
+  url "https://github.com/artyom-poptsov/guile-png/archive/refs/tags/v0.7.3.tar.gz"
+  sha256 "21f0802aa85cbec76c0f60f18617925626224386068ab40427da82e03fae5d53"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-png-0.7.2"
