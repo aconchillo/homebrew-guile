@@ -1,9 +1,8 @@
 class GuileLib < Formula
   desc "Accumulation place for pure-scheme Guile modules"
   homepage "https://www.nongnu.org/guile-lib/"
-  url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.7.tar.gz"
-  sha256 "e4ef3b845f121882c7c0cf04f81a1cb8fd360c6f64b56b868de5546214f904de"
-  revision 3
+  url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.8.tar.gz"
+  sha256 "64e902ee0cbb2cee1efb8168c3bf9ed49e0b32a8a23db863e83bf14817d767d9"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.7_3"
