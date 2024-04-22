@@ -1,8 +1,8 @@
 class Nyacc < Formula
   desc "Guile modules for generating parsers and lexical analyzers"
   homepage "https://www.nongnu.org/nyacc/"
-  url "https://download.savannah.gnu.org/releases/nyacc/nyacc-1.09.3.tar.gz"
-  sha256 "068f31458e71ac7fc462f98ea134160002635c03df6ef1995b0b3eacc09e2a2b"
+  url "https://download.savannah.gnu.org/releases/nyacc/nyacc-1.09.4.tar.gz"
+  sha256 "ee6546d4e918fc6b59b716abbe42c14a0cf454f5a82bf644671cced5b9d70141"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/nyacc-1.09.3"
