@@ -1,7 +1,7 @@
 class GuileNext < Formula
   desc "GNU Ubiquitous Intelligent Language for Extensions"
   homepage "https://www.gnu.org/software/guile/"
-  url "https://git.savannah.gnu.org/git/guile.git", revision: "d8df317bafcdd9fcfebb636433c4871f2fab28b2"
+  url "https://git.savannah.gnu.org/git/guile.git", revision: "e2fad20257e0c5adf59c30fedc736206a9253042"
   version "3.0.9"
   license "LGPL-3.0-or-later"
   revision 4
