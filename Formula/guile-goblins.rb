@@ -5,10 +5,10 @@ class GuileGoblins < Formula
   sha256 "79f9b23ad3c0cf564f74c0ae55a1802d1e9ed2583b81c8edf350543015542ae8"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-goblins-0.12.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "245cf95125f7133e7610f7bf03fba23c05e7b80e63c9ea36a2bf8381b7f31868"
-    sha256 cellar: :any_skip_relocation, ventura:      "73974db48a3f6caab272479f43fa1b3f20f466fe5ab62024034b9ca980f287bb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b9b7748bc15d97cad4bd52002f3f141d57e611a6edc6d3e9725fd4b946efa94e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-goblins-0.13.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "ae0929c9e87df61f6a1bf2ecdfcde0b8e3d5239f358d9aa92dcf0ca3a9f109ca"
+    sha256 cellar: :any_skip_relocation, ventura:      "85c1469c57212a7a9aaffa59014ca2800b1eb9083b8db8694c15fe3312ed865a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff022eed5edfcedb9838f8723fb271a0729ab4d2fb311a061d70949fc6ca2989"
   end
 
   depends_on "texinfo" => :build
