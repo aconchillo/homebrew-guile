@@ -6,10 +6,10 @@ class GuileHoot < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.4.1"
-    sha256 arm64_sonoma: "c962fa34a6bdbd1a9eb0060cc53b7da6b91cdef39a2eb4f109a8d9bb88151a21"
-    sha256 ventura:      "a7b3ba4582304be3f06bf6918d74794217da3412a3ed35d8df9d84882cc0db32"
-    sha256 x86_64_linux: "aaa2784be89d6760a913e376ef3ca4948ea9543e4416c47e9ad24cc6358bb56f"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.4.1_1"
+    sha256 arm64_sonoma: "5998de869781812e2cd5fed380c2d0d1282b425e910f042e358a47fcd4536354"
+    sha256 ventura:      "8b167e21231704a5a5f60d791b10f8194a72a7ffe89d11b79c473d0109733334"
+    sha256 x86_64_linux: "b8f658c15e64e7c8390715440d486628cb223e62f08bee7eb3b26f54f1fe2809"
   end
 
   depends_on "texinfo" => :build
