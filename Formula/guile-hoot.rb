@@ -3,6 +3,7 @@ class GuileHoot < Formula
   homepage "https://spritely.institute/hoot/"
   url "https://spritely.institute/files/releases/guile-hoot/guile-hoot-0.4.1.tar.gz"
   sha256 "1664997dd69cf39965e3d5819cf658399c791b7880a096200a57216468137721"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.4.1"
@@ -12,7 +13,7 @@ class GuileHoot < Formula
   end
 
   depends_on "texinfo" => :build
-  depends_on "guile-next"
+  depends_on "guile"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
