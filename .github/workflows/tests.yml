@@ -25,13 +25,13 @@ jobs:
           key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ runner.os }}-rubygems-
 
-      - run: brew test-bot --only-cleanup-before
+      - "run": brew test-bot --only-cleanup-before
 
-      - run: brew test-bot --only-setup
+      - "run": brew test-bot --only-setup
 
-      - run: brew test-bot --only-tap-syntax
+      - "run": brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae
+      - "run": brew test-bot --only-formulae
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
