@@ -1,10 +1,9 @@
 class GuileNext < Formula
   desc "GNU Ubiquitous Intelligent Language for Extensions"
   homepage "https://www.gnu.org/software/guile/"
-  url "https://git.savannah.gnu.org/git/guile.git", revision: "e2fad20257e0c5adf59c30fedc736206a9253042"
-  version "3.0.9"
+  url "https://git.savannah.gnu.org/git/guile.git", revision: "bce91cebedda016b479972655c680acc6706e539"
+  version "3.0.10"
   license "LGPL-3.0-or-later"
-  revision 4
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_4"
@@ -57,7 +56,7 @@ class GuileNext < Formula
     # of opt_prefix usage everywhere.
     inreplace lib/"pkgconfig/guile-3.0.pc" do |s|
       s.gsub! Formula["bdw-gc"].prefix.realpath, Formula["bdw-gc"].opt_prefix
-      s.gsub! Formula["libffi"].prefix.realpath, Formula["libffi"].opt_prefix if MacOS.version < :catalina
+      s.gsub! Formula["libffi"].prefix.realpath, Formula["libffi"].opt_prefix if !OS.mac? || MacOS.version < :catalina
     end
 
     (share/"gdb/auto-load").install Dir["#{lib}/*-gdb.scm"]
