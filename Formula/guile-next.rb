@@ -6,11 +6,10 @@ class GuileNext < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.9_4"
-    rebuild 1
-    sha256 arm64_sonoma: "ac7dbbe976f49449305f1e63e01344cf4264b99ad39497627502ce277507b4fb"
-    sha256 ventura:      "b19ec2fdc35fe4f919e5d47403cdbe54f3e65cd11a44595b9b78f513d7842c18"
-    sha256 x86_64_linux: "a09226d7d0d3bab237069ac08aad713168d3831d0442eb87da40e4579ed7d319"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-next-3.0.10"
+    sha256 arm64_sonoma: "10f8a56f94aeec98900969ae01e5646f004d8ba702a469df1d67441472400695"
+    sha256 ventura:      "f2563e9daf0c83bb53c051a9ab0b0c3e76f7b8666b97b57f9358908d9b05e3d3"
+    sha256 x86_64_linux: "db33f15a991af0849eb8ed2ed990329600bbedc899052d89268bb28d25ecc378"
   end
 
   depends_on "autoconf" => :build
