@@ -3,7 +3,7 @@ class GuileHoot < Formula
   homepage "https://spritely.institute/hoot/"
   url "https://spritely.institute/files/releases/guile-hoot/guile-hoot-0.4.1.tar.gz"
   sha256 "1664997dd69cf39965e3d5819cf658399c791b7880a096200a57216468137721"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hoot-0.4.1_1"
@@ -25,19 +25,6 @@ class GuileHoot < Formula
 
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
-  end
-
-  def caveats
-    <<~EOS
-      To use `guile-hoot` you need to unlink `guile` and then link `guile-next`:
-        brew unlink guile
-        brew link guile-next
-
-      Remember to add the following to your .bashrc or equivalent in order to use this module:
-        export GUILE_LOAD_PATH="#{HOMEBREW_PREFIX}/share/guile/site/3.0"
-        export GUILE_LOAD_COMPILED_PATH="#{HOMEBREW_PREFIX}/lib/guile/3.0/site-ccache"
-        export GUILE_SYSTEM_EXTENSIONS_PATH="#{HOMEBREW_PREFIX}/lib/guile/3.0/extensions"
-    EOS
   end
 
   test do
