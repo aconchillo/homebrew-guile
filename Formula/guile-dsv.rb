@@ -1,9 +1,8 @@
 class GuileDsv < Formula
   desc "Guile module for delimiter-separated values (DSV) data format"
   homepage "https://github.com/artyom-poptsov/guile-dsv"
-  url "https://github.com/artyom-poptsov/guile-dsv/archive/refs/tags/v0.7.1.tar.gz"
-  sha256 "bfa9078f8abecd5662e7b4dc60fc031d297b69dc7cc50d3c61faf59b05aaac09"
-  revision 1
+  url "https://github.com/artyom-poptsov/guile-dsv/archive/refs/tags/v0.7.2.tar.gz"
+  sha256 "49cc236d58b9bfb35c795e4a62b0a9cb337ff1880d1d52202ca757d8354d785e"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dsv-0.7.1_1"
