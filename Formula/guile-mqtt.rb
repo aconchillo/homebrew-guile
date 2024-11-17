@@ -4,6 +4,13 @@ class GuileMqtt < Formula
   url "https://github.com/mdjurfeldt/guile-mqtt/releases/download/v0.2.1/guile-mqtt-0.2.1.tar.gz"
   sha256 "faa7eb530f32218f2239b1152db83a6ce7e240d4792e4c369fda0732bdc94399"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mqtt-0.2.1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "41f3f2204aeb4340ee6dc5a1b73e1e73a391afeaac1e4f5e98b994e7c96588d4"
+    sha256 cellar: :any_skip_relocation, ventura:      "3c14629d1d45f632891d84b90a92a2241b5d148cd45e1197386d1c8fb27df745"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8fa7b97c5a12e400984d796745535fb8434fa20d138617a95263aff688cf2b0e"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "mosquitto"
