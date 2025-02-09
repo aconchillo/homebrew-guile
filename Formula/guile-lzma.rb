@@ -3,7 +3,7 @@ class GuileLzma < Formula
   homepage "https://ngyro.com/software/guile-lzma.html"
   url "https://files.ngyro.com/guile-lzma/guile-lzma-0.1.1.tar.gz"
   sha256 "2b866896d672ed4d39008f4b5336750d7897560a06678365f5c5a72bd2fcce5e"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1_1"
@@ -12,9 +12,6 @@ class GuileLzma < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "34d48462162654f4318b478fbe7495329dfd5fe973b319ee636400e4717bd91e"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
-  depends_on "pkg-config" => :build
   depends_on "guile"
   depends_on "guile-bytestructures"
   depends_on "xz"
