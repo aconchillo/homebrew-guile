@@ -4,6 +4,13 @@ class GuileBstructs < Formula
   url "https://files.dthompson.us/releases/guile-bstructs/guile-bstructs-0.1.0.tar.gz"
   sha256 "8b1fe3d8f47f07ed0e5cd0d78c5e4df1c49d67c67eb22a45db34c3efa33a0439"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bstructs-0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "361430bd6e9cbdee123d2289122d5f26b79fb214b7452d72bf20f7564c2ea2d1"
+    sha256 cellar: :any_skip_relocation, ventura:      "c7fb3d8e834d3404b2204a77a6b28cc985131e4c7d3655ae96661e636657d9ec"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7aaf5374a8f604fe08e240f6043209cc46502468218f674eec67d5a7491cc3d3"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
