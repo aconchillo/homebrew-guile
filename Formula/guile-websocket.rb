@@ -1,9 +1,8 @@
 class GuileWebsocket < Formula
   desc "Simple, functional, hackable static site generator"
   homepage "https://dthompson.us/projects/guile-websocket.html"
-  url "https://files.dthompson.us/guile-websocket/guile-websocket-0.1.tar.gz"
-  sha256 "2441d36470b6264331f124ca09ca754ffeedac77b801444cfbe6b18950e05074"
-  revision 2
+  url "https://files.dthompson.us/guile-websocket/guile-websocket-0.2.0.tar.gz"
+  sha256 "ee3c63f88e56a6ab46bbdf73af397dd9e219513872ebd0380ac2f35e7a787690"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.1_2"
@@ -12,9 +11,20 @@ class GuileWebsocket < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "47751ffc34750e8cb8a305dbaa15e9efd56073b38698121619b4dbb8584c2dc4"
   end
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "pkg-config" => :build
   depends_on "guile"
+  depends_on "guile-gnutls"
 
   def install
+    ENV["GUILE_AUTO_COMPILE"] = "0"
+
+    # We need this so we can find other modules.
+    ENV["GUILE_LOAD_PATH"] = HOMEBREW_PREFIX/"share/guile/site/3.0"
+    ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
+    ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
+
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
