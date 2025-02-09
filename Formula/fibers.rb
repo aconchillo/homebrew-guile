@@ -3,7 +3,7 @@ class Fibers < Formula
   homepage "https://github.com/wingo/fibers"
   url "https://github.com/wingo/fibers/releases/download/v1.3.1/fibers-1.3.1.tar.gz"
   sha256 "a5e1a9c49c0efe7ac6f355662041430d4b64e59baa538d2b8fb5ef7528d81dbf"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.3.1_1"
@@ -12,9 +12,6 @@ class Fibers < Formula
     sha256 x86_64_linux: "4eb749ecfda5083a14f92ef8b2233889451f9c9fe6f60a9b3a03202ae15cfc20"
   end
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
-  depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "libevent"
 
