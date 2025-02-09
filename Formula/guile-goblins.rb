@@ -1,8 +1,8 @@
 class GuileGoblins < Formula
   desc "Distributed object programming environment"
   homepage "https://gitlab.com/spritely/guile-goblins"
-  url "https://spritely.institute/files/releases/guile-goblins/guile-goblins-0.14.0.tar.gz"
-  sha256 "8d1fa95a4ecd5ef385d02bc3c1ad6b620d32bb992dcaae38d2ac91822bea1ebf"
+  url "https://spritely.institute/files/releases/guile-goblins/guile-goblins-0.15.0.tar.gz"
+  sha256 "1f89819f415edf627df69c9b7daee331fc4106f9937df7db01c721ba3b82ddb7"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-goblins-0.14.0"
@@ -16,6 +16,7 @@ class GuileGoblins < Formula
   depends_on "guile"
   depends_on "guile-gcrypt"
   depends_on "guile-gnutls"
+  depends_on "guile-websocket"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
