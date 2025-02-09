@@ -5,10 +5,10 @@ class GuileWebsocket < Formula
   sha256 "ee3c63f88e56a6ab46bbdf73af397dd9e219513872ebd0380ac2f35e7a787690"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.1_2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "28d5cc28b0eb270f2820308af7b41ca8e9e3f1233951093bc850d359335e9a02"
-    sha256 cellar: :any_skip_relocation, ventura:      "ee2ab43fffd0ff3d479f4c0396b5ffacb9c611f39ad0220b3a6f5d176e904fad"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "47751ffc34750e8cb8a305dbaa15e9efd56073b38698121619b4dbb8584c2dc4"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "23295a2fa658987331d0ea9559ed7868a566bdba7d6e26738c7b3b71a7c8e86d"
+    sha256 cellar: :any_skip_relocation, ventura:      "4655eb2916710efaf2525ba256c0895ef0d1b811e352fcd26c2e50fb0c2baa4c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b5d8d6e665c6633e6a531559183b755f629da17cbe9e363a67746b1ccacba9f3"
   end
 
   depends_on "autoconf" => :build
