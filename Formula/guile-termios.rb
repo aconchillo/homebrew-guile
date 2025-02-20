@@ -3,6 +3,7 @@ class GuileTermios < Formula
   homepage "https://github.com/ft/guile-termios"
   url "https://github.com/ft/guile-termios/archive/refs/tags/v0.6.4.tar.gz"
   sha256 "4e6751788ed8cb2ec8426da32e6bcfe68cc9f4fe34ce8a12d93ca289e33bbe1e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-termios-0.6.4"
@@ -13,7 +14,7 @@ class GuileTermios < Formula
   depends_on "guile"
 
   def install
-    system "make", "-j1", "DESTDIR=#{prefix}", "PREFIX=/", "install"
+    system "make", "-j1", "DESTDIR=#{prefix}", "PREFIX=", "install"
   end
 
   def caveats
