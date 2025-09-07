@@ -1,7 +1,7 @@
 class GGolf < Formula
   desc "Guile Object Library for GNOME"
   homepage "https://www.gnu.org/software/g-golf/"
-  url "https://ftp.gnu.org/gnu/g-golf/g-golf-0.8.0.tar.gz"
+  url "https://ftpmirror.gnu.org/gnu/gnu/g-golf/g-golf-0.8.0.tar.gz"
   sha256 "a89ac2f2f45026e073f9e165b427fc101bfb2ed10837bcb0641bca2089735d85"
 
   bottle do

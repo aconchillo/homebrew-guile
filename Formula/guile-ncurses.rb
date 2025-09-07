@@ -1,7 +1,7 @@
 class GuileNcurses < Formula
   desc "Guile library for creating text user interfaces with ncurses"
   homepage "https://www.gnu.org/software/guile-ncurses/"
-  url "https://ftp.gnu.org/gnu/guile-ncurses/guile-ncurses-3.1.tar.gz"
+  url "https://ftpmirror.gnu.org/gnu/gnu/guile-ncurses/guile-ncurses-3.1.tar.gz"
   sha256 "ee89e8ceafcab9dd0ef3fc1acc9b10f4d21ba4b256d329d842d6183e63f8d733"
 
   bottle do
