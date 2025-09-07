@@ -5,10 +5,11 @@ class GuileGcrypt < Formula
   sha256 "92dd5d2253ecb96a30483850528a76f6e1d7e53e5163670a7d9126f78fe4cfbe"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.4.0_2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "38a43821f491e0c052920b0f707fa48a13667c82d7d9e401e2a94bec409889fb"
-    sha256 cellar: :any_skip_relocation, ventura:      "0b534ec8557ba0c7f5b21f9a1b1c1d3e92f87243e4ba77d87df205d15f805dc9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4869571b7e1d3d6b0250f193941cc96da3c45f64776a7f6cf3471c1212de2bdb"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gcrypt-0.5.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b533ddfc0072e3d6a578ed6db6c718b01a61a670619d5b46d6886cdfbefc29fb"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "637dda3f90bb2245b0381801c3aa5451b97883f8875ff2a1f192d5dcd8a03d8f"
+    sha256 cellar: :any_skip_relocation, ventura:       "712b5641a3476c4bfb041dd2619cdeb5c44dc2764aeacc20a12f0c5a70489f84"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "acba33c7293df5feba48d136338821a4278b40d3f365bf9a004fe3f5ad353315"
   end
 
   depends_on "autoconf" => :build
