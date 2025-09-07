@@ -3,6 +3,7 @@ class GuileGoblins < Formula
   homepage "https://gitlab.com/spritely/guile-goblins"
   url "https://files.spritely.institute/releases/guile-goblins/guile-goblins-0.16.1.tar.gz"
   sha256 "30bb8271aaf0aa046dc6c30e341b2f7efacbcf7d0a17aced2d60328b526ece81"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-goblins-0.16.1"
