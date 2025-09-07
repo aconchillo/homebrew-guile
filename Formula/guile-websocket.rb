@@ -3,7 +3,7 @@ class GuileWebsocket < Formula
   homepage "https://dthompson.us/projects/guile-websocket.html"
   url "https://files.dthompson.us/guile-websocket/guile-websocket-0.2.0.tar.gz"
   sha256 "ee3c63f88e56a6ab46bbdf73af397dd9e219513872ebd0380ac2f35e7a787690"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.2.0_1"
