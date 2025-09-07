@@ -6,10 +6,11 @@ class GuileWebsocket < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.2.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "b35d0e60d58a52ac10c3762ad5568f17ffd1e35a21cf026599674a5318932138"
-    sha256 cellar: :any_skip_relocation, ventura:      "19ca2ae20365728f371c5b30130a32d057f623f8146ac6933c99884db30428e0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ef877bc13624d1abd8ed68f95cc6d4c575462f7e973afc8234d16a4dd238e011"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.2.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "83e73d1facd7ebf638550d8411c35e30f41e4cfb8b540886959aaa30da5ddd61"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "2373c192b0ea09a0eff4bddb51d4e9dee584225bde42de5abee2c2b74e2bf1e4"
+    sha256 cellar: :any_skip_relocation, ventura:       "d595ecae9cec87b2d7d4f9d7810ce980fcc193a3888424ab7747a8325a020c64"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a8984e19dcf21baa2a4956e8dc9b003ec653c4ce60d795640cbcde9c3abd4d1e"
   end
 
   depends_on "guile"
