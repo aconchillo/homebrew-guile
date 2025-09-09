@@ -1,7 +1,7 @@
 class GuileOpengl < Formula
   desc "Library providing access to the OpenGL graphics API from Guile"
   homepage "https://www.gnu.org/software/guile-opengl/"
-  url "https://ftpmirror.gnu.org/gnu/gnu/guile-opengl/guile-opengl-0.2.0.tar.gz"
+  url "https://ftpmirror.gnu.org/guile-opengl/guile-opengl-0.2.0.tar.gz"
   sha256 "b8f087ec28823d099fb842c3ba94104bb04fa9e708166487a471989e1c176c65"
   revision 1
 
