@@ -1,8 +1,8 @@
 class Fibers < Formula
   desc "Concurrency library for Guile"
   homepage "https://codeberg.org/fibers/fibers"
-  url "https://codeberg.org/fibers/fibers/archive/v1.4.0.tar.gz"
-  sha256 "2b9fa0bf3009111678a82343b8847aa0eed72dd9d1516fece7bc8274893a40c4"
+  url "https://codeberg.org/fibers/fibers/archive/v1.4.1.tar.gz"
+  sha256 "f08155fe10debe80f07e38f3008e86c3788b074641388b0142376a54fd38ae6d"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.4.0"
