@@ -28,9 +28,9 @@ class GuileCairo < Formula
     system "make", "install"
   end
 
-  def post_install
+  post_install_steps do
     # Touch config.go to avoid Guile recompilation.
-    touch "#{lib}/guile/3.0/site-ccache/cairo/config.go"
+    touch "{{lib}}/guile/3.0/site-ccache/cairo/config.go"
   end
 
   def caveats

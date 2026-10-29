@@ -45,9 +45,9 @@ class Chickadee < Formula
     system "make", "install"
   end
 
-  def post_install
+  post_install_steps do
     # Touch config.go to avoid Guile recompilation.
-    touch "#{lib}/guile/3.0/site-ccache/chickadee/config.go"
+    touch "{{lib}}/guile/3.0/site-ccache/chickadee/config.go"
   end
 
   def caveats

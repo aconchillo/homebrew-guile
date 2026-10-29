@@ -33,9 +33,9 @@ class GuileGit < Formula
     system "make", "install"
   end
 
-  def post_install
+  post_install_steps do
     # Touch configuration.go to avoid Guile recompilation.
-    touch "#{lib}/guile/3.0/site-ccache/git/configuration.go"
+    touch "{{lib}}/guile/3.0/site-ccache/git/configuration.go"
   end
 
   def caveats

@@ -25,9 +25,9 @@ class GuileLzlib < Formula
     system "make", "install"
   end
 
-  def post_install
+  post_install_steps do
     # Touch config.go to avoid Guile recompilation.
-    touch "#{lib}/guile/3.0/site-ccache/lzlib/config.go"
+    touch "{{lib}}/guile/3.0/site-ccache/lzlib/config.go"
   end
 
   def caveats
