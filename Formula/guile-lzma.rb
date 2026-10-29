@@ -9,7 +9,6 @@ class GuileLzma < Formula
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzma-0.1.1_2"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "bdae623526507e91990f753679401e9b8f5bd066a9b9ca98e28c3dd8ddde992d"
     sha256 cellar: :any_skip_relocation, ventura:      "db47f0c365a0c40c122a5178730b46c429f3116386643df52f0cadefb46a6657"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7b42ecac34cc1983480b11280fd63bc8497a2de9cfe1d9b02681af571fed658b"
   end
 
   depends_on "guile"
