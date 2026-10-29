@@ -3,6 +3,7 @@ class GuileBstructs < Formula
   homepage "https://dthompson.us/projects/guile-bstructs.html"
   url "https://files.dthompson.us/releases/guile-bstructs/guile-bstructs-0.1.0.tar.gz"
   sha256 "8b1fe3d8f47f07ed0e5cd0d78c5e4df1c49d67c67eb22a45db34c3efa33a0439"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-bstructs-0.1.0"
