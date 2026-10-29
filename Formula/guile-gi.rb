@@ -21,6 +21,7 @@ class GuileGi < Formula
 
   on_macos do
     depends_on "bdw-gc"
+    depends_on "gettext"
   end
 
   def install
