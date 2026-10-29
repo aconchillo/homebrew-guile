@@ -17,6 +17,7 @@ class GuileNcurses < Formula
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
+  depends_on "libunistring"
   depends_on "ncurses"
 
   on_macos do
