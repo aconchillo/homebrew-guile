@@ -25,13 +25,17 @@ class GuileNcurses < Formula
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
-    # ncurses 6.5 makes the menu and form structs opaque by default.
-    ENV.append_to_cflags "-DNCURSES_OPAQUE_MENU=0 -DNCURSES_OPAQUE_FORM=0"
 
     inreplace buildpath/"configure.ac",
               "guileextensiondir=\"$libdir/guile/$guile_effective_version\"",
               "guileextensiondir=\"$libdir/guile/$guile_effective_version/extensions\""
     inreplace "src/ncurses/extra_type.c", "#include <string.h>\n", "#include <string.h>\n#include <unistd.h>\n"
+    # Newer ncurses makes ITEM opaque in curses.h, but menu_type.c unlinks
+    # menu items directly, so expose the struct before including menu.h.
+    inreplace "src/ncurses/menu_type.c", %r{#include <((?:ncursesw?/)?)menu\.h>},
+              "#include <\\1curses.h>\n" \
+              "#undef NCURSES_OPAQUE_MENU\n#define NCURSES_OPAQUE_MENU 0\n" \
+              "#include <\\1menu.h>"
 
     system "autoreconf", "-vif"
     system "./configure",
