@@ -29,7 +29,7 @@ class GuileCurl < Formula
     # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
     ENV.append_path "ACLOCAL_PATH", Formula["gettext"].pkgshare/"m4"
 
-    system "./bootstrap"
+    system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
