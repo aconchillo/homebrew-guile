@@ -17,6 +17,10 @@ class GuilePlotutils < Formula
   depends_on "guile"
   depends_on "plotutils"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
