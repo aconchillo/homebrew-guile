@@ -3,6 +3,7 @@ class Ploticus < Formula
   homepage "https://ploticus.sourceforge.net/"
   url "https://downloads.sourceforge.net/project/ploticus/ploticus/2.42/ploticus242_src.tar.gz"
   sha256 "3f29e4b9f405203a93efec900e5816d9e1b4381821881e241c08cab7dd66e0b0"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/ploticus-2.42"
@@ -12,6 +13,10 @@ class Ploticus < Formula
   end
 
   depends_on "libpng"
+
+  on_linux do
+    depends_on "zlib-ng-compat"
+  end
 
   def install
     # Use alternate name because "pl" conflicts with macOS "pl" utility

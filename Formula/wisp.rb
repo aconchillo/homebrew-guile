@@ -3,6 +3,7 @@ class Wisp < Formula
   homepage "https://www.draketo.de/software/wisp"
   url "https://www.draketo.de/software/wisp-1.0.12.tar.gz"
   sha256 "1abed812c960b2f9f383b151bbd9758e6e24df56e181f00b9e04fd7b7d7c9a2e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/wisp-1.0.12"
