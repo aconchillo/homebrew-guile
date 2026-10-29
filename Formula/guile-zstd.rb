@@ -1,7 +1,7 @@
 class GuileZstd < Formula
   desc "GNU Guile bindings to the zstd compression library"
-  homepage "https://notabug.org/guile-zstd/guile-zstd"
-  url "https://notabug.org/guile-zstd/guile-zstd/archive/v0.1.1.tar.gz"
+  homepage "https://codeberg.org/guile-compression/guile-zstd"
+  url "https://codeberg.org/guile-compression/guile-zstd/archive/v0.1.1.tar.gz"
   sha256 "6e57ef524f20cab79ca5fd62366c5435f71cf652f582fc1e7d62585e90d499c5"
   revision 2
 
