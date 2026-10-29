@@ -1,7 +1,7 @@
 class GuileGcrypt < Formula
   desc "Guile 3.0/2.x bindings to the GNU Libgcrypt cryptography library"
-  homepage "https://notabug.org/cwebber/guile-gcrypt"
-  url "https://notabug.org/cwebber/guile-gcrypt/archive/v0.5.0.tar.gz"
+  homepage "https://codeberg.org/guile-gcrypt/guile-gcrypt"
+  url "https://codeberg.org/guile-gcrypt/guile-gcrypt/archive/v0.5.0.tar.gz"
   sha256 "92dd5d2253ecb96a30483850528a76f6e1d7e53e5163670a7d9126f78fe4cfbe"
   revision 1
 
