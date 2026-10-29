@@ -1,7 +1,7 @@
 class GuileLzlib < Formula
   desc "GNU Guile bindings to the lzlib compression library"
-  homepage "https://notabug.org/guile-lzlib/guile-lzlib"
-  url "https://notabug.org/guile-lzlib/guile-lzlib/archive/0.0.2.tar.gz"
+  homepage "https://codeberg.org/guile-compression/guile-lzlib"
+  url "https://codeberg.org/guile-compression/guile-lzlib/archive/0.0.2.tar.gz"
   sha256 "8623db77d447e7b9ffbfcbc288390e706a6b1a89b1171daed60874cfec7e4f87"
   revision 2
 
