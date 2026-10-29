@@ -20,6 +20,10 @@ class Fibers < Formula
   depends_on "guile"
   depends_on "libevent"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
     # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
