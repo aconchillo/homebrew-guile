@@ -19,13 +19,20 @@ class GuileGi < Formula
   depends_on "guile"
   depends_on "libffi"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
+    ENV.append_to_cflags "-Wno-error=incompatible-pointer-types"
 
     system "./configure",
            "--prefix=#{prefix}",
            "--with-gnu-filesystem-hierarchy"
-    system "make", "install"
+    # The test sources are copied from gobject-introspection, which no longer
+    # ships them, and they are not needed to build or install the library.
+    system "make", "install", "BUILT_SOURCES="
   end
 
   def caveats
