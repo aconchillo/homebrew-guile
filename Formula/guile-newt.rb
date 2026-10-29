@@ -3,6 +3,7 @@ class GuileNewt < Formula
   homepage "https://gitlab.com/mothacehe/guile-newt"
   url "https://gitlab.com/mothacehe/guile-newt/-/archive/0.0.3/guile-newt-0.0.3.tar.gz"
   sha256 "0a8381c23a7de31ce9fd9457fbff85d6e373f52ce72a7835b39250d9d0c370e8"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-newt-0.0.3"

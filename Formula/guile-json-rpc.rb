@@ -3,6 +3,7 @@ class GuileJsonRpc < Formula
   homepage "https://codeberg.org/rgherdt/scheme-json-rpc"
   url "https://codeberg.org/rgherdt/scheme-json-rpc/archive/0.2.11.tar.gz"
   sha256 "6a10390de15a9a991e7bc15d8766a5da7561428f25c2f33592d86b374ca242a1"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-json-rpc-0.2.11"

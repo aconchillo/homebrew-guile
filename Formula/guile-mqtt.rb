@@ -3,6 +3,7 @@ class GuileMqtt < Formula
   homepage "https://github.com/mdjurfeldt/guile-mqtt"
   url "https://github.com/mdjurfeldt/guile-mqtt/releases/download/v0.2.1/guile-mqtt-0.2.1.tar.gz"
   sha256 "faa7eb530f32218f2239b1152db83a6ce7e240d4792e4c369fda0732bdc94399"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mqtt-0.2.1"

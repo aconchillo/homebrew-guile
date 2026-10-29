@@ -3,7 +3,7 @@ class GuileFScm < Formula
   homepage "https://git.sr.ht/~brown121407/f.scm"
   url "https://git.sr.ht/~brown121407/f.scm/archive/0.2.0.tar.gz"
   sha256 "c4c2d4c395b7a54344c7fce3b74a7158b9cf812c4ae1a108c62761c34b503f3e"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-f-scm-0.2.0_1"
