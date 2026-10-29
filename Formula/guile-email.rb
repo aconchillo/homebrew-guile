@@ -3,6 +3,7 @@ class GuileEmail < Formula
   homepage "https://guile-email.systemreboot.net/"
   url "https://guile-email.systemreboot.net/releases/guile-email-0.3.1.tar.lz"
   sha256 "1cbebc536586190914a07d0e204f2b575098fe06791ee4c31e3369162d635e08"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-email-0.3.1"
