@@ -4,7 +4,7 @@ class GuileCairo < Formula
   url "https://git.savannah.gnu.org/git/guile-cairo.git", revision: "74ce9a9696fa8d14ce15c27c4b0da8219f62403f"
   version "1.11.2"
   license "LGPL-3.0-or-later"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.2_2"
