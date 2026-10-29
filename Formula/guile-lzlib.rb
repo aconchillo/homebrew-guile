@@ -3,7 +3,7 @@ class GuileLzlib < Formula
   homepage "https://notabug.org/guile-lzlib/guile-lzlib"
   url "https://notabug.org/guile-lzlib/guile-lzlib/archive/0.0.2.tar.gz"
   sha256 "8623db77d447e7b9ffbfcbc288390e706a6b1a89b1171daed60874cfec7e4f87"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzlib-0.0.2_1"
