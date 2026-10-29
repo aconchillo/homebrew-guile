@@ -3,6 +3,7 @@ class Fibers < Formula
   homepage "https://codeberg.org/fibers/fibers"
   url "https://codeberg.org/fibers/fibers/archive/v1.4.0.tar.gz"
   sha256 "2b9fa0bf3009111678a82343b8847aa0eed72dd9d1516fece7bc8274893a40c4"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.4.0"
