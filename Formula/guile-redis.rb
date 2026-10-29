@@ -3,7 +3,7 @@ class GuileRedis < Formula
   homepage "https://github.com/aconchillo/guile-redis"
   url "https://download.savannah.gnu.org/releases/guile-redis/guile-redis-2.2.0.tar.gz"
   sha256 "3dcdc585e72d490c9ec91106ecab6a3b850ea0a672d9d8d99b584d945bf59370"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.2.0_1"
