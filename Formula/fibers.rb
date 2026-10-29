@@ -1,9 +1,8 @@
 class Fibers < Formula
   desc "Concurrency library for Guile"
-  homepage "https://codeberg.org/fibers/fibers"
-  url "https://codeberg.org/fibers/fibers/archive/v1.4.0.tar.gz"
-  sha256 "2b9fa0bf3009111678a82343b8847aa0eed72dd9d1516fece7bc8274893a40c4"
-  revision 1
+  homepage "https://codeberg.org/guile/fibers"
+  url "https://codeberg.org/guile/fibers/archive/v1.4.3.tar.gz"
+  sha256 "fd055e9cee7ec11f7d9a6009e5387c002e99beb9fa9d2da3eab1b4da92b5be91"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/fibers-1.4.0"
@@ -15,6 +14,7 @@ class Fibers < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
@@ -22,6 +22,8 @@ class Fibers < Formula
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
+    # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
+    ENV.append_path "ACLOCAL_PATH", Formula["gettext"].pkgshare/"m4"
 
     system "./autogen.sh"
     system "./configure", "--prefix=#{prefix}"
