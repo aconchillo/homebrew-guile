@@ -14,7 +14,7 @@ class GuileDbdMysql < Formula
   depends_on "guile"
   depends_on "guile-dbi"
   depends_on "mariadb"
-  depends_on "openssl@1.1"
+  depends_on "openssl@4"
 
   patch :DATA
 
