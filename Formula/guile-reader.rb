@@ -21,6 +21,10 @@ class GuileReader < Formula
   depends_on "texinfo" => :build
   depends_on "guile"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   patch :DATA
 
   def install
