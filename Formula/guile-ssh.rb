@@ -3,6 +3,7 @@ class GuileSsh < Formula
   homepage "https://github.com/artyom-poptsov/guile-ssh"
   url "https://github.com/artyom-poptsov/guile-ssh/archive/refs/tags/v0.17.0.tar.gz"
   sha256 "ce6670a2114d3269c2f79153adc8d6bd251d7c649fee0f02f5e893104a1b38bc"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.17.0"
