@@ -19,12 +19,19 @@ class GuileNcurses < Formula
   depends_on "guile"
   depends_on "ncurses"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
+    # ncurses 6.5 makes the menu and form structs opaque by default.
+    ENV.append_to_cflags "-DNCURSES_OPAQUE_MENU=0 -DNCURSES_OPAQUE_FORM=0"
 
     inreplace buildpath/"configure.ac",
               "guileextensiondir=\"$libdir/guile/$guile_effective_version\"",
               "guileextensiondir=\"$libdir/guile/$guile_effective_version/extensions\""
+    inreplace "src/ncurses/extra_type.c", "#include <string.h>\n", "#include <string.h>\n#include <unistd.h>\n"
 
     system "autoreconf", "-vif"
     system "./configure",
