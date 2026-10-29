@@ -3,6 +3,7 @@ class GuileLib < Formula
   homepage "https://www.nongnu.org/guile-lib/"
   url "https://download.savannah.nongnu.org/releases/guile-lib/guile-lib-0.2.8.1.tar.gz"
   sha256 "1374c2d839e6a33d190cd1dabd9c7f87753f8384f55b866f3e142155c22b49b1"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lib-0.2.8.1"
