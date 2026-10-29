@@ -3,6 +3,7 @@ class GuileTap < Formula
   homepage "https://github.com/ft/guile-tap"
   url "https://github.com/ft/guile-tap/archive/refs/tags/v0.4.6.tar.gz"
   sha256 "b01f64a68e78d8a5149f0d706cc3215a1374b1c226fcf200cd0d6b432d0b964c"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-tap-0.4.6"
