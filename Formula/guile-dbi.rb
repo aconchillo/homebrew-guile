@@ -1,27 +1,30 @@
 class GuileDbi < Formula
   desc "Guile scheme interface to SQL databases"
   homepage "https://github.com/opencog/guile-dbi"
-  url "https://github.com/opencog/guile-dbi/archive/refs/tags/guile-dbi-2.1.8.tar.gz"
-  sha256 "c6a84a63b57ae23c259c203063f4226ac566161e0261f4e1d2f2f963ad06e4e7"
-
-  bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbi-2.1.8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "1f18cbb0ce8634b335353110e20636547c3ce3d35f83c4bc99a254d4551d78be"
-  end
+  url "https://github.com/opencog/guile-dbi/archive/refs/tags/guile-dbi-3.2.0.tar.gz"
+  sha256 "3e7729cf389878d069f7c5884dba95be0dc4a0e32116d830bdebdaf9ebbd7291"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "pkgconf" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
+  depends_on "libtool"
+
+  on_macos do
+    depends_on "bdw-gc"
+  end
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
     chdir "guile-dbi" do
+      # automake's default GNU strictness requires a NEWS file.
+      touch "NEWS"
       system "autoreconf", "-vif"
-      system "./configure", "--prefix=#{prefix}",
-             "--with-guile-site-dir=#{share}/guile/site/3.0"
-      system "make", "install"
+      system "./configure", "--prefix=#{prefix}"
+      # GUILE_SITE defaults to guile's own site dir, outside our prefix.
+      system "make", "install", "GUILE_SITE=#{share}/guile/site/3.0"
     end
   end
 
