@@ -19,9 +19,20 @@ class GuileSsh < Formula
   depends_on "guile"
   depends_on "libssh"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   patch :DATA
 
   def install
+    # Newer libssh headers include <stdbool.h>, so `bool` can't be a variable name.
+    inreplace "libguile-ssh/session-func.c" do |s|
+      s.gsub! "int32_t bool;", "int32_t bool_value;"
+      s.gsub! "bool = scm_to_bool (value);", "bool_value = scm_to_bool (value);"
+      s.gsub! "&bool);", "&bool_value);"
+    end
+
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
