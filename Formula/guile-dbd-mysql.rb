@@ -1,22 +1,34 @@
 class GuileDbdMysql < Formula
   desc "Guile scheme interface to SQL databases"
   homepage "https://github.com/opencog/guile-dbi"
-  url "https://github.com/opencog/guile-dbi/archive/refs/tags/guile-dbi-2.1.8.tar.gz"
-  sha256 "c6a84a63b57ae23c259c203063f4226ac566161e0261f4e1d2f2f963ad06e4e7"
+  url "https://github.com/opencog/guile-dbi/archive/refs/tags/guile-dbi-3.2.0.tar.gz"
+  sha256 "3e7729cf389878d069f7c5884dba95be0dc4a0e32116d830bdebdaf9ebbd7291"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "libtool" => :build
+  depends_on "pkgconf" => :build
   depends_on "guile"
   depends_on "guile-dbi"
   depends_on "mariadb"
-  depends_on "openssl@4"
 
-  patch :DATA
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
+  on_linux do
+    depends_on "zlib-ng-compat"
+  end
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
     chdir "guile-dbd-mysql" do
+      # Homebrew's mariadb installs its headers in include/mysql, which
+      # libmariadb.pc already adds to the include path.
+      inreplace "src/guile-dbd-mysql.c", "<mariadb/", "<"
+      # automake's default GNU strictness requires a NEWS file.
+      touch "NEWS"
       system "autoreconf", "-vif"
       system "./configure", "--prefix=#{prefix}"
       system "make", "install"
@@ -46,45 +58,3 @@ class GuileDbdMysql < Formula
     system "guile", dbi
   end
 end
-
-__END__
---- a/guile-dbd-mysql/configure.ac	2023-06-08 08:38:53
-+++ b/guile-dbd-mysql/configure.ac	2023-06-08 08:40:53
-@@ -52,10 +52,6 @@
- AC_FUNC_MALLOC
- AC_HEADER_STDC
-
--# Checks for libs
--AC_CHECK_LIB(mariadbclient,mysql_init,,
--        AC_MSG_ERROR([*** Can't find libmysql]))
--
- CFLAGS=`guile-config compile`
- LIBS=`guile-config link`
-
-@@ -63,8 +59,12 @@
- MYSQL_LIBS=`mariadb_config --libs_r`
-
- CFLAGS="${CFLAGS} ${MYSQL_CFLAGS}"
--LIBS="${LIBS} ${MYSQL_LIBS}"
-+LIBS="${LIBS} ${MYSQL_LIBS} -lcrypto -lssl -lz"
-
-+# Checks for libs
-+AC_CHECK_LIB(mariadbclient,mysql_init,,
-+        AC_MSG_ERROR([*** Can't find libmysql]), [${LIBS}])
-+
- . $srcdir/DBD-VERSION
- AC_SUBST(DBD_MAJOR_VERSION)
- AC_SUBST(DBD_MINOR_VERSION)
---- a/guile-dbd-mysql/src/guile-dbd-mysql.c	2023-06-08 13:22:48
-+++ b/guile-dbd-mysql/src/guile-dbd-mysql.c	2023-06-08 13:23:32
-@@ -23,8 +23,8 @@
-
- #include <guile-dbi/guile-dbi.h>
- #include <libguile.h>
--#include <mariadb/mysql.h>
--#include <mariadb/errmsg.h>
-+#include <mysql/mysql.h>
-+#include <mysql/errmsg.h>
- #include <string.h>
- #include <errno.h>
- #include <stdlib.h>
