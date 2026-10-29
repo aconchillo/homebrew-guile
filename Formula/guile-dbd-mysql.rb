@@ -4,6 +4,13 @@ class GuileDbdMysql < Formula
   url "https://github.com/opencog/guile-dbi/archive/refs/tags/guile-dbi-3.2.0.tar.gz"
   sha256 "3e7729cf389878d069f7c5884dba95be0dc4a0e32116d830bdebdaf9ebbd7291"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-dbd-mysql-3.2.0"
+    sha256 cellar: :any, arm64_tahoe:   "1ef998bd0433cccfb4ee0ac756c0b64ab6bb3afad364a2cdbe5a607e88a12add"
+    sha256 cellar: :any, arm64_sequoia: "fc4e0ab04d5b79383c6bd590383fca8b4c9a10100d9cb11640f74ca7dbdc50d1"
+    sha256 cellar: :any, x86_64_linux:  "c6aef923fc1592124404f4018f0364f842b5c8ebb6dd6eca37f3b44647aee2ed"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
