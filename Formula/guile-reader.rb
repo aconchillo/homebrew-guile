@@ -3,7 +3,7 @@ class GuileReader < Formula
   homepage "https://www.nongnu.org/guile-reader/"
   url "https://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
   sha256 "38c2b444eadbb8c0cab78d90a44ec3ebff42bd410c5b84a91018cee7eb64d2bb"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3_2"
