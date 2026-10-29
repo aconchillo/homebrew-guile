@@ -31,7 +31,18 @@ jobs:
       - run: brew test-bot --only-tap-syntax
 
       - run: brew test-bot --only-formulae
+        id: test-bot-formulae
         if: github.event_name == 'pull_request'
+
+      # test-bot ignores build, linkage and test failures on platforms where a
+      # formula was never bottled, so fail explicitly if anything was skipped.
+      - name: Check all formulae were bottled
+        if: github.event_name == 'pull_request' && steps.test-bot-formulae.outputs.skipped_or_failed_formulae != ''
+        env:
+          SKIPPED_OR_FAILED: ${{ steps.test-bot-formulae.outputs.skipped_or_failed_formulae }}
+        run: |
+          echo "::error::Skipped or failed formulae: $SKIPPED_OR_FAILED"
+          exit 1
 
       # Linux bottles share the x86_64_linux tag, so only publish them from
       # one Ubuntu runner to avoid conflicting bottles in pr-pull.
@@ -41,3 +52,4 @@ jobs:
         with:
           name: bottles_${{ matrix.os }}
           path: '*.bottle.*'
+          if-no-files-found: error
