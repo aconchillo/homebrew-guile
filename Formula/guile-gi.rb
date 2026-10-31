@@ -3,7 +3,7 @@ class GuileGi < Formula
   homepage "https://github.com/spk121/guile-gi/"
   url "https://github.com/spk121/guile-gi/releases/download/v0.3.2/guile_gi-0.3.2.tar.gz"
   sha256 "7e35b9b661e331a45bc44f4e4093b748693c603de94d728098a7a8e71f5c3505"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gi-0.3.2_2"
@@ -19,13 +19,21 @@ class GuileGi < Formula
   depends_on "guile"
   depends_on "libffi"
 
+  on_macos do
+    depends_on "bdw-gc"
+    depends_on "gettext"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
+    ENV.append_to_cflags "-Wno-error=incompatible-pointer-types"
 
     system "./configure",
            "--prefix=#{prefix}",
            "--with-gnu-filesystem-hierarchy"
-    system "make", "install"
+    # The test sources are copied from gobject-introspection, which no longer
+    # ships them, and they are not needed to build or install the library.
+    system "make", "install", "BUILT_SOURCES="
   end
 
   def caveats
