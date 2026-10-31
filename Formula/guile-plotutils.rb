@@ -3,7 +3,7 @@ class GuilePlotutils < Formula
   homepage "https://github.com/spk121/guile-plotutils"
   url "https://github.com/spk121/guile-plotutils/releases/download/v1.0.1/guile_plotutils-1.0.1.tar.gz"
   sha256 "d93068400bb5fbaf73ef4afd3fd22104cbec6d25e85f774afcef3756ce2f4464"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-plotutils-1.0.1_2"
@@ -16,6 +16,10 @@ class GuilePlotutils < Formula
   depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "plotutils"
+
+  on_macos do
+    depends_on "bdw-gc"
+  end
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
