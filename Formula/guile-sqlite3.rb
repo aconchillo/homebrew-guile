@@ -1,9 +1,9 @@
 class GuileSqlite3 < Formula
   desc "Guile bindings to SQLite3"
-  homepage "https://notabug.org/guile-sqlite3/guile-sqlite3"
-  url "https://notabug.org/guile-sqlite3/guile-sqlite3/archive/v0.1.3.tar.gz"
+  homepage "https://codeberg.org/guile-sqlite3/guile-sqlite3"
+  url "https://codeberg.org/guile-sqlite3/guile-sqlite3/archive/v0.1.3.tar.gz"
   sha256 "158cb82958c6329319f911412999ea125980f327f54185bf0dad271d6f8f45c2"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sqlite3-0.1.3_1"
