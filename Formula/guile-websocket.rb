@@ -4,6 +4,13 @@ class GuileWebsocket < Formula
   url "https://files.dthompson.dev/guile-websocket/guile-websocket-0.3.0.tar.gz"
   sha256 "1ba6c0d1d175f4a68b58ce003257477e3931fea0d70593881aa7177cb99483fc"
 
+  bottle do
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-websocket-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "4b42c94caf9efb3e3734a4baab56fe007c16d75c6acc6f0c65f228ab9a66be80"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bca6db794bbb30061e03da452d60cb2e35d98e55e9ed8c59d20aea79a45fda65"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "acd6632a4ad1b4ba3272107b9019713fc80440041d51788bb5d6e396006ba733"
+  end
+
   depends_on "guile"
   depends_on "guile-gnutls"
 
