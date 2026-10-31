@@ -3,6 +3,7 @@ class GuileConfig < Formula
   homepage "https://gitlab.com/a-sassmannshausen/guile-config/"
   url "https://gitlab.com/a-sassmannshausen/guile-config/-/archive/0.5.1/guile-config-0.5.1.tar.gz"
   sha256 "c30bb76bf27dcdbda7cc13733cf907e3b28d14dec2a55a89097514be61f3278e"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-config-0.5.1"
