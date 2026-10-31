@@ -4,7 +4,7 @@ class GuileCairo < Formula
   url "https://git.savannah.gnu.org/git/guile-cairo.git", revision: "74ce9a9696fa8d14ce15c27c4b0da8219f62403f"
   version "1.11.2"
   license "LGPL-3.0-or-later"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-cairo-1.11.2_2"
@@ -15,13 +15,20 @@ class GuileCairo < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "cairo"
   depends_on "guile"
 
+  on_macos do
+    depends_on "bdw-gc"
+  end
+
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
+    # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
+    ENV.append_path "ACLOCAL_PATH", Formula["gettext"].pkgshare/"m4"
 
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
