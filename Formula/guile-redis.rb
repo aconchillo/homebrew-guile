@@ -6,10 +6,10 @@ class GuileRedis < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.2.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "2304325b00f15fa79e9fbc36c554d844cab0f49f29a74a613841190d0fee1edd"
-    sha256 cellar: :any_skip_relocation, ventura:      "13fbf6b51e2d0d2e999b629e86a27a682b8d9e3b52e9564947e3775400542554"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b743a8cc501481a12d165a057429f103221d28d906afc53564ccd041a975f4c4"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-redis-2.2.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "3a03eb67435c991ea43979701eef03d850af3c5801ce423276d03401bd4e3fc8"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f06c197510f5136f526ccf893add3bc28ac31201e9d411b2c6ff920c0dc32098"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2fc86342d2528c8ec5199b1a00b73b65bf1971f0a404b65b044daac9636659de"
   end
 
   depends_on "pkg-config" => :build
