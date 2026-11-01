@@ -6,10 +6,10 @@ class GuileMqtt < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mqtt-0.2.1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "41f3f2204aeb4340ee6dc5a1b73e1e73a391afeaac1e4f5e98b994e7c96588d4"
-    sha256 cellar: :any_skip_relocation, ventura:      "3c14629d1d45f632891d84b90a92a2241b5d148cd45e1197386d1c8fb27df745"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8fa7b97c5a12e400984d796745535fb8434fa20d138617a95263aff688cf2b0e"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mqtt-0.2.1_1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "bc2d2833c438c271be4d13dd1ad6ac35ea859453b8d6256155c80dcf47d3d643"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8502fb6961889819bf50717f9068df42e8002904f872920eb21821437afa73d6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cfd56a53a2d1f14cd80f1e94237eaf198d86f78a6f7e52e45bdd0456294e2f4d"
   end
 
   depends_on "pkg-config" => :build
