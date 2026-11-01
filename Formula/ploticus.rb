@@ -6,10 +6,10 @@ class Ploticus < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/ploticus-2.42"
-    sha256 arm64_sonoma: "a07ba5cf7c465f72d5f2183113a77a9d4d01b32295332a094ace5a841d01a716"
-    sha256 ventura:      "470e18c8b029406e11ac7946ad99e922757065a0aefb29464974471ee05f1e25"
-    sha256 x86_64_linux: "69a3d4125b2539865bfdcda78871346132f0db668b20c660e7be0c5ceec88a01"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/ploticus-2.42_1"
+    sha256 arm64_tahoe:   "bda412bb618bd00895bc8f0fb4d3ad3c8b48f46f4a23753679eae373cc864acb"
+    sha256 arm64_sequoia: "9b599a8bbcc32063b96f3fc06c411a807880f296bf35ce4f519210dfd003a973"
+    sha256 x86_64_linux:  "b72d47d0b636ceec881b8cb3fb739a21aa60633e410ab683d043c3404169a670"
   end
 
   depends_on "libpng"
