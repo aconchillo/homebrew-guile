@@ -6,10 +6,10 @@ class GuileSyntaxHighlight < Formula
   revision 3
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-syntax-highlight-0.2.0_2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fa7f34d589df791ae97dfe20f93d9deb976b132518a88825070016f09e4411ce"
-    sha256 cellar: :any_skip_relocation, ventura:      "797e6b30339fab2cca4fcdbc32a3d9512924bb1d46850c174cf77d5e17663dee"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "150cecbbc9596256808bb0f3cc919c3d22a1e2e7be6c1d6868fca1a66e775a03"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-syntax-highlight-0.2.0_3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "3fb0eedbea218e6395f5bb03c03d60186e2bfbbe779e47f95dc86612d812f5ae"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "aebcb3d8a6fe6b96d379202b284e4b13ede7de37ad02da7a41828d287f841f76"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2b9cd71175a150286983fa3b6d144f1f4003947f29b38c98b209c11ba3161a6d"
   end
 
   depends_on "pkg-config" => :build
