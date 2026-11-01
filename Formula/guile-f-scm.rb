@@ -6,10 +6,10 @@ class GuileFScm < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-f-scm-0.2.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "62726cfcb17ecd2851d5876a06a079ec8c4dff58b74a80c0c25d0fc17c269065"
-    sha256 cellar: :any_skip_relocation, ventura:      "27a6eda60aff6b04efed79d8fa88cc07289afd1a63bd57170ce503f8a88f6f10"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c0baec856add112117b8d8444ca5c63477ef0b84fdf86cbeac568e77db3292a0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-f-scm-0.2.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "0bb959441808373c50ab77a593748325ef7be7d07cce013dfa95641f11dfdf01"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f2dffc28cd1c48f7124950ef51d1b23c68f17d0d03164e8194789e46320761bf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5fbae3d632fb8b88a1a93719d16beb0d70b4731af8a0976aa29018d643390802"
   end
 
   depends_on "guile"
