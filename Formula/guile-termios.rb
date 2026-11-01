@@ -6,9 +6,10 @@ class GuileTermios < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-termios-0.6.4"
-    sha256 cellar: :any_skip_relocation, catalina:     "bab1e837496e81d7b29f461ab3137800fe79fc204c2c7e8b43b93051782ba44f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "78f1e956e189fb3a6d31f88de9061b97fc1bb7df891fef4858b724e836883047"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-termios-0.6.4_1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "08d8477ee9c08fdcd391eabde4187c406d07c1cca09e02fb1650bbdbd277d312"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1b3daa8dd6c0db9012bdbbc91a846c154c4a344116fe05b9a3300c3eb0257b86"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d85226d57df33b7235f4a1807ed2dc8cc369d35d59e381ff0087e686a6f76247"
   end
 
   depends_on "guile"
