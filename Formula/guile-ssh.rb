@@ -6,10 +6,10 @@ class GuileSsh < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.17.0"
-    sha256 cellar: :any,                 arm64_sonoma: "9bc9e9cd82b9ddf53707979aa95c0cd4f5274f797853fce6acc70a7448be8ae8"
-    sha256 cellar: :any,                 ventura:      "65aa9ab82588ea81eda8b31444165f327c6b6452046a412f60b753e4aa54ab2d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9bca192f00bcdd63cf71862a3bd005f8fa463e48f3c1f877d62d6a977b8643d1"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.17.0_1"
+    sha256 cellar: :any, arm64_tahoe:   "9558ba2a5ed0b40fbec07247681f3b2827f9ac8fd43b1667d920552bb0bad884"
+    sha256 cellar: :any, arm64_sequoia: "515ea26ccfcab075d88f3537457c646e148c02514eb7b00fb1787890326d8732"
+    sha256 cellar: :any, x86_64_linux:  "2fb5843fe7990e31b8a928f6a0d3a813c50592966017de219703a12bed32ff78"
   end
 
   depends_on "autoconf" => :build
