@@ -6,10 +6,10 @@ class Guilescript < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.2.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "04c4beae7412af623989cc2eb9d0081b87fc479fe88d5642b446c75939b6fd0d"
-    sha256 cellar: :any_skip_relocation, ventura:      "9b8b780cd3e98a24c11f7a83f1c097aca538de5e77febcb56a116ea2b61183a5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8a84160d72d2b1332e3a9c754c86a8aaee01682aab7905923718faae75df09c6"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guilescript-0.2.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "2867a6e22ea62ca9015a89995611b9e4099789514ab03fdf59e45632161268c6"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1c2490d98af8a36f5f1d2fcab316e9407c6604c849717263095a4232f4119484"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "69b4947e36bd772ac59d8dda9fb3161c8043af5cbccb8e4636e2858779622edb"
   end
 
   depends_on "autoconf" => :build
