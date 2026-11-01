@@ -6,10 +6,10 @@ class GuileRdf < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rdf-1.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "671f82c550c4b197683e043d219d0dab2bf122404178eaebcaff1bfdda9f1761"
-    sha256 cellar: :any_skip_relocation, ventura:      "be90669eb0eacdf21255d235233468a2a739f8a570b569e852238b5364326cda"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "acb9ff1c31014c3bb9a2bf788a92d7a5172a8f8e55ebf5417cc7fdbc9b2f792a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rdf-1.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "150b0e49309dc589243911b125b9c8952403205f63d21cdc389ed014a922ada9"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a7d970bd045d3475a11c2358d29ccd1516c1ed1c74738a92db06e6bfe2ea5244"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a8d76093176f5ac02d5258173452f66a2b95a16ff8578394d853a7808a289728"
   end
 
   depends_on "autoconf" => :build
