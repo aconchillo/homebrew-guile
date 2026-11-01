@@ -6,10 +6,10 @@ class GuileZlib < Formula
   revision 4
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zlib-0.1.0_3"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "188bf9f04d6d3281d633c4a9454ddc257cbbcdb74485af17b2c67f044b18d61a"
-    sha256 cellar: :any_skip_relocation, ventura:      "de7f0f84420d36027130cff74aa0c4cd2cb451e333277631f2a93794fd425266"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "af1fe713a83e9cff67b0b37886b64d644cf00b810b2a9776efa376cd1ea94ec7"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zlib-0.1.0_4"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "dc4e1ca3baed58573cd3c66cca7c754c661a4ad2ed5f5831e852c91335076085"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2aef300a762bcea6610fa324aeff49ef6f2bdb52c57f02296e67bb8bcd3cd363"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "787f337d8dadea49b3577157600707fd1510f345112f5729d793a1895d4f9d6a"
   end
 
   depends_on "autoconf" => :build
