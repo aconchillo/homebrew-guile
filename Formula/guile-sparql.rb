@@ -6,10 +6,10 @@ class GuileSparql < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sparql-0.0.8_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "2d3ecb215b79eec355fb1da480a68fdd54d2f94a5bed7ade1765459f98ef36a4"
-    sha256 cellar: :any_skip_relocation, ventura:      "d268818634d9aa2c38b16df9df2d798e271e134270fd81984d89329f6f2f46b2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "881418fae247764cacd190b688447f39b9d17e484dc70be024b37cfea50315d0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-sparql-0.0.8_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "505f57399332df02c3abc8a23491e8ff33bc9a296fc2b487e1857a75cab495a3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bd5bc68e6a97d2d2ca018f32a2672bbdcda40dc2c297e736d0c87396987622aa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cdb1f7971293a5a8102eef86f5a1e508ce989c27d5664494eb33f0663e02db77"
   end
 
   depends_on "pkg-config" => :build
