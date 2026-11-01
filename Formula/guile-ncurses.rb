@@ -6,10 +6,10 @@ class GuileNcurses < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ncurses-3.1"
-    sha256 cellar: :any,                 monterey:     "105aae7af1c856f39b443b18f39ba8b3ef75ae48f4d66df77639d81630cb7e0f"
-    sha256 cellar: :any,                 big_sur:      "172734e20ce3d79734c282c504a07922f6d04a46b0a4707c3ffdc5385c6c326d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7a357082632aaafe0b7721cb643f6f7fd5acd6ecd865b1de9d6ee05f75d458bb"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ncurses-3.1_1"
+    sha256 cellar: :any, arm64_tahoe:   "9eaf1c5f3056fce5aea0632cbe2b5a373f72087100c45bfcc53ed6b81983dfe3"
+    sha256 cellar: :any, arm64_sequoia: "2450ea9a4dd01b3e8ea7a67b05bcb1c41f734dc5a951970141e6509c4201913f"
+    sha256 cellar: :any, x86_64_linux:  "f0594930006e89cf340e8d412ad168d05fac560f15dd76e90f849ccc280f743b"
   end
 
   depends_on "autoconf" => :build
