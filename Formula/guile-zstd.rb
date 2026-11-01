@@ -6,10 +6,10 @@ class GuileZstd < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zstd-0.1.1_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "c492a95779556b6391895fb50d710b9ae9c8118d865259c8db2a4a536022677f"
-    sha256 cellar: :any_skip_relocation, ventura:      "491d22a8eaeaf050cdad4c3a47adc9b39225730d4e59bae92d677fd53f822b9e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3be6f3cc8e21339d535e134f64a83dbbd0581bbf79156e2ac7f1b904052375fc"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zstd-0.1.1_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "e4b428797fad1348938d93ceab844d20706e8b2aa57f4b15421b64851c4001fe"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2766b98cc66554729c552e8d83aa13e5f5eca6b3a3e8bede20adac983f67c5cc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "325158fbb886be60c7307ba4bcf7f427bdc8eacffe4f47316baac7dd4d108057"
   end
 
   depends_on "autoconf" => :build
