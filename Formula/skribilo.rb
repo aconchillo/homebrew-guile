@@ -1,9 +1,8 @@
 class Skribilo < Formula
   desc "Ultimate Document Programming Framework"
   homepage "https://www.nongnu.org/skribilo/"
-  url "https://download.savannah.nongnu.org/releases/skribilo/skribilo-0.9.5.tar.gz"
-  sha256 "00826a21c4634fb0b410ee89eb48068c445d800825874654e3d53d5ca3f0bf09"
-  revision 2
+  url "https://download.savannah.nongnu.org/releases/skribilo/skribilo-0.11.1.tar.gz"
+  sha256 "665c241c42920bf369f1231d4b9c71ce18ba63add0b9a8f241821fd11a28d592"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5_2"
