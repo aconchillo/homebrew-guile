@@ -1,9 +1,8 @@
 class GuileHall < Formula
   desc "Hall is a project manager for Guile modules and applications"
   homepage "https://gitlab.com/a-sassmannshausen/guile-hall/"
-  url "https://gitlab.com/a-sassmannshausen/guile-hall/-/archive/0.4.1/guile-hall-0.4.1.tar.gz"
-  sha256 "8bf70fa795db3032be710a41fd316b92a87da2c2c909658412d0c36c4142e9be"
-  revision 2
+  url "https://gitlab.com/a-sassmannshausen/guile-hall/-/archive/0.6.0/guile-hall-0.6.0.tar.gz"
+  sha256 "ca731964b763e76a1f501eb0bb5f9188f87b4be3b6c54e729f1bc72d52f04a6a"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1_2"
@@ -18,6 +17,7 @@ class GuileHall < Formula
   depends_on "texinfo" => :build
   depends_on "guile"
   depends_on "guile-config"
+  depends_on "guile-lib"
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
