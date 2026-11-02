@@ -1,9 +1,8 @@
 class GuileSmc < Formula
   desc "GNU Guile state machine compiler"
   homepage "https://github.com/artyom-poptsov/guile-smc"
-  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.6.3.tar.gz"
-  sha256 "9e6d9b4c6a145cefc9c671971ffa46685c1f58634ae1f5b23b7d18b0f0b03429"
-  revision 2
+  url "https://github.com/artyom-poptsov/guile-smc/archive/refs/tags/v0.6.4.tar.gz"
+  sha256 "f1a0a9174fd2911f054a2ba5e4d3f1803cc4c508c86063c38ccfa6d33bd0485b"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-smc-0.6.3_2"
