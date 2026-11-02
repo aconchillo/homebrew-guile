@@ -3,6 +3,7 @@ class GuileLspServer < Formula
   homepage "https://codeberg.org/rgherdt/scheme-lsp-server"
   url "https://codeberg.org/rgherdt/scheme-lsp-server/archive/0.2.2.tar.gz"
   sha256 "1d1bf313a1050118be717ca8b6fa9a758321850e9816f0f3a1c321b9b839c83b"
+  revision 1
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lsp-server-0.2.2"
