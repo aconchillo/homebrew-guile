@@ -1,9 +1,8 @@
 class GuileMqtt < Formula
   desc "Guile bindings for libmosquitto MQTT client library"
   homepage "https://github.com/mdjurfeldt/guile-mqtt"
-  url "https://github.com/mdjurfeldt/guile-mqtt/releases/download/v0.2.1/guile-mqtt-0.2.1.tar.gz"
-  sha256 "faa7eb530f32218f2239b1152db83a6ce7e240d4792e4c369fda0732bdc94399"
-  revision 1
+  url "https://github.com/mdjurfeldt/guile-mqtt/releases/download/v1.0.0/guile-mqtt-1.0.0.tar.gz"
+  sha256 "ebe5371477b06dd23c97baf8a550ab7740cd28fcb80471f2da6fe1710ec1c814"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mqtt-0.2.1_1"
