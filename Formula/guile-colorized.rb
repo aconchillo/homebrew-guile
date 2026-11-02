@@ -5,10 +5,10 @@ class GuileColorized < Formula
   sha256 "5d7aeeebf049114339dcabaa70c3f83b5b68b836cc0057c3a3c2c4b56e00007a"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-colorized-0.1_2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "f11e7f4644000e84ac8695875104ca716bc135a1be0d01b3e56d73ba5d5e54d6"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "336d4cf1576137570469e0ecc360657aa6786aee97d6bf33d8418dba41d68a8f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98847ae595296fe8e7e91bf929db8ca575432834e44073167985ca4ed0e81832"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-colorized-0.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "665601d7f49b8a263fcbfa855b775bf7f0a167613026b21afba8dc82e70a09fd"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7fe32f218a408f54e653a9d521d64607b686a41426a3eebec8c3807bd877c2f9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8447ccb3d01fd52cd772db5bf4ad14e37554b60c48ac9d09ade1b005508e8496"
   end
 
   depends_on "guile"
