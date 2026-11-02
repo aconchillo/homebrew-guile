@@ -6,10 +6,10 @@ class GuilePresent < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-present-0.3.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "b15ca9f13a6d30cc9c9f0525f9258a6357903931e0342577802b9627f64bf510"
-    sha256 cellar: :any_skip_relocation, ventura:      "1ae5c7da2146e9cf543138a16f032b163654ca6a3df65a326cf06c4c8a046d37"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "000d80202c1850cbee98f363d15f0326b1139247016abc2916e21e7fb6946895"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-present-0.3.0_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "791180441ea7902b6b88667f8230d112c7fc49e20d22958df7889e025e74a83a"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "258346753ac87c90a12fb2a267adbcc93e6f6808c2cf3d63c7d4ad163223150c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76cbc1e2c10c49cdde82b2121ba837ec2211aa2c6161ee596f79978f6531bc5b"
   end
 
   depends_on "autoconf" => :build
