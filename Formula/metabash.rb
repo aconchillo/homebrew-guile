@@ -6,10 +6,10 @@ class Metabash < Formula
   revision 3
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/metabash-0.0.0_2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "f9d41fed4c94c7692df956ba534b44c1b7122d6dfc9954e957786aa8c4b3fe03"
-    sha256 cellar: :any_skip_relocation, ventura:      "3d37d777986176716b0c8692d627b78cf8cd506a203c32955d14576a619ae890"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "415725877e83ea755e3250f1adef4e29716ba9e125c7c535eb419ff3ec481440"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/metabash-0.0.0_3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "ab0e338feba655d019ec00f3a51d1cba52889ac4eaa0adb38b9eec0e9c2ddd4a"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "cd4269199bbe35c1418f26a06463adecb96b1594b37cdc5923d64c8eedca749d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2218cfbeb13bd6d85866f0f9fa00cff87282ced7451a916a83b2353a440cbdfa"
   end
 
   depends_on "autoconf" => :build
