@@ -1,8 +1,8 @@
 class GGolf < Formula
   desc "Guile Object Library for GNOME"
   homepage "https://www.gnu.org/software/g-golf/"
-  url "https://ftpmirror.gnu.org/g-golf/g-golf-0.8.0.tar.gz"
-  sha256 "a89ac2f2f45026e073f9e165b427fc101bfb2ed10837bcb0641bca2089735d85"
+  url "https://ftpmirror.gnu.org/g-golf/g-golf-0.8.7.tar.gz"
+  sha256 "b21bfc9922c641d725bb8299a000a23a8e35537b1cee437e74a405dc76493482"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/g-golf-0.8.0"
@@ -13,6 +13,7 @@ class GGolf < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "adwaita-icon-theme"
@@ -22,6 +23,10 @@ class GGolf < Formula
   depends_on "guile-lib"
 
   uses_from_macos "libffi", since: :catalina
+
+  on_macos do
+    depends_on "bdw-gc"
+  end
 
   patch :DATA
 
@@ -37,6 +42,8 @@ class GGolf < Formula
     inreplace buildpath/"g-golf/init.scm", "libgobject-2.0", "#{HOMEBREW_PREFIX}/lib/libgobject-2.0"
     inreplace buildpath/"g-golf/init.scm", "libgirepository-1.0", "#{HOMEBREW_PREFIX}/lib/libgirepository-1.0"
 
+    # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
+    ENV.append_path "ACLOCAL_PATH", Formula["gettext"].pkgshare/"m4"
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "-j1", "install"
