@@ -3,7 +3,7 @@ class GuileRsvg < Formula
   homepage "https://wingolog.org/projects/guile-rsvg/"
   url "https://wingolog.org/pub/guile-rsvg/guile-rsvg-2.18.1.tar.gz"
   sha256 "07ca914542f3621bb9b2d72888592c3ad7c292aae1ce79cdcfd90f1ecd10ce8c"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rsvg-2.18.1_2"
@@ -15,9 +15,17 @@ class GuileRsvg < Formula
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
+  depends_on "cairo"
+  depends_on "gdk-pixbuf"
+  depends_on "glib"
   depends_on "guile"
   depends_on "guile-cairo"
   depends_on "librsvg"
+
+  on_macos do
+    depends_on "bdw-gc"
+    depends_on "gettext"
+  end
 
   patch :DATA
 
