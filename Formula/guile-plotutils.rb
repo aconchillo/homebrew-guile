@@ -23,7 +23,7 @@ class GuilePlotutils < Formula
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
 
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure", "--prefix=#{prefix}", "--with-gnu-filesystem-hierarchy"
     system "make", "install"
   end
 
