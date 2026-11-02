@@ -6,10 +6,10 @@ class GuileHall < Formula
   revision 3
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1_2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "83122ba8842622da891d9426cd8c54d9495be3268b494bac774db67c0d205506"
-    sha256 cellar: :any_skip_relocation, ventura:      "945f6d5ed07f0c167a0185f2cbbe5fd3dd755ac8fa4a8f7e781aac6e943bbb6e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3c56399547889a29346592ed94454888afd24eb648dcf383d5d6f3f926d03542"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-hall-0.4.1_3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "a2bf0dab5b981dcc4e8ff905126ab385f2dbf9015014c1089118eedb7a1710c4"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8950b59d2a821c219131cee18a9f731e90e3f97050095525e506c4d349ce07e5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6615c7a90334a8dd409d97a24b7e6404f827f2730d391eb9d932358072a6d9da"
   end
 
   depends_on "autoconf" => :build
