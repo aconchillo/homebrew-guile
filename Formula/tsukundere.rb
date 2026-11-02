@@ -19,10 +19,12 @@ class Tsukundere < Formula
   depends_on "guile"
   depends_on "guile-sdl2"
   depends_on "pango"
-  depends_on "sdl2"
+  depends_on "sdl2-compat"
 
   on_macos do
     depends_on "bdw-gc"
+    depends_on "gettext"
+    depends_on "harfbuzz"
   end
 
   patch :DATA
