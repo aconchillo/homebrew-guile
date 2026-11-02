@@ -1,9 +1,8 @@
 class GuileZlib < Formula
   desc "GNU Guile bindings to the zlib compression library"
   homepage "https://codeberg.org/guile-compression/guile-zlib"
-  url "https://codeberg.org/guile-compression/guile-zlib/archive/v0.1.0.tar.gz"
-  sha256 "25c726b570a06d21bc6fd7ec6093f377c749ce2efdd1d1516ac1b595f3f94ee9"
-  revision 4
+  url "https://codeberg.org/guile-compression/guile-zlib/archive/v0.2.2.tar.gz"
+  sha256 "6f6cca4b32ca79f3f4627cdb7ea68569a3cc38be60468991e2b5c085783e38c1"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-zlib-0.1.0_4"
