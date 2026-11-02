@@ -6,9 +6,10 @@ class GuileRsvg < Formula
   revision 3
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rsvg-2.18.1_2"
-    sha256 cellar: :any,                 arm64_sonoma: "18a81d3d0f7fb4315b8e2fa3015a46a2221d104b28882dafabf96cc860654e32"
-    sha256 cellar: :any,                 ventura:      "2618b7b7932118329d659882334c5242ae40f057492774ff25558cbc35e422aa"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-rsvg-2.18.1_3"
+    sha256 cellar: :any, arm64_tahoe:   "1d584e5c424305837913395e4d5b88cc5de332658ca96ad9242ffa1653a20150"
+    sha256 cellar: :any, arm64_sequoia: "1b003b98324b96a99574d4d15d5fcf85308520c43167b549949f5bea2171928c"
+    sha256 cellar: :any, x86_64_linux:  "db54b52dd5b27ed6029037c2387762b4d07f34058767ef5fea4b1bdb44827c1a"
   end
 
   depends_on "autoconf" => :build
