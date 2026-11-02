@@ -1,9 +1,8 @@
 class GuilePlotutils < Formula
   desc "Guile to use plotting and graphing functionality from GNU Plotutils"
   homepage "https://github.com/spk121/guile-plotutils"
-  url "https://github.com/spk121/guile-plotutils/releases/download/v1.0.1/guile_plotutils-1.0.1.tar.gz"
-  sha256 "d93068400bb5fbaf73ef4afd3fd22104cbec6d25e85f774afcef3756ce2f4464"
-  revision 3
+  url "https://github.com/spk121/guile-plotutils/releases/download/v1.0.2/guile_plotutils-1.0.2.tar.gz"
+  sha256 "37e389f058e97f8607ff26281e36b7ba94305cffa7b815ac9ccc315783147100"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-plotutils-1.0.1_3"
