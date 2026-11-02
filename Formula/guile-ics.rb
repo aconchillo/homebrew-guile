@@ -5,10 +5,10 @@ class GuileIcs < Formula
   sha256 "ac2002c5c2e875511c9a289dcc6fe6749321494c7d8154d1d47e7e135bd625ed"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ics-0.6.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e2308260c7a6987aaa208311b19eb7d83934b32491acb22a7ea5b6703e0576e2"
-    sha256 cellar: :any_skip_relocation, ventura:      "14ea363cc3c3c8889c1112266d5706b0c16f45f53293c2a156658c917ede9135"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d4f45638bcd9d679bf1ada9bee751dc9c8b3319128283814ea6acaac81c6ad80"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ics-0.7.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "32500627c635d19030fb43654986e172d369ebe0d9594217c6ada7a1a84a4423"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "4103247bec44f38e3e93899cca56b6660d2bce2c62ef6ca1e82862d3043bf236"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2d35e3b58c8f32f44848119d93108814c3cd254f3e4824746ae666407e3bac2"
   end
 
   depends_on "autoconf" => :build
