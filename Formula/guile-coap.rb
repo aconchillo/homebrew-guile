@@ -5,10 +5,10 @@ class GuileCoap < Formula
   sha256 "cd62bb26762f83a20664629548ee82cb058d71f6aab04d26ad0ed2e46a6763a2"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.1.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "3dd3efe36f4a08b3cbc2cefa82fa9349bed04ba594584f7926ca5974cf44b745"
-    sha256 cellar: :any_skip_relocation, ventura:      "90c94956048f36637b015aa9dcdc0484bc9a5d44d61fb3df8c2fbd0f92660e0f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3604708f3e3a3cd1d275353e0b18f7604b1fe07283a49c90c720358a1a15b77a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-coap-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "8d2ca1a3e33735cb5ab97930aa7be97df9cabfa0298d6fadb83d9157da106e5b"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e490ad9ecedc352d87f1ec63388918c2152015a520ce1e0271fc139a39ba828d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "68e4137c9743c328cec8fca5569961190a6c89dcc4e9a55ae0e3ffac874b8d02"
   end
 
   depends_on "autoconf" => :build
