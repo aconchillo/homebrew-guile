@@ -5,10 +5,10 @@ class GuileLzlib < Formula
   sha256 "760ebca527a668fa7fba18dbd0200df9d6816709fca54c1fc03862bde1866eba"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzlib-0.0.2_2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "a9c3b1c0b42f180dc53dac01e925949f59775550b19d40d89a020922badce501"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "44cd8937d9b8cb4fdc56d309f6afbc7c06f9ac2a4ed3d0093cefd44e9354bf8d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e2d9eb6b89f45df1e615ec55bacf385ef4f526da1a48bb7858827b2bb0d1c605"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-lzlib-0.4.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "a3cd3ed471f0d24568618e2f761c05245a4cf331d7be1c777c4c71f4ad1b3f25"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "08f178f2460764b9769fd46ddd0111d228537edf4b33536c2383a438ac78a394"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "95ffa7d9d1aeb6ecdeed79d23912a560d1ff0ad88b851b330d3c32e89623e9f8"
   end
 
   depends_on "autoconf" => :build
