@@ -1,9 +1,8 @@
 class GuileReader < Formula
   desc "Simple framework for building readers for GNU Guile"
   homepage "https://www.nongnu.org/guile-reader/"
-  url "https://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.3.tar.gz"
-  sha256 "38c2b444eadbb8c0cab78d90a44ec3ebff42bd410c5b84a91018cee7eb64d2bb"
-  revision 3
+  url "https://download.savannah.nongnu.org/releases/guile-reader/guile-reader-0.6.4.tar.gz"
+  sha256 "6b220033ac2e71b7bef41a43f354c22b9986a675a4d12ed31cf744143a99135b"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-reader-0.6.3_3"
@@ -24,8 +23,6 @@ class GuileReader < Formula
   on_macos do
     depends_on "bdw-gc"
   end
-
-  patch :DATA
 
   def install
     ENV["GUILE_AUTO_COMPILE"] = "0"
@@ -59,17 +56,3 @@ class GuileReader < Formula
     system "guile", reader
   end
 end
-
-__END__
-diff --git a/src/compat.c b/src/compat.c
-index 943c7f9..9b15b31 100644
---- a/src/compat.c
-+++ b/src/compat.c
-@@ -21,6 +21,7 @@
- #endif
-
- #include <libguile.h>
-+#include <libguile/deprecation.h>
- #include <compat.h>
- #include <string.h>
- #include <stdio.h>
