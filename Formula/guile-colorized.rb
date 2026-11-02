@@ -1,9 +1,8 @@
 class GuileColorized < Formula
   desc "Colorized REPL for GNU Guile"
   homepage "https://gitlab.com/NalaGinrut/guile-colorized"
-  url "https://gitlab.com/NalaGinrut/guile-colorized/-/archive/v0.1/guile-colorized-v0.1.tar.gz"
-  sha256 "fb60ca552f6e935b9d8b6a7cf9b2a4e1c85caa6b5bce53f6f4541acf21c5ab47"
-  revision 2
+  url "https://gitlab.com/NalaGinrut/guile-colorized/-/archive/v0.2/guile-colorized-v0.2.tar.gz"
+  sha256 "5d7aeeebf049114339dcabaa70c3f83b5b68b836cc0057c3a3c2c4b56e00007a"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-colorized-0.1_2"
