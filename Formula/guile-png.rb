@@ -14,6 +14,7 @@ class GuilePng < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "coreutils" => :build
+  depends_on "help2man" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
   depends_on "guile"
