@@ -3,7 +3,7 @@ class Haunt < Formula
   homepage "https://dthompson.us/projects/haunt.html"
   url "https://files.dthompson.us/haunt/haunt-0.3.0.tar.gz"
   sha256 "98babed06be54a066c3ebc94410a91eb7cc48367e94d528131d3ba271499992b"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/haunt-0.3.0_1"
