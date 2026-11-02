@@ -5,8 +5,10 @@ class Tsukundere < Formula
   sha256 "1b3b56b56ff13c683ff2cc048e7686ea3220126bf82da9d73ad425faeaba32f8"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.2_2"
-    sha256 big_sur: "10d885fd71ffac695ae330a8f55bade33177c681b4994ecbb8bb32be4977bb2d"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/tsukundere-0.4.3"
+    sha256 arm64_tahoe:   "e2c1bb8f6bf1e3ece9c0065e0d63430cbbbbc23871ed67941f496bd38651abbc"
+    sha256 arm64_sequoia: "61fe9defbb47600c569e473fd877c5d7ff3d142bf58833c52713320a208d76b3"
+    sha256 x86_64_linux:  "ac53f28516f60df5f2592c1a3e4fa710bd3487f1d0a8f991ab459b5ffd07842c"
   end
 
   depends_on "autoconf" => :build
