@@ -1,8 +1,8 @@
 class GuileIcs < Formula
   desc "RFC5545 (iCalendar) format parser for GNU Guile"
   homepage "https://github.com/artyom-poptsov/guile-ics"
-  url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "a18f6090f9919142c9129f0ef3f67ca3f0a0db47cc44201d36d6e7655189d1bc"
+  url "https://github.com/artyom-poptsov/guile-ics/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "ac2002c5c2e875511c9a289dcc6fe6749321494c7d8154d1d47e7e135bd625ed"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ics-0.6.0"
@@ -16,6 +16,7 @@ class GuileIcs < Formula
   # coreutils because of install not working great on macOS 10.11. coreutils
   # will bring ginstall.
   depends_on "coreutils" => :build
+  depends_on "gettext" => :build
   depends_on "help2man" => :build
   depends_on "pkg-config" => :build
   depends_on "texinfo" => :build
@@ -30,6 +31,8 @@ class GuileIcs < Formula
     ENV["GUILE_LOAD_COMPILED_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/site-ccache"
     ENV["GUILE_SYSTEM_EXTENSIONS_PATH"] = HOMEBREW_PREFIX/"lib/guile/3.0/extensions"
 
+    # guile.m4's GUILE_FLAGS needs AC_LIB_LINKFLAGS_FROM_LIBS from gettext.
+    ENV.append_path "ACLOCAL_PATH", Formula["gettext"].pkgshare/"m4"
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
