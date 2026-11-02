@@ -5,9 +5,10 @@ class GuileGit < Formula
   sha256 "91ffe50e595907ad49a3a6e8c24f87613ba2a6cf59730c8ad5be4d2ef8f041cd"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.6.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "cbed9fb49705ea36fd822728fe377cd8a1e570af41392204c1bdf94da798d0f5"
-    sha256 cellar: :any_skip_relocation, ventura:      "fba9808838b6027e5f0d99bf556faa87686f5cd28542b2bfdea9b83d402d371d"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-git-0.11.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "e87f3cc1f49ca6d85c283cf4ef780eadfff440551a0db37afb1c76359d54a996"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7e57c2d59e701ee71e9e00a70c49e6920239df9ec4d761f1bf59cf3d1c333dd4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f787d7e482e0fa084232c7c45191550dbd70c194cba2d1b44979301ca420ca87"
   end
 
   depends_on "autoconf" => :build
