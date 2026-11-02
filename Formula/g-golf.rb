@@ -26,6 +26,7 @@ class GGolf < Formula
 
   on_macos do
     depends_on "bdw-gc"
+    depends_on "gettext"
   end
 
   patch :DATA
