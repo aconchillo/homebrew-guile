@@ -1,9 +1,8 @@
 class GuileSsh < Formula
   desc "SSH library for programs written in Guile"
   homepage "https://github.com/artyom-poptsov/guile-ssh"
-  url "https://github.com/artyom-poptsov/guile-ssh/archive/refs/tags/v0.17.0.tar.gz"
-  sha256 "ce6670a2114d3269c2f79153adc8d6bd251d7c649fee0f02f5e893104a1b38bc"
-  revision 1
+  url "https://github.com/artyom-poptsov/guile-ssh/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "9be26290cdd65ffe812d1e69d4bb87a2d41d2ee72ff8db65dee817fc315f153c"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-ssh-0.17.0_1"
@@ -26,13 +25,6 @@ class GuileSsh < Formula
   patch :DATA
 
   def install
-    # Newer libssh headers include <stdbool.h>, so `bool` can't be a variable name.
-    inreplace "libguile-ssh/session-func.c" do |s|
-      s.gsub! "int32_t bool;", "int32_t bool_value;"
-      s.gsub! "bool = scm_to_bool (value);", "bool_value = scm_to_bool (value);"
-      s.gsub! "&bool);", "&bool_value);"
-    end
-
     system "autoreconf", "-vif"
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
