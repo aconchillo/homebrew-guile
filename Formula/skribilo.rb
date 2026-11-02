@@ -5,10 +5,10 @@ class Skribilo < Formula
   sha256 "665c241c42920bf369f1231d4b9c71ce18ba63add0b9a8f241821fd11a28d592"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.9.5_2"
-    sha256 arm64_sonoma: "2a9879cd7a0c7fd7b8f8ceb4a6ea930a40545e989d5d09a9f416ad2a07cbce62"
-    sha256 ventura:      "16213cbce72a6edf3d6a0c07ed2b50425f4d1233915338a7fbe8aa87cb9877a8"
-    sha256 x86_64_linux: "b7a26767889cd2491cb00988ae78520a72243da5885ceaf87fb25cb12600709a"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/skribilo-0.11.1"
+    sha256 arm64_tahoe:   "59a5eebf508cfff16aa506ce92918dd1b9e07509df807a8135ea156ba36984e7"
+    sha256 arm64_sequoia: "3c6bafbfd00fceaa358a29cd8369ce8772768be0d8dd64f33fd03d45b49410bb"
+    sha256 x86_64_linux:  "d44b7d7fb78744ebcac01d56bb19d72579274e31ffdf25a8caae02032fae1589"
   end
 
   depends_on "gnu-sed" => :build
