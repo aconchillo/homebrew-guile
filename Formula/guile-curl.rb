@@ -1,9 +1,8 @@
 class GuileCurl < Formula
   desc "Guile bindings for the CURL network client library"
   homepage "https://github.com/spk121/guile-curl"
-  url "https://github.com/spk121/guile-curl/archive/refs/tags/v0.9.tar.gz"
-  sha256 "d241f27c2a6d2ac768ce1ae64fd27e6854b34ace6ce35ce810fb41a2a7b20ed6"
-  revision 2
+  url "https://github.com/spk121/guile-curl/archive/refs/tags/v0.10.tar.gz"
+  sha256 "8c25bfc1d95227b22b9f48df971be748486b9e2ea0b4e33944ce8aaf9baffd4c"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-curl-0.9_2"
