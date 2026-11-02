@@ -1,9 +1,8 @@
 class GuileTap < Formula
   desc "Test Framework that emits TAP output for GNU Guile"
   homepage "https://github.com/ft/guile-tap"
-  url "https://github.com/ft/guile-tap/archive/refs/tags/v0.4.6.tar.gz"
-  sha256 "b01f64a68e78d8a5149f0d706cc3215a1374b1c226fcf200cd0d6b432d0b964c"
-  revision 1
+  url "https://github.com/ft/guile-tap/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "acc0a907c99a9ea4b9984f74fef4e530ac033e53a759ba8037c7d66f1852c4a5"
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-tap-0.4.6_1"
@@ -15,8 +14,6 @@ class GuileTap < Formula
   depends_on "guile"
 
   def install
-    inreplace buildpath/"bin/tap-harness", "/usr/bin", "#{HOMEBREW_PREFIX}/bin"
-
     system "make", "DESTDIR=#{prefix}", "PREFIX=/", "install"
   end
 
