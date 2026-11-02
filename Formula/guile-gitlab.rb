@@ -3,7 +3,7 @@ class GuileGitlab < Formula
   homepage "https://github.com/artyom-poptsov/guile-gitlab"
   url "https://github.com/artyom-poptsov/guile-gitlab/archive/refs/tags/v0.2.1.tar.gz"
   sha256 "9408ee5dba92b56882f35079aa4d11fb8179ec58b050f88f03f6de149977ceb8"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-gitlab-0.2.1_1"
