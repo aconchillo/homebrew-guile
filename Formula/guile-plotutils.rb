@@ -5,10 +5,10 @@ class GuilePlotutils < Formula
   sha256 "37e389f058e97f8607ff26281e36b7ba94305cffa7b815ac9ccc315783147100"
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-plotutils-1.0.1_3"
-    sha256 cellar: :any, arm64_tahoe:   "0b64ea66b6f8ee14a19bcccfc1d9a61726b2d350d5b9f9bdedc2674c773807fe"
-    sha256 cellar: :any, arm64_sequoia: "dff096ac9c68577cf97da8380df895ea9bb537159f98e15931592ece163f5fc8"
-    sha256 cellar: :any, x86_64_linux:  "32cc5c4871d74c14c84485eebc438d090af6c3024dcbdce55be2558afb46e1c0"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-plotutils-1.0.2"
+    sha256 cellar: :any, arm64_tahoe:   "ab35b35c886d260ff20fd2ce76e259018357c8de36de45e6f057bb4a62cbaaba"
+    sha256 cellar: :any, arm64_sequoia: "2871cf46747fc689fc896d0bb44a1d187fccae575beb15c9a1b8e8282e0e949b"
+    sha256 cellar: :any, x86_64_linux:  "9e8f732fd17f29566dfa96d87a6753cd34d2b3c1dcf75a3696cbca03b0d36487"
   end
 
   depends_on "pkg-config" => :build
