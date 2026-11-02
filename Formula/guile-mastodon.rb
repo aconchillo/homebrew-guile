@@ -6,10 +6,10 @@ class GuileMastodon < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mastodon-0.0.2_1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "b3d20082768ebc2db9eb1ba9c386dc86b060869fc8afea068db39a40b3ad7697"
-    sha256 cellar: :any_skip_relocation, ventura:      "93db2b2b20e4c2a46bebaddb498a09991c3564dc381131085cff2c1745b7d44c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "df219ac403a06c745e0937c241d974a093bae9714a2df0e3266b32cb54a36d32"
+    root_url "https://github.com/aconchillo/homebrew-guile/releases/download/guile-mastodon-0.0.2_2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "080522de9c1ca14eb24e2941f0f89efea8093646cd1fa296e25ab254d33817f8"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "dec23746e2a6bb6d37a04df423457aeb7340a084c53827d765ecddd1abd0cf8d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5820d8a200cebc8c94fbb88016bdbc6e4a677f1d5a02bf1f093d1fe49bc78204"
   end
 
   depends_on "autoconf" => :build
